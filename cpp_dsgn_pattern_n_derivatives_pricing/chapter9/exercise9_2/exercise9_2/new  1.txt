@@ -1,0 +1,88 @@
+a primer for the mathematical of financial engineering, 2nd ed, dan stefanica, p.46-47
+
+numerical integration
+------------------------------------------------------------------------------------------------
+
+pseudocode for midpoint rule
+
+input:
+a = left endpoint of the integration interval
+b = right endpoint of the integration interval
+n = number of partition intervals
+f_int(x) = routine evaluating f(x)
+
+output:
+I_midpoint = midpoint rule approximation of integral(f(x),a,b)
+
+h = (b -a)/n;  I_midpoint = 0
+for i = 1:n
+	I_midpoint = I_midpoint + f_int(a + (i-1/2)*h)
+end
+I_midpoint = h * I_midpoint
+
+------------------------------------------------------------------------------------------------
+pseudocode for trapezoidal rule
+
+input:
+a = left endpoint of the integration interval
+b = right endpoint of the integration interval
+n = number of partition intervals
+f_int(x) = routine evaluating f(x)
+
+output:
+I_trap = trapezoidal rule approximation of integral(f(x),a,b)
+
+h = (b -a)/n;
+I_trap = f_int(a)/2 + f_int(b)/2
+for i = 1:n-1
+	I_trap = I_trap+ f_int(a + i*h)
+end
+I_trap = h * I_trap
+
+------------------------------------------------------------------------------------------------
+pseudocode for Simpson's rule
+
+input:
+a = left endpoint of the integration interval
+b = right endpoint of the integration interval
+n = number of partition intervals
+f_int(x) = routine evaluating f(x)
+
+output:
+I_simpson = Simpson's rule approximation of integral(f(x),a,b)
+
+h = (b -a)/n;
+I_simpson = f_int(a)/6 + f_int(b)/6
+for i = 1:n-1
+	I_simpson = I_simpson+ f_int(a + i*h)/3
+end
+
+for i = 1:n
+	I_simpson = I_simpson+ 2*f_int(a + (i - 1/2)*h)/3
+end
+
+I_simpson= h * I_simpson
+
+-----------------------------------------------------------------------------------------------------------------
+pseudocode for computing an approximate value of an integral with given tolerance, p.48
+
+input:
+
+tol = prescribed tolerance
+I_numercial(n) = result of the numerical integration rule with n intervals; any integration rule can be used
+
+
+ouptut:
+I_approx = approximation of integral(f(x),a,b) with tolerance
+
+n=4; I_old = I_numerical(n) //4 intervals initial partition
+n = 2*n; I_new = I_numerical(n)
+
+while(abs(I_new - I_old)>tol)
+	I_old = I_new
+	n = 2*n
+	I_new = I_numerical(n)
+end
+I_approx = I_new
+
+
