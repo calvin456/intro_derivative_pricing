@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "book_example_exception", "book_example_exception\book_example_exception.vcxproj", "{AF87FB94-FE0D-4C0E-BBAF-193C73198524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF87FB94-FE0D-4C0E-BBAF-193C73198524}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF87FB94-FE0D-4C0E-BBAF-193C73198524}.Debug|Win32.Build.0 = Debug|Win32
+		{AF87FB94-FE0D-4C0E-BBAF-193C73198524}.Release|Win32.ActiveCfg = Release|Win32
+		{AF87FB94-FE0D-4C0E-BBAF-193C73198524}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
