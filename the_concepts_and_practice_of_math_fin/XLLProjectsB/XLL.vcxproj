@@ -26,21 +26,25 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -84,7 +88,6 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionName)</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionName)</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionName)</TargetName>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Mr No Name\Documents\joshi_dsgn_pattern_derivatives_pricing\library\include;C:\Users\Mr No Name\Documents\joshi_dsgn_pattern_derivatives_pricing\library\source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -116,7 +119,7 @@
       <Culture>0x0809</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>xlw-vc100-mt-gd-5_0_1f0.lib;odbc32.lib;odbccp32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xlw-vc120-mt-gd-5_0_2f0.lib;odbc32.lib;odbccp32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\$(Configuration)\$(SolutionName).xll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>$(XLW)\xlw\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -158,7 +161,7 @@
       <Culture>0x0809</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>xlw-vc100-mt-gd-5_0_1f0.lib;odbc32.lib;odbccp32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xlw-vc120-mt-gd-5_0_2f0.lib;odbc32.lib;odbccp32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)\$(SolutionName).xll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>$(XLW)\xlw\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -200,7 +203,7 @@
       <Culture>0x0809</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>xlw-vc100-mt-5_0_1f0.lib;odbc32.lib;odbccp32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xlw-vc120-mt-5_0_2f0.lib;odbc32.lib;odbccp32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\$(Configuration)\$(SolutionName).xll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>$(XLW)\xlw\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -242,7 +245,7 @@
       <Culture>0x0809</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>xlw-vc100-mt-5_0_1f0.lib;odbc32.lib;odbccp32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xlw-vc120-mt-5_0_2f0.lib;odbc32.lib;odbccp32.lib;User32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)\$(SolutionName).xll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>$(XLW)\xlw\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -253,51 +256,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\analytical_jdm_pricer.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\AntiThetic.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Arrays.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\barrier_options_analytical.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BlackScholesFormulas.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BSCallTwo.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\HestonIntegrand.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\HestonPricingAnalytical.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\MyFunctions.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\NewtonRaphson.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Normals.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\NumericalIntegration.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\NumericalRule.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\options.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\ParkMiller.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\quanto_margrabe.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Random2.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\SteppingMethods.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Terminator.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Timer.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\VGIntegrand.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\VGPricingAnalytical.h" />
-    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Wrapper.h" />
     <ClInclude Include="source\cppinterface.h" />
-    <ClInclude Include="source\gamma_func.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\AntiThetic.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Arrays.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\barrier_options_analytical.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BlackScholesFormulas.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BSCallTwo.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\HestonIntegrand.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\HestonPricingAnalytical.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\MyFunctions.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Normals.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\options.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\ParkMiller.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\quanto_margrabe.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Random2.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\SteppingMethods.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Terminator.cpp" />
-    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\VGPricingAnalytical.cpp" />
     <ClCompile Include="source\source.cpp" />
-    <ClCompile Include="source\VGIntegrand.cpp" />
     <ClCompile Include="source\xlwWrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
