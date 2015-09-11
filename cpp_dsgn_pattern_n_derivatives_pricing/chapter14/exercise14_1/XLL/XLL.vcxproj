@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25E6BE1C-C64A-437F-B6FB-D30583E419C4}</ProjectGuid>
+    <RootNamespace>XLL</RootNamespace>
+    <ProjectName>rng_xll</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.xll</TargetExt>
+    <IncludePath>C:\Users\Mr No Name\Documents\joshi_dsgn_pattern_derivatives_pricing\library\include;C:\Users\Mr No Name\Documents\joshi_dsgn_pattern_derivatives_pricing\library\source;C:\Program Files %28x86%29\XLW\xlw-5.0.2f0\xlw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\XLW\xlw-5.0.2f0\xlw\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xlw-vc120-mt-gd-5_0_2f0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Arrays.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\MyFunctions.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Normals.h" />
+    <ClInclude Include="..\source\AntiTheticXlw.h" />
+    <ClInclude Include="..\source\cppinterface.h" />
+    <ClInclude Include="..\source\MersenneTwisterXlw.h" />
+    <ClInclude Include="..\source\MomentMatchingXlw.h" />
+    <ClInclude Include="..\source\ParkMillerXlw.h" />
+    <ClInclude Include="..\source\Random2Xlw.h" />
+    <ClInclude Include="..\source\reftest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Arrays.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\MyFunctions.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Normals.cpp" />
+    <ClCompile Include="..\source\AntiTheticXlw.cpp" />
+    <ClCompile Include="..\source\MersenneTwisterXlw.cpp" />
+    <ClCompile Include="..\source\MomentMatchingXlw.cpp" />
+    <ClCompile Include="..\source\ParkMillerXlw.cpp" />
+    <ClCompile Include="..\source\Random2Xlw.cpp" />
+    <ClCompile Include="..\source\RNGRegistration.cpp" />
+    <ClCompile Include="..\source\source.cpp" />
+    <ClCompile Include="..\source\xlwWrapper.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

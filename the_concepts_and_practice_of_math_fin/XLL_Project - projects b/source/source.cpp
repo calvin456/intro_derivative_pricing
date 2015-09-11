@@ -100,7 +100,7 @@ _ZeroCoupon( double r,
 
 double // evaluate final price bsd on Euler stepping
 _FinalPrice_EulerStepping( double Spot,
-                         double Steps, //Number of steps
+                         short Steps, //Number of steps
                          double r,
                          double d,
                          double Vol,

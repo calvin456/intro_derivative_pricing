@@ -7,55 +7,55 @@
     <ClCompile Include="source\xlwWrapper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\AntiThetic.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\AntiThetic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\Arrays.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Arrays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\barrier_options_analytical.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\barrier_options_analytical.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\BlackScholesFormulas.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BlackScholesFormulas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\BSCallTwo.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BSCallTwo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\HestonIntegrand.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\HestonIntegrand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\HestonPricingAnalytical.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\HestonPricingAnalytical.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\MyFunctions.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\MyFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\Normals.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Normals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\options.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\options.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\ParkMiller.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\ParkMiller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\quanto_margrabe.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\quanto_margrabe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\Random2.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Random2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\SteppingMethods.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\SteppingMethods.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\Terminator.cpp">
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Terminator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\VGPricingAnalytical.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\VGIntegrand.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="source\VGPricingAnalytical.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,76 +71,76 @@
     <ClInclude Include="source\cppinterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="source\analytical_jdm_pricer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\AntiThetic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Arrays.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\barrier_options_analytical.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\BlackScholesFormulas.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\BSCallTwo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\HestonIntegrand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\HestonPricingAnalytical.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\MyFunctions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\NewtonRaphson.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Normals.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\NumericalIntegration.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\NumericalRule.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\options.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\ParkMiller.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\quanto_margrabe.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Random2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\SteppingMethods.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Terminator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Timer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\VGIntegrand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\VGPricingAnalytical.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\wrapper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="source\gamma_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\AntiThetic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Arrays.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\barrier_options_analytical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BlackScholesFormulas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BSCallTwo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\HestonIntegrand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\HestonPricingAnalytical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\MyFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\NewtonRaphson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Normals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\NumericalIntegration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\NumericalRule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\ParkMiller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\quanto_margrabe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Random2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\SteppingMethods.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Terminator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\VGIntegrand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\VGPricingAnalytical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\analytical_jdm_pricer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

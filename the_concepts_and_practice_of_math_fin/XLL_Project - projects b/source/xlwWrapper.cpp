@@ -434,7 +434,7 @@ XLRegistration::Arg
 _FinalPrice_EulerSteppingArgs[]=
 {
 { "Spot","spot ","B"},
-{ "Strike","strike ","B"},
+{ "Strike","strike ","XLF_OPER"},
 { "r","interest rate ","B"},
 { "d","dividend yield ","B"},
 { "Vol","volatility ","B"},
@@ -464,7 +464,7 @@ extern "C"
 LPXLFOPER EXCEL_EXPORT
 xl_FinalPrice_EulerStepping(
 double Spot,
-double Strike,
+LPXLFOPER Strikea,
 double r,
 double d,
 double Vol,
@@ -476,6 +476,10 @@ EXCEL_BEGIN;
 		return XlfOper(true);
 
 
+XlfOper Strikeb(
+	(Strikea));
+short Strike(
+	Strikeb.AsShort("Strike"));
 
 
 

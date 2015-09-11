@@ -73,7 +73,7 @@ _ZeroCoupon( double r //interest rate
 
 double // evaluate final price bsd on Euler stepping
 _FinalPrice_EulerStepping(double Spot //spot
-                         ,double Strike //strike
+                         ,short Strike //strike
                          ,double r //interest rate
                          ,double d //dividend yield
                          ,double Vol //volatility
