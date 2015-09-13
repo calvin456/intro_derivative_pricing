@@ -80,7 +80,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\PayOff3.h" />
-    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\wrapper2.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Wrapper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\PayOff3.cpp" />

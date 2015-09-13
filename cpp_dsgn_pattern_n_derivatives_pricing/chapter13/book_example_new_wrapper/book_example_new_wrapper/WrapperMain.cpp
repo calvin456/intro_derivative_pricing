@@ -9,7 +9,7 @@ reproduced from p. 193, C++ Design Patterns and Derivatives Pricing,
 //		requires PayOff3.cpp
 
 #include <iostream>
-#include <wrapper2.h>
+#include <wrapper.h>
 #include <PayOff3.h>
 
 using namespace std;

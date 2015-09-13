@@ -18,7 +18,7 @@
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\PayOff3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\wrapper2.h">
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Wrapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
