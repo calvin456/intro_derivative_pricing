@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exercise16_2_pimpl", "exercise16_2\exercise16_2.vcxproj", "{FBF5B357-48B6-4384-9C3B-CAC304EEA45F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exercise_16_2_no_pimpl", "exercise_16_2_no_pimpl\exercise_16_2_no_pimpl.vcxproj", "{D310AAA8-9742-45DD-8CC2-8C1DF97E635D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBF5B357-48B6-4384-9C3B-CAC304EEA45F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FBF5B357-48B6-4384-9C3B-CAC304EEA45F}.Debug|Win32.Build.0 = Debug|Win32
+		{FBF5B357-48B6-4384-9C3B-CAC304EEA45F}.Release|Win32.ActiveCfg = Release|Win32
+		{FBF5B357-48B6-4384-9C3B-CAC304EEA45F}.Release|Win32.Build.0 = Release|Win32
+		{D310AAA8-9742-45DD-8CC2-8C1DF97E635D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D310AAA8-9742-45DD-8CC2-8C1DF97E635D}.Debug|Win32.Build.0 = Debug|Win32
+		{D310AAA8-9742-45DD-8CC2-8C1DF97E635D}.Release|Win32.ActiveCfg = Release|Win32
+		{D310AAA8-9742-45DD-8CC2-8C1DF97E635D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
