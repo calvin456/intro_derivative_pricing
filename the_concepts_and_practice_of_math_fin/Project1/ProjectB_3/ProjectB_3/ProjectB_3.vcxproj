@@ -72,13 +72,16 @@
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\ConvergenceTable.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Digital.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\MCStatistics.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\MersenneTwister.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Normals.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Parameters.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\ParkMiller.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\path_generation.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\path_generation_gbm.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\PayOff3.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\PayOffBridge.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Random2.cpp" />
-    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Vanilla3.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Vanilla3Template.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -87,14 +90,18 @@
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BlackScholesFormulas.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\ConvergenceTable.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Digital.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\engine_vanilla.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\MersenneTwister.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Normals.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Parameters.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\ParkMiller.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\path_generation.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\path_generation_gbm.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\PayOff3.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\PayOffBridge.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Random2.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Timer.h" />
-    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Vanilla3.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Vanilla3Template.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Wrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

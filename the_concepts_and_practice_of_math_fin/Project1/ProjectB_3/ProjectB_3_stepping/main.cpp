@@ -27,11 +27,15 @@ int main(){
 		double d(.03);
 		double Vol(.30);
 		double Expiry(.33);
-		unsigned long NumberOfPaths(static_cast<unsigned long>(1e6));
+		unsigned long NumberOfPaths(static_cast<unsigned long>(1e4));
 
-		//Validation via MC
+		//Stepping methods
 
-		// (ii) Use the engine to write MC pricers for all the products mentionned above
+		// (ii) Compare the number of paths required for the 2 mc methods to get a given degree of convergence
+
+		// (iii) Make sure the two methods give the same prices
+
+		// (iv) Compare the times req to set a given level of accuracy
 
 		cout << "analytical solution BSM call : " << BlackScholesCall(Spot, Strike, r, d, Vol, Expiry) << endl;
 
@@ -66,15 +70,15 @@ int main(){
 
 		ConvergenceTable gatherer_time(_gatherer_time);
 
-		RandomMersenneTwister generator_(1);
-		//RandomParkMiller generator_(1);
+		RandomMersenneTwister generator_(6000);
+		//RandomParkMiller generator_(6000);
 
 		RandomBase* generator(new AntiThetic(generator_));
-
-		shared_ptr<PathGeneration> thePath(new PathGenerationGBM(generator, Spot, Expiry,
+		// At 6 000 steps price converges
+		shared_ptr<PathGeneration> thePath(new PathEulerStepping(generator, Spot, Expiry,
 											driftParam,
 											VolParam,
-											1));
+											6000));
 
 
 		mc_pricer_vanilla(theOption, rParam, thePath, NumberOfPaths, gatherer, gatherer_time);
@@ -82,7 +86,7 @@ int main(){
 		vector<vector<double> > results = gatherer.GetResultsSoFar();
 		vector<vector<double> > results1 = gatherer_time.GetResultsSoFar();
 
-		cout << endl  << "1st mc pricer" << endl;
+		cout << "alternative mc pricer" << endl;
 
 		cout << "\nFor the call price the results are \n";
 		cout << "with antithetic variables \n";
@@ -102,7 +106,7 @@ int main(){
 		VanillaOptionTemplate<PayOffPut> theOption1(thePayOff1, Expiry);
 
 		ConvergenceTable gatherer1(gathererOne);
-		
+
 		ConvergenceTable gatherer_time1(_gatherer_time);
 
 		mc_pricer_vanilla(theOption1, rParam, thePath, NumberOfPaths, gatherer1, gatherer_time1);
@@ -122,7 +126,7 @@ int main(){
 			cout << results3[i][0] << "\t ";
 			cout << "\n";
 		}
-		
+
 		PayOffDigitalCall thePayOff2(Strike);
 
 		VanillaOptionTemplate<PayOffDigitalCall> theOption2(thePayOff2, Expiry);
@@ -148,7 +152,7 @@ int main(){
 			cout << results5[i][0] << "\t ";
 			cout << "\n";
 		}
-		
+
 		PayOffDigitalPut thePayOff3(Strike);
 
 		VanillaOptionTemplate<PayOffDigitalPut> theOption3(thePayOff3, Expiry);
@@ -189,6 +193,6 @@ int main(){
 		return 1;
 	}
 
-	
+
 
 }
