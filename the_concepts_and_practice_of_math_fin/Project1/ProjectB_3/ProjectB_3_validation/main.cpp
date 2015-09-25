@@ -42,7 +42,7 @@ int main(){
 		RandomMersenneTwister generator_(1);
 		//RandomParkMiller generator_(1);
 
-		RandomBase* generator(new AntiThetic(generator_));
+		shared_ptr<RandomBase> generator(new AntiThetic(generator_));
 
 		shared_ptr<PathGeneration> thePath(new PathGenerationGBM(generator, Spot, Expiry, 
 												driftParam, VolParam, 1));

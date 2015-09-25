@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "delta_hedging", "ProjectB_5\ProjectB_5.vcxproj", "{0AC83A62-DB0D-47DC-9281-878192F98863}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snl_hedging", "snl_hedging\snl_hedging.vcxproj", "{79D4AE53-3655-448F-AD12-99F6DF6E34D3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gamma_hedging", "gamma_hedging\gamma_hedging.vcxproj", "{6E5A2A07-5A38-442D-AF77-1BDA2B43F3C1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "delta_sv_hedging", "delta_sv_hedging\delta_sv_hedging.vcxproj", "{257E2038-2754-463C-9BBD-AF4A68643403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AC83A62-DB0D-47DC-9281-878192F98863}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0AC83A62-DB0D-47DC-9281-878192F98863}.Debug|Win32.Build.0 = Debug|Win32
+		{0AC83A62-DB0D-47DC-9281-878192F98863}.Release|Win32.ActiveCfg = Release|Win32
+		{0AC83A62-DB0D-47DC-9281-878192F98863}.Release|Win32.Build.0 = Release|Win32
+		{79D4AE53-3655-448F-AD12-99F6DF6E34D3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79D4AE53-3655-448F-AD12-99F6DF6E34D3}.Debug|Win32.Build.0 = Debug|Win32
+		{79D4AE53-3655-448F-AD12-99F6DF6E34D3}.Release|Win32.ActiveCfg = Release|Win32
+		{79D4AE53-3655-448F-AD12-99F6DF6E34D3}.Release|Win32.Build.0 = Release|Win32
+		{6E5A2A07-5A38-442D-AF77-1BDA2B43F3C1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E5A2A07-5A38-442D-AF77-1BDA2B43F3C1}.Debug|Win32.Build.0 = Debug|Win32
+		{6E5A2A07-5A38-442D-AF77-1BDA2B43F3C1}.Release|Win32.ActiveCfg = Release|Win32
+		{6E5A2A07-5A38-442D-AF77-1BDA2B43F3C1}.Release|Win32.Build.0 = Release|Win32
+		{257E2038-2754-463C-9BBD-AF4A68643403}.Debug|Win32.ActiveCfg = Debug|Win32
+		{257E2038-2754-463C-9BBD-AF4A68643403}.Debug|Win32.Build.0 = Debug|Win32
+		{257E2038-2754-463C-9BBD-AF4A68643403}.Release|Win32.ActiveCfg = Release|Win32
+		{257E2038-2754-463C-9BBD-AF4A68643403}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

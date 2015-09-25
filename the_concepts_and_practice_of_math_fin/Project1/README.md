@@ -1,1 +1,1 @@
-Build XLLProjectsB and use it for part consistency and investigations in project 1
+Build XLLProjectsB and use it for parts consistency and investigations in project 1

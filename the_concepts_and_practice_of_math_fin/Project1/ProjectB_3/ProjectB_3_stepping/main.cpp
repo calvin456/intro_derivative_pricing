@@ -73,7 +73,7 @@ int main(){
 		RandomMersenneTwister generator_(6000);
 		//RandomParkMiller generator_(6000);
 
-		RandomBase* generator(new AntiThetic(generator_));
+		shared_ptr<RandomBase> generator(new AntiThetic(generator_));
 		// At 6 000 steps price converges
 		shared_ptr<PathGeneration> thePath(new PathEulerStepping(generator, Spot, Expiry,
 											driftParam,

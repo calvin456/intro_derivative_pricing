@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <includedir>
+        <dir name="C:/Users/Mr No Name/Documents/joshi_dsgn_pattern_derivatives_pricing/library/include/"/>
+        <dir name="C:/Users/Mr No Name/Documents/joshi_dsgn_pattern_derivatives_pricing/library/source/"/>
+    </includedir>
+    <paths>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project3/ProjectB_5/delta_sv_hedging"/>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project3/ProjectB_5/gamma_hedging"/>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project3/ProjectB_5/ProjectB_5"/>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project3/ProjectB_5/snl_hedging"/>
+    </paths>
+</project>

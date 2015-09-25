@@ -57,7 +57,7 @@ int main(){
 		//finite difference approx
 		double gamma_fd = (1 / (epsilon* epsilon)) * (BlackScholesCall(Spot + epsilon, Strike, r, d, Vol, Expiry) -
 			2.0 *BlackScholesCall(Spot, Strike, r, d, Vol, Expiry) +
-			BlackScholesCall(Spot - epsilon, Strike, r, d, Vol, Expiry));
+				BlackScholesCall(Spot - epsilon, Strike, r, d, Vol, Expiry));
 
 		cout << "finite difference formula delta: " << gamma_fd << endl;
 
@@ -77,8 +77,8 @@ int main(){
 
 		RandomParkMiller rng_pm(1);
 
-		RandomBase* anti_pm_gen(new AntiThetic(rng_pm));
-
+		shared_ptr<RandomBase> anti_pm_gen(new AntiThetic(rng_pm));
+		
 		shared_ptr<PathGeneration> thePath(new PathGenerationGBM(anti_pm_gen, Spot, Expiry,
 			driftParam, VolParam, 1));
 
@@ -94,18 +94,18 @@ int main(){
 
 		RandomMersenneTwister rng_mt(1);
 
-		RandomBase* anti_mt_gen(new AntiThetic(rng_pm));
+		shared_ptr<RandomBase> anti_mt_gen(new AntiThetic(rng_pm));
 
 		shared_ptr<PathGeneration> thePath1(new PathGenerationGBM(anti_mt_gen, Spot, Expiry,
 			driftParam, VolParam, 1));
 
 		double mc_mt = mc_pricer_vanilla(theOption, rParam, thePath1, NumberOfPaths);
-
+		
 		cout << (1 / epsilon) * (mc_mt - mc_pm1) << endl;
 
 		cout << "2 RNGs - Park Miller & Sobol" << endl;
-
-		RandomBase* rng_sobol(new RandomSobol(1));
+		
+		shared_ptr<RandomBase> rng_sobol(new RandomSobol(1));
 
 		shared_ptr<PathGeneration> thePath2(new PathGenerationGBM(rng_sobol, Spot + epsilon, Expiry,
 			driftParam, VolParam, 1));
@@ -113,17 +113,17 @@ int main(){
 		double mc_sobol = mc_pricer_vanilla(theOption, rParam, thePath2, NumberOfPaths);
 
 		cout << (1 / epsilon) * (mc_sobol - mc_pm1) << endl;
-
+		
 		// (ii)  Finite difference method. Sme RNG - ParkMiller
 		cout << "sme RNG - Park Miller" << endl;
-
+		
 		shared_ptr<PathGeneration> thePath3(new PathGenerationGBM(anti_pm_gen, Spot + epsilon, Expiry,
 			driftParam, VolParam, 1));
 
 		double mc_pm2 = mc_pricer_vanilla(theOption, rParam, thePath3, NumberOfPaths);
 
 		cout << (1 / epsilon) * (mc_pm2 - mc_pm1) << endl;
-
+		
 		
 		// (iii) Implement the pathwise method for the delta
 		cout << "pathwise method : ";
