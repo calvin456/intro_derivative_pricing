@@ -32,14 +32,14 @@ int main(){
 		double Vol(.20);
 		double Expiry(.25);
 
-		CallOption* call1(new CallOption(Spot, Strike, r, d, Vol, Expiry));
+		shared_ptr<CallOption> call1(new CallOption(Spot, Strike, r, d, Vol, Expiry));
 
 		//-----------------------------------------------------------------------------------------
 		//Gamma Hedging
 		//Implement the Gamma hedging of a far-OTM option
 		//with spot and another option
 
-		CallOption*	call2(new CallOption(Spot, .9*Strike, r, d, Vol, Expiry));
+		shared_ptr<CallOption>	call2(new CallOption(Spot, .9*Strike, r, d, Vol, Expiry));
 
 		double call1_value0(call2->GetValue(Spot, Vol, Expiry));
 
@@ -64,12 +64,13 @@ int main(){
 		//Plot the var against time-step size
 		//How is the var affected by chging mu and sigma?
 
-		GammaHedging<CallOption, CallOption>* gamma_hedge(new GammaHedging<CallOption, CallOption>
+		shared_ptr<GammaHedging<CallOption, CallOption>> gamma_hedge(new GammaHedging<CallOption, CallOption>
 														(call1_value0, r, call2, call1, path1, Expiry));
 
 		EngineSimul<CallOption> engine_gamma(gamma_hedge, NumberOfPaths);
 
-		cout << endl << "variance gamma hedging vs rebalancing freq : " << endl;
+		cout << "variance pnl" << endl;
+		cout << endl << "gamma hedging vs rebalancing freq : " << endl;
 		cout << "baseline : ";
 
 		cout << " drift - ";
@@ -107,7 +108,7 @@ int main(){
 
 		//How is the var affected by chging mu and sigma?
 		//Bump drift and vol by -/+ 10%
-		cout << endl << "variance gamma hedging vs rebalancing freq : " << endl;
+		cout << endl << "gamma hedging vs rebalancing freq : " << endl;
 		cout << "Bump drift by - 10% : ";
 
 		path1->SetDrift(ParametersConstant(.9* (r - d)));
@@ -140,7 +141,7 @@ int main(){
 		cout << engine_gamma.DoSimulation() << endl;
 
 		//--------------------------------------
-		cout << endl << "variance gamma hedging vs rebalancing freq : " << endl;
+		cout << endl << "gamma hedging vs rebalancing freq : " << endl;
 		cout << "Bump drift by + 10% : ";
 
 		path1->SetDrift(ParametersConstant(1.1* (r - d)));
@@ -172,7 +173,7 @@ int main(){
 		cout << engine_gamma.DoSimulation() << endl;
 		//--------------------------------------
 
-		cout << endl << "variance gamma hedging vs rebalancing freq : " << endl;
+		cout << endl << "gamma hedging vs rebalancing freq : " << endl;
 		cout << "Bump vol by - 10% : ";
 
 		path1->SetVol(ParametersConstant(.9* Vol));
@@ -206,7 +207,7 @@ int main(){
 
 		//--------------------------------------
 
-		cout << endl << "variance gamma hedging vs rebalancing freq : " << endl;
+		cout << endl << "gamma hedging vs rebalancing freq : " << endl;
 		cout << "Bump vol by + 10% : ";
 
 		path1->SetVol(ParametersConstant(1.1* Vol));

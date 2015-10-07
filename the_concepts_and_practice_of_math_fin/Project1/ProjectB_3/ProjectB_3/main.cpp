@@ -89,10 +89,9 @@ int main(){
 		cout << "mean\t se\t path\t timer\n";
 		for (unsigned long i = 0; i < results.size(); i++)
 		{
-			for (unsigned long j = 0; j < results[i].size(); j++){
+			for (unsigned long j = 0; j < results[i].size(); j++)
 				cout << results[i][j] << "\t ";
 
-			}
 			cout << results1[i][0] << "\t ";
 			cout << "\n";
 		}
@@ -115,10 +114,9 @@ int main(){
 		cout << "mean\t se\t path\t timer\n";
 		for (unsigned long i = 0; i < results2.size(); i++)
 		{
-			for (unsigned long j = 0; j < results2[i].size(); j++){
+			for (unsigned long j = 0; j < results2[i].size(); j++)
 				cout << results2[i][j] << "\t ";
 
-			}
 			cout << results3[i][0] << "\t ";
 			cout << "\n";
 		}
@@ -141,10 +139,9 @@ int main(){
 		cout << "mean\t se\t path\t timer\n";
 		for (unsigned long i = 0; i < results4.size(); i++)
 		{
-			for (unsigned long j = 0; j < results4[i].size(); j++){
+			for (unsigned long j = 0; j < results4[i].size(); j++)
 				cout << results4[i][j] << "\t ";
 
-			}
 			cout << results5[i][0] << "\t ";
 			cout << "\n";
 		}
@@ -167,10 +164,9 @@ int main(){
 		cout << "mean\t se\t path\t timer\n";
 		for (unsigned long i = 0; i < results6.size(); i++)
 		{
-			for (unsigned long j = 0; j < results6[i].size(); j++){
+			for (unsigned long j = 0; j < results6[i].size(); j++)
 				cout << results6[i][j] << "\t ";
 
-			}
 			cout << results7[i][0] << "\t ";
 			cout << "\n";
 		}

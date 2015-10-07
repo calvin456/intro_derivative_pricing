@@ -107,7 +107,7 @@ int main(){
 		cout << "daily rebalancing : ";
 		cout << engine_delta_sv1.DoSimulation() << endl;
 		
-
+		
 		// (ii) Delta hedging using rms of sigma across at all times
 		
 		shared_ptr<DeltaHedgingRMS<CallOption>> delta_hedge_rms(new DeltaHedgingRMS<CallOption>(call1_value0, r, call1, path1, Expiry));
@@ -143,10 +143,11 @@ int main(){
 		//variance = engine_delta.DoSimulation(); 
 		cout << "daily rebalancing : ";
 		cout << engine_delta_sv2.DoSimulation() << endl;
-	
+		
+		
 		// (iii) Delta hedging using rms of sigma at time s
 
-		shared_ptr<DeltaHedgingRMSDec<CallOption>> delta_hedge_rms_dec(new DeltaHedgingRMSDec<CallOption>(call1_value0, r, call1, path1, Expiry));
+		shared_ptr<DeltaHedgingRMSDec<CallOption>> delta_hedge_rms_dec(new DeltaHedgingRMSDec<CallOption>(call1_value0, r, call1,path1,Expiry));
 
 		EngineSimulSV<CallOption> engine_delta_sv3(delta_hedge_rms_dec, NumberOfPaths);
 
@@ -216,7 +217,7 @@ int main(){
 		//variance = engine_delta.DoSimulation(); 
 		cout << "daily rebalancing : ";
 		cout << engine_delta_sv4.DoSimulation() << endl;
-
+		
 		//-----------------------------------------------------------------------------------------
 		
 		double tmp;

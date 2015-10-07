@@ -32,7 +32,7 @@ int main(){
 		double Vol(.20);
 		double Expiry(.25);
 
-		CallOption* call1(new CallOption(Spot, Strike, r, d, Vol, Expiry));
+		shared_ptr<CallOption> call1(new CallOption(Spot, Strike, r, d, Vol, Expiry));
 
 		//-----------------------------------------------------------------------------------------
 		//the perfect BSM world
@@ -43,9 +43,9 @@ int main(){
 		ParametersConstant rParam(r);
 		ParametersConstant driftParam(r - d);
 
-		PathGenerationGBM* path1(new PathGenerationGBM(generator, Spot, Expiry,
-			driftParam,
-			VolParam));
+		PathGenerationGBM *path1(new PathGenerationGBM(generator, Spot, Expiry,
+											driftParam,
+											VolParam));
 
 		double call1_value0(call1->GetValue(Spot, Vol, Expiry));
 
@@ -55,7 +55,7 @@ int main(){
 		//Plot the var against time-step size
 		//How is the var affected by chging mu and sigma?
 
-		SnLHedging<CallOption>* snl_hedge(new SnLHedging<CallOption>(call1_value0, r, call1, path1, Expiry));
+		shared_ptr<SnLHedging<CallOption>> snl_hedge(new SnLHedging<CallOption>(call1_value0, r, call1, path1, Expiry));
 
 		EngineSimul<CallOption> engine_snl(snl_hedge, NumberOfPaths);
 

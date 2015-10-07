@@ -32,7 +32,7 @@ int main(){
 		double Vol(.20);
 		double Expiry(.25);
 
-		CallOption* call1(new CallOption(Spot, Strike, r, d, Vol, Expiry));
+		shared_ptr<CallOption> call1(new CallOption(Spot, Strike, r, d, Vol, Expiry));
 
 		//-----------------------------------------------------------------------------------------
 		//the perfect BSM world
@@ -55,11 +55,12 @@ int main(){
 		//Plot the var against time-step size
 		//How is the var affected by chging mu and sigma?
 
-		DeltaHedging<CallOption>* delta_hedge(new DeltaHedging<CallOption>(call1_value0, r, call1, path1, Expiry));
+		shared_ptr<DeltaHedging<CallOption>> delta_hedge(new DeltaHedging<CallOption>(call1_value0, r, call1, path1, Expiry));
 
 		EngineSimul<CallOption> engine_delta(delta_hedge, NumberOfPaths);
 
-		cout << endl << "variance delta hedging vs rebalancing freq : " << endl;
+		cout << "variance pnl" << endl;
+		cout << endl << "delta hedging vs rebalancing freq : " << endl;
 		cout << "baseline : ";
 
 		cout << " drift - ";
@@ -95,7 +96,7 @@ int main(){
 		
 		//How is the var affected by chging mu and sigma?
 		//Bump drift and vol by -/+ 10%
-		cout << endl << "variance delta hedging vs rebalancing freq : " << endl;
+		cout << endl << "delta hedging vs rebalancing freq : " << endl;
 		cout << "Bump drift by - 10% : ";
 		
 		path1->SetDrift(ParametersConstant(.9* (r - d)));
@@ -128,7 +129,7 @@ int main(){
 		cout << engine_delta.DoSimulation() << endl;
 		
 		//--------------------------------------
-		cout << endl << "variance delta hedging vs rebalancing freq : " << endl;
+		cout << endl << "delta hedging vs rebalancing freq : " << endl;
 		cout << "Bump drift by + 10% : ";
 		
 		path1->SetDrift(ParametersConstant(1.1* (r - d)));
@@ -160,7 +161,7 @@ int main(){
 		cout << engine_delta.DoSimulation() << endl;
 		//--------------------------------------
 		
-		cout << endl << "variance delta hedging vs rebalancing freq : " << endl;
+		cout << endl << "delta hedging vs rebalancing freq : " << endl;
 		cout << "Bump vol by - 10% : " ;
 		
 		path1->SetVol(ParametersConstant(.9* Vol));
@@ -194,7 +195,7 @@ int main(){
 
 		//--------------------------------------
 		
-		cout << endl << "variance delta hedging vs rebalancing freq : " << endl;
+		cout << endl << "delta hedging vs rebalancing freq : " << endl;
 		cout << "Bump vol by + 10% : " ;
 		
 		path1->SetVol(ParametersConstant(1.1* Vol));
