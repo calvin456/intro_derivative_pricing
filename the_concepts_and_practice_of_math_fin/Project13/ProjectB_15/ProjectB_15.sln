@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vanilla_options", "ProjectB_14\ProjectB_14.vcxproj", "{17BE63AF-54B4-42CA-BD8F-051F19DEEB49}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vanilla_options", "ProjectB_15\ProjectB_15.vcxproj", "{17BE63AF-54B4-42CA-BD8F-051F19DEEB49}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_framework", "test_framework\test_framework.vcxproj", "{A68365FC-BCEB-407C-88BB-CC17205C03D7}"
 EndProject

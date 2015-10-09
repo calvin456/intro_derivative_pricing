@@ -6,7 +6,7 @@
 #include <iostream>
 #include <memory>
 
-#include <path_generation_heston.h>
+#include <path_generation_jdp.h>
 #include <path_generation_gbm_svm.h>
 #include <PayOff3.h>
 #include <Vanilla3Template.cpp>
@@ -33,11 +33,9 @@ int main(){
 		double d(0.0);
 
 		double Vol(.1);
-
-		double kappa(0.0);
-		//double theta(.1);
-		double sigma(.2);
-		double correl(0.0);
+		double kappa(0.2);
+		double m(.9);
+		double nu(.1);
 
 		double Expiry(1.0);
 
@@ -81,16 +79,16 @@ int main(){
 
 		unsigned long steps(NumberOfDates - 1);
 
-		shared_ptr<PathGenerationHeston> thePath(new PathGenerationHeston(_generator, Spot, Expiry, driftParam, VolParam, steps, correl, kappa, sigma));
+		shared_ptr<PathGenerationJDP> thePath(new PathGenerationJDP(_generator, Spot, Expiry, driftParam, VolParam, kappa, m, nu, steps));
 
 		unsigned long NumberOfPaths(static_cast<unsigned long> (1e04));
 
-		engine_mc_exotic<PathDependent, PathGenerationHeston> theEngine(theOption, rParam, thePath);
+		engine_mc_exotic<PathDependent, PathGenerationJDP> theEngine(theOption, rParam, thePath);
 		theEngine.DoSimulation(gatherer, NumberOfPaths);
 
 		std::vector<std::vector<double>> results = gatherer.GetResultsSoFar();
 
-		cout << "heston mc pricing : " << endl;
+		cout << "jdp mc pricing : " << endl;
 		cout << "\nFor the Asian call price the results are \n";
 		cout << "with antithetic variables \n";
 		cout << "mean\t se\t path\n";
@@ -111,47 +109,46 @@ int main(){
 		//atm implied vol.
 
 		vol_matrix_atm(11, 0) = 1.0; // 1-yr
-		vol_matrix_atm(11, 1) = .231406;
+		vol_matrix_atm(11, 1) = .231716;
 
 		vol_matrix_atm(10, 0) = .916667; // 11-mth
-		vol_matrix_atm(10, 1) = .225215;
+		vol_matrix_atm(10, 1) = .225683;
 
 		vol_matrix_atm(9, 0) = .833333; // 10-mth
-		vol_matrix_atm(9, 1) = .218995;
+		vol_matrix_atm(9, 1) = .219208;
 
 		vol_matrix_atm(8, 0) = .75; // 9-mth
-		vol_matrix_atm(8, 1) = .212295;
+		vol_matrix_atm(8, 1) = .212669;
 
 		vol_matrix_atm(7, 0) = .666667; // 8-mth
-		vol_matrix_atm(7, 1) = .205498;
+		vol_matrix_atm(7, 1) = .205582;
 
 		vol_matrix_atm(6, 0) = .583333; // 7-mth
-		vol_matrix_atm(6, 1) = .198084;
+		vol_matrix_atm(6, 1) = .198104;
 
 		vol_matrix_atm(5, 0) = .5; // 6-mth
-		vol_matrix_atm(5, 1) = .19018;
+		vol_matrix_atm(5, 1) = .190336;
 
 		vol_matrix_atm(4, 0) = .416667; // 5-mth
-		vol_matrix_atm(4, 1) = .181934;
+		vol_matrix_atm(4, 1) = .181726;
 
 		vol_matrix_atm(3, 0) = .333333; // 4-mth
-		vol_matrix_atm(3, 1) = .172586;
+		vol_matrix_atm(3, 1) = .172573;
 
 		vol_matrix_atm(2, 0) = .25; // 3-mth
-		vol_matrix_atm(2, 1) = .162396;
+		vol_matrix_atm(2, 1) = .161896;
 
 		vol_matrix_atm(1, 0) = .166667; // 2-mth
-		vol_matrix_atm(1, 1) = .149514;
+		vol_matrix_atm(1, 1) = .150121;
 
 		vol_matrix_atm(0, 0) = .083333; // 1-mth
-		vol_matrix_atm(0, 1) = .134838;
+		vol_matrix_atm(0, 1) = .134917;
 
 		//------------------------------------------------------------------
 
 		// Reprice one-year Asian call option w/ monthly resets 
 		// using BSM model w/ time-dependent vol
 
-		//_generator->ResetDimensionality(11);
 		_generator->Reset();
 
 		shared_ptr<PathGeneration> thePath1(new PathGenerationGBM_SV(_generator, Spot, Expiry, driftParam, vol_matrix_atm, steps));
@@ -165,7 +162,7 @@ int main(){
 
 		cout << "gbm with stochastic vol mc pricing - atm : " << endl;
 		cout << "\nFor the Asian call price the results are \n";
-		//cout << "with antithetic variables \n";
+		cout << "with antithetic variables \n";
 		cout << "mean\t se\t path\n";
 		for (unsigned long i = 0; i < results1.size(); i++)
 		{
@@ -192,7 +189,7 @@ int main(){
 
 		cout << "gbm with stochastic vol mc pricing - atm : " << endl;
 		cout << "\nFor the discrete barrier call price the results are \n";
-		//cout << "with antithetic variables \n";
+		cout << "with antithetic variables \n";
 		cout << "mean\t se\t path\n";
 		for (unsigned long i = 0; i < results2.size(); i++)
 		{
@@ -208,40 +205,40 @@ int main(){
 		//atb at-the-barrier implied vol.
 
 		vol_matrix_atb(11, 0) = 1.0; // 1-yr
-		vol_matrix_atb(11, 1) = .200092;
+		vol_matrix_atb(11, 1) = .200875;
 
 		vol_matrix_atb(10, 0) = .916667; // 11-mth
-		vol_matrix_atb(10, 1) = .194004;
+		vol_matrix_atb(10, 1) = .194882;
 
 		vol_matrix_atb(9, 0) = .833333; // 10-mth
-		vol_matrix_atb(9, 1) = .187912;
+		vol_matrix_atb(9, 1) = .188477;
 
 		vol_matrix_atb(8, 0) = .75; // 9-mth
-		vol_matrix_atb(8, 1) = .18138;
+		vol_matrix_atb(8, 1) = .182048;
 
 		vol_matrix_atb(7, 0) = .666667; // 8-mth
-		vol_matrix_atb(7, 1) = .174785;
+		vol_matrix_atb(7, 1) = .175097;
 
 		vol_matrix_atb(6, 0) = .583333; // 7-mth
-		vol_matrix_atb(6, 1) = .167692;
+		vol_matrix_atb(6, 1) = .167858;
 
 		vol_matrix_atb(5, 0) = .5; // 6-mth
-		vol_matrix_atb(5, 1) = .160189;
+		vol_matrix_atb(5, 1) = .160444;
 
 		vol_matrix_atb(4, 0) = .416667; // 5-mth
-		vol_matrix_atb(4, 1) = .152507;
+		vol_matrix_atb(4, 1) = .152339;
 
 		vol_matrix_atb(3, 0) = .333333; // 4-mth
-		vol_matrix_atb(3, 1) = .143945;
+		vol_matrix_atb(3, 1) = .143916;
 
 		vol_matrix_atb(2, 0) = .25; // 3-mth
-		vol_matrix_atb(2, 1) = .13494;
+		vol_matrix_atb(2, 1) = .134435;
 
 		vol_matrix_atb(1, 0) = .166667; // 2-mth
-		vol_matrix_atb(1, 1) = .124267;
+		vol_matrix_atb(1, 1) = .124635;
 
 		vol_matrix_atb(0, 0) = .083333; // 1-mth
-		vol_matrix_atb(0, 1) = .113508;
+		vol_matrix_atb(0, 1) = .113361;
 
 		//Price discrete barrier call option calibrating w/ ATB vol
 		_generator->Reset();
@@ -257,7 +254,7 @@ int main(){
 
 		cout << "gbm with stochastic vol mc pricing - atb : " << endl;
 		cout << "\nFor the discrete barrier call price the results are \n";
-		//cout << "with antithetic variables \n";
+		cout << "with antithetic variables \n";
 		cout << "mean\t se\t path\n";
 		for (unsigned long i = 0; i < results3.size(); i++)
 		{

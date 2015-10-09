@@ -37,8 +37,8 @@ int main(){
 		shared_ptr<CallOption> call1(new CallOption(Spot, Strike, r, d, Vol, Expiry));
 
 		//-----------------------------------------------------------------------------------------
-		//the perfect BSM world
-		unsigned long NumberOfPaths(static_cast<unsigned long>(1e4));
+		//stochastic vol - Heston
+		unsigned long NumberOfPaths(static_cast<unsigned long>(1e04)); 
 
 		shared_ptr<RandomMersenneTwister> generator(new RandomMersenneTwister(1));
 		ParametersConstant VolParam(Vol);

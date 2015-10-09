@@ -40,9 +40,8 @@ int main(int argc, char **argv) {
 
 		cout << "1 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(28, Feb, 2000);
+		
+		maturity += 1*Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -50,9 +49,8 @@ int main(int argc, char **argv) {
 
 		cout << "2 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Mar, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -60,9 +58,8 @@ int main(int argc, char **argv) {
 
 		cout << "3 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(30, Apr, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -70,9 +67,8 @@ int main(int argc, char **argv) {
 
 		cout << "4 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, May, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -80,9 +76,8 @@ int main(int argc, char **argv) {
 
 		cout << "5 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(30, Jun, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -90,9 +85,8 @@ int main(int argc, char **argv) {
 
 		cout << "6 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Jul, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -100,9 +94,8 @@ int main(int argc, char **argv) {
 
 		cout << "7 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Aug, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -110,9 +103,8 @@ int main(int argc, char **argv) {
 
 		cout << "8 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(30, Sep, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -120,9 +112,8 @@ int main(int argc, char **argv) {
 
 		cout << "9 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Oct, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -130,9 +121,8 @@ int main(int argc, char **argv) {
 
 		cout << "10 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(30, Nov, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -140,9 +130,8 @@ int main(int argc, char **argv) {
 
 		cout << "11 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Dec, 2000);
+		
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -158,8 +147,6 @@ int main(int argc, char **argv) {
 
 		cout << "tenor\t " << "price\t " << "implied vol" << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
 		maturity = Date(31, Jan, 2000);
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
@@ -170,9 +157,7 @@ int main(int argc, char **argv) {
 
 		cout << "1 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(28, Feb, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -180,9 +165,7 @@ int main(int argc, char **argv) {
 
 		cout << "2 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Mar, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -190,9 +173,7 @@ int main(int argc, char **argv) {
 
 		cout << "3 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(30, Apr, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -200,9 +181,7 @@ int main(int argc, char **argv) {
 
 		cout << "4 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, May, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -210,9 +189,7 @@ int main(int argc, char **argv) {
 
 		cout << "5 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(30, Jun, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -220,9 +197,7 @@ int main(int argc, char **argv) {
 
 		cout << "6 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Jul, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -230,9 +205,7 @@ int main(int argc, char **argv) {
 
 		cout << "7 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Aug, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -240,9 +213,7 @@ int main(int argc, char **argv) {
 
 		cout << "8 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(30, Sep, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -250,9 +221,7 @@ int main(int argc, char **argv) {
 
 		cout << "9 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Oct, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -260,9 +229,7 @@ int main(int argc, char **argv) {
 
 		cout << "10 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(30, Nov, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 
@@ -270,9 +237,7 @@ int main(int argc, char **argv) {
 
 		cout << "11 month " << price << "\t " << iv << endl;
 
-		todaysDate = Date(01, Jan, 2000);
-		settlementDate = Date(03, Jan, 2000);
-		maturity = Date(31, Dec, 2000);
+		maturity += 1 * Months;
 
 		price = heston_ql_call(todaysDate, settlementDate, maturity, underlying, strike, dividendYield, riskFreeRate, volatility, kappa, sigma, rho);
 

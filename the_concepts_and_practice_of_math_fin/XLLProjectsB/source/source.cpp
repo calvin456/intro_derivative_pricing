@@ -10,12 +10,12 @@
 #include "analytical_jdm_pricer.h"
 #include "options.h"
 #include "quanto_margrabe.h"
-#include "HestonPricingAnalytical.h"
-
+#include "heston_ql.h"
+#include "implied_vol_ql.h"
 #include "VGPricingAnalytical.h"
 #include "barrier_options_analytical.h"
 
-
+using namespace BSFunction;
 
 double // evaluate BlackScholes call price
 _BlackScholesCall( double Spot //spot
@@ -27,7 +27,7 @@ _BlackScholesCall( double Spot //spot
 						 )
 {
 							 
-	return BlackScholesCall(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesCall(Spot, Strike, r, d, Vol, Expiry);
                                              
 }
 
@@ -42,7 +42,7 @@ _BlackScholesPut( double Spot //spot
 						 )
 {
 	
-	return BlackScholesPut(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesPut(Spot, Strike, r, d, Vol, Expiry);
 }
 
 double // evaluate BlackScholes digital call price
@@ -55,7 +55,7 @@ _BlackScholesDigitalCall(double Spot //spot
 						 )
 {
 								   
-	return BlackScholesDigitalCall(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesDigitalCall(Spot, Strike, r, d, Vol, Expiry);
 
 }
 
@@ -69,7 +69,7 @@ _BlackScholesDigitalPut(double Spot //spot
 						 )
 {
 								   
-	return BlackScholesDigitalPut(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesDigitalPut(Spot, Strike, r, d, Vol, Expiry);
 
 }
 
@@ -83,8 +83,8 @@ _Forward( double Spot,
                             double d,
 							double Expiry){
 	
-	return Forward(Spot,Strike, r,d,Expiry);
-														
+	return BSFunction::Forward(Spot,Strike, r,d,Expiry);
+	
 }
 
 							 
@@ -92,7 +92,7 @@ double // evaluate forward price
 _ZeroCoupon( double r,
 							double Expiry){
 	
-	return ZeroCoupon(r,Expiry);
+	return ZeroCoupon(r, Expiry);
 						
 }
 
@@ -106,7 +106,7 @@ _FinalPrice_EulerStepping( double Spot,
                          double Vol,
 						 double Expiry){
 
-	return FinalPrice_EulerStepping( Spot,Steps,r,d,Vol, Expiry);
+	return FinalPrice_EulerStepping(Spot, Steps, r, d, Vol, Expiry);
                          						
 }
 
@@ -119,7 +119,7 @@ _BlackScholesCallVega( double Spot //spot
                          ,double Expiry //expiry
 						 ){
 
-	return BlackScholesCallVega(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesCallVega(Spot, Strike, r, d, Vol, Expiry);
                          						
 }
 
@@ -132,7 +132,7 @@ _BlackScholesCallDelta( double Spot //spot
                          ,double Expiry //expiry
 						 ){
 
-	return BlackScholesCallDelta(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesCallDelta(Spot, Strike, r, d, Vol, Expiry);
                          						
 }
 
@@ -145,7 +145,7 @@ _BlackScholesGamma( double Spot //spot
                          ,double Expiry //expiry
 						 ){
 
-	return BlackScholesGamma(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesGamma(Spot, Strike, r, d, Vol, Expiry);
                          						
 }
 
@@ -158,7 +158,7 @@ _BlackScholesCallRho( double Spot //spot
                          ,double Expiry //expiry
 						 ){
 
-	return BlackScholesCallRho(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesCallRho(Spot, Strike, r, d, Vol, Expiry);
                          						
 }
 
@@ -171,7 +171,7 @@ _BlackScholesCallTheta( double Spot //spot
                          ,double Expiry //expiry
 						 ){
 
-	return BlackScholesCallTheta(Spot,Strike, r,d, Vol, Expiry);
+	return BlackScholesCallTheta(Spot, Strike, r, d, Vol, Expiry);
                          						
 }
 
@@ -187,13 +187,20 @@ _ImpliedVolatility(double Price //option price
 					, double Tolerance //tolerance. Set by default 1e-6
 ){
 
-	BSCallTwo theCall(r, d, Expiry, Spot, Strike);
+	//BSCallTwo theCall(r, d, Expiry, Spot, Strike);
 
-	Terminator terminator(5, 100); //5 sec, 100 max iter
+	//Terminator terminator(5, 100); //5 sec, 100 max iter
 
-	return NewtonRaphson1<BSCallTwo, &BSCallTwo::Price, &BSCallTwo::Vega>(Price,
-		Start, Tolerance, theCall, terminator);
+	//return NewtonRaphson1<BSCallTwo, &BSCallTwo::Price, &BSCallTwo::Vega>(Price,
+	//	Start, Tolerance, theCall, terminator);
+	
+	QuantLib::Date todaysDate(01, Jan, 2000);
+	QuantLib::Date settlementDate(03, Jan, 2000);
+	QuantLib::Date maturity = todaysDate + 12 * Expiry * QuantLib::Months;
+	Settings::instance().evaluationDate() = todaysDate;
+	double iv = implied_vol_ql(todaysDate, settlementDate, maturity, Spot, Strike, Price, d, r, .1);
 
+	return iv;
 }
 
 
@@ -210,7 +217,7 @@ _Analytical_jdm_pricer_call(double Spot //spot
 						,double nu //nu
 ){
 
-	CallOption*  call = new CallOption(Spot, Strike, r, d, Vol0, Expiry);
+	MyOption::CallOption*  call = new MyOption::CallOption(Spot, Strike, r, d, Vol0, Expiry);
 
 	return analytical_jdm_pricer(Spot, Strike, r, d, Vol0, Expiry, kappa, m, nu, call);
 }
@@ -268,9 +275,13 @@ _Analytical_heston_pricer_call(double mu //nu
 							, double Expiry //expiry
 ){
 
-	ParametersHeston p(mu, Spot, Vol, r, kappa, theta, sigma, correl, Strike, Expiry);
+	QuantLib::Date todaysDate(01, Jan, 2000);
+	QuantLib::Date settlementDate(03, Jan, 2000);
+	QuantLib::Date maturity = todaysDate + 12 * Expiry * QuantLib::Months;
 
-	return HestonVanillaCalltAnalytical(p);
+	double price = heston_ql_call(todaysDate, settlementDate, maturity, Spot, Strike, 0.0, r, Vol, kappa, sigma, correl);
+
+	return price;
 
 }
 

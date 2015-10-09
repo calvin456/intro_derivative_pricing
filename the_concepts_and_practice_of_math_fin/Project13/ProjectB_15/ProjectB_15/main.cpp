@@ -71,7 +71,7 @@ int main(){
 		//---------------------------------------------------------------------------
 		//mc pricing
 
-		// (i) shorrt-step the vol and the spot
+		// (i) short-step the vol and the spot
 
 		StatisticsMean gatherer_mean;
 		StatisticsSE gatherer_se;

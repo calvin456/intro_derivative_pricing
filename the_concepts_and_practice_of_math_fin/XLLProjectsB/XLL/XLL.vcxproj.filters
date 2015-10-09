@@ -36,12 +36,6 @@
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BSCallTwo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\HestonIntegrand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\HestonPricingAnalytical.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\MyFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -87,6 +81,12 @@
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Wrapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\heston_ql.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\implied_vol_ql.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\source.cpp">
@@ -108,12 +108,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BSCallTwo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\HestonIntegrand.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\HestonPricingAnalytical.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\MyFunctions.cpp">
@@ -144,6 +138,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\VGPricingAnalytical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\heston_ql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\implied_vol_ql.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
