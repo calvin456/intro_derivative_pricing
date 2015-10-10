@@ -17,6 +17,7 @@
 #include <engine_heston.h>
 
 using namespace std;
+using namespace BSFunction;
 
 int main(){
 	try {

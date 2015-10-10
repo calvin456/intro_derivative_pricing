@@ -1,22 +1,22 @@
-//hestonql.cpp
-//Wrapper function. Computes semi-analytical heston w/ QuantLib
-//ref. quantlib equity option project
+//vg_ql.cpp
+//Wrapper function. Computes analytical variance-gamma w/ QuantLib
+//ref. variancegamma.cpp, test suite ql
 
-#include "heston_ql.h"
+#include "vg_ql.h"
 
 using namespace std;
 
-Real heston_ql_call(const Date& todaysDate_,
+Real vg_ql_call(const Date& todaysDate_,
 	const Date& settlementDate_,
 	const Date& maturity_,
 	Real underlying_,
 	Real strike_,
 	Spread dividendYield_,
 	Rate riskFreeRate_,
-	Volatility volatility_,
-	Real kappa_,
 	Real sigma_,
-	Real rho_)
+	Real nu_,
+	Real theta_
+	)
 {
 
 	// set up dates
@@ -33,9 +33,10 @@ Real heston_ql_call(const Date& todaysDate_,
 	Real strike = strike_;
 	Spread dividendYield = dividendYield_;
 	Rate riskFreeRate = riskFreeRate_;
-	Volatility volatility = volatility_;
+	//Volatility volatility = volatility_;
 
-	DayCounter dayCounter = ActualActual();
+	//DayCounter dayCounter = ActualActual();
+	DayCounter dayCounter = Actual360();
 
 	boost::shared_ptr<Exercise> europeanExercise(new EuropeanExercise(maturity));
 
@@ -51,16 +52,12 @@ Real heston_ql_call(const Date& todaysDate_,
 	// options
 	VanillaOption europeanOptionCall(payoffCall, europeanExercise);
 
-	// Analytic formulas:
-	// semi-analytic Heston for European
-	//Cannot set kappa to 0. Gen exception
+	boost::shared_ptr<VarianceGammaProcess> stochProcess(new VarianceGammaProcess(underlyingH, flatDividendTS, flatTermStructure, sigma_, nu_, theta_));
 
-	Real v0 = volatility*volatility, kappa = kappa_, theta = v0, sigma = sigma_, rho = rho_;
-	boost::shared_ptr < HestonProcess > hestonProcess(new HestonProcess(flatTermStructure, flatDividendTS, underlyingH, v0, kappa, theta, sigma, rho));
+	// Analytic engine
+	boost::shared_ptr<PricingEngine> analyticEngine(new VarianceGammaEngine(stochProcess));
 
-	boost::shared_ptr<HestonModel> hestonModel(new HestonModel(hestonProcess));
-
-	europeanOptionCall.setPricingEngine(boost::shared_ptr<PricingEngine>(new AnalyticHestonEngine(hestonModel)));
+	europeanOptionCall.setPricingEngine(analyticEngine);
 
 	return  europeanOptionCall.NPV();
 }
