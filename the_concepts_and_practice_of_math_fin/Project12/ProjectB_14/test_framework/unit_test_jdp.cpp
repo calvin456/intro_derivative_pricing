@@ -54,8 +54,6 @@ int main(int argc, char **argv) {
 		Date settlementDate(03, Jan, 2000);
 		Date maturity(31, March, 2000);
 
-
-		//Do not set-up kappa to zero. This will lead to execution failure.
 		ql_analytical = jdp_ql_call(todaysDate, settlementDate, maturity, 100.0, 100.0, 0.0, 0.05, 0.1, .2, 0.9, 0.1);
 
 		VanillaOptionTemplate<PayOffCall> theOption(PayOffCall(100.0), 0.25);

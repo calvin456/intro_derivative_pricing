@@ -19,21 +19,19 @@ Control variate method - gain very limited
 #include <BinomialTree.h>
 #include <TreeAmerican.h>
 #include <TreeEuropean.h>
-
 #include <TreeBarrier.h>
-
 #include <BlackScholesFormulas.h>
 #include <PayOffForward.h>
-
 #include <barrierOption.h>
 
 #include <iostream>
 #include <vector>
-
+#include <cmath>
 #include <fstream>
 
 using namespace std;
-#include <cmath>
+using namespace BSFunction;
+
 int main()
 {
 

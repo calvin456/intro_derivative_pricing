@@ -18,6 +18,7 @@
 #include <Digital.h>
 
 using namespace std;
+using namespace BSFunction;
 
 int main(){
 
