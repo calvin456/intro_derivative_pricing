@@ -1,4 +1,4 @@
-//jdp_ql.cpp
+//multi_ql.cpp
 //Wrapper function. Computes semi-analytical heston w/ QuantLib
 //ref. quantlib margrabeoption.cpp & quantooption.cpp
 

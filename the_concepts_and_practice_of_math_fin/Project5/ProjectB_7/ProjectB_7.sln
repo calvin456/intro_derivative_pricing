@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectB_7", "ProjectB_7\ProjectB_7.vcxproj", "{EAB9F587-65B9-444C-BA60-66500463F205}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_framework", "test_framework\test_framework.vcxproj", "{EAB9F587-65B9-444C-BA60-66500463F205}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exotic_options", "exotic_options\exotic_options.vcxproj", "{813F4B13-4394-4581-AD6D-0F6C2057E4B1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "speed_up", "speed_up\speed_up.vcxproj", "{A7C35DC0-B4C0-4EFD-9309-A3549654F893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{EAB9F587-65B9-444C-BA60-66500463F205}.Debug|Win32.Build.0 = Debug|Win32
 		{EAB9F587-65B9-444C-BA60-66500463F205}.Release|Win32.ActiveCfg = Release|Win32
 		{EAB9F587-65B9-444C-BA60-66500463F205}.Release|Win32.Build.0 = Release|Win32
+		{813F4B13-4394-4581-AD6D-0F6C2057E4B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{813F4B13-4394-4581-AD6D-0F6C2057E4B1}.Debug|Win32.Build.0 = Debug|Win32
+		{813F4B13-4394-4581-AD6D-0F6C2057E4B1}.Release|Win32.ActiveCfg = Release|Win32
+		{813F4B13-4394-4581-AD6D-0F6C2057E4B1}.Release|Win32.Build.0 = Release|Win32
+		{A7C35DC0-B4C0-4EFD-9309-A3549654F893}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A7C35DC0-B4C0-4EFD-9309-A3549654F893}.Debug|Win32.Build.0 = Debug|Win32
+		{A7C35DC0-B4C0-4EFD-9309-A3549654F893}.Release|Win32.ActiveCfg = Release|Win32
+		{A7C35DC0-B4C0-4EFD-9309-A3549654F893}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

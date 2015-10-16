@@ -18,6 +18,7 @@ Test delta hedge
 #include <engine_simul.cpp>
 
 using namespace std;
+using namespace MyOption;
 
 int main(){
 
