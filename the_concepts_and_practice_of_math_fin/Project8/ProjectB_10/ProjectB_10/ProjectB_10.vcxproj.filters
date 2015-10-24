@@ -72,6 +72,9 @@
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\PayOff3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\stochastic_term.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

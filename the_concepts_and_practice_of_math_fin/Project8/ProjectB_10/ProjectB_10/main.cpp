@@ -73,12 +73,6 @@ int main(){
 		VanillaOptionTemplate<QuantoPut> theOption1(thePayOff1, Expiry);
 		VanillaOptionTemplate<ExchangeOption> theOption2(thePayOff2, Expiry);
 
-		//VanillaOptionTemplate<PayOffCall> theOption3(thePayOff3, Expiry);
-
-		//cout << theOption.GetStrike() << endl;
-		//cout << theOption1.GetStrike() << endl;
-		//cout << theOption2.GetStrike() << endl;
-
 		ParametersConstant rParam(rd);
 
 		//----------------------------------------------------------
@@ -100,8 +94,7 @@ int main(){
 		ConvergenceTable gatherer_time(_gatherer_time);
 
 		RandomMersenneTwister generator_(2);
-		//RandomParkMiller generator_(1);
-
+	
 		shared_ptr<RandomBase> generator(new AntiThetic(generator_));
 
 		MJArray Spot0(2);
@@ -120,10 +113,10 @@ int main(){
 		
 		unsigned long steps(static_cast<unsigned long> (1e00));
 
-		unique_ptr<PathGenerationMulti> ThePaths(new PathGenerationMulti(generator,
+		shared_ptr<PathGenerationMulti> ThePaths(new PathGenerationMulti(generator,
 			Spot0, Expiry, r0, steps, cov));
 		
-		unsigned long NumberOfPaths(static_cast<unsigned long> (1e6));
+		unsigned long NumberOfPaths(static_cast<unsigned long> (1e01));
 		
 		mc_pricer_multi(theOption, rParam, ThePaths, NumberOfPaths, gatherer, gatherer_time);
 
@@ -148,13 +141,17 @@ int main(){
 		//---------------------------------------------------------------------------
 		steps = static_cast<unsigned long> (1e02);
 
-		generator->Reset();
+		NumberOfPaths = static_cast<unsigned long> (1e04);
+
+		ThePaths->SetSteps(steps);
+
+		//generator->Reset();
 
 		ConvergenceTable gatherer1(gathererOne);
 
-		StatisticsKeepTrack _gatherer_time1;
+		//StatisticsKeepTrack _gatherer_time1;
 
-		ConvergenceTable gatherer_time1(_gatherer_time1);
+		ConvergenceTable gatherer_time1(_gatherer_time);
 
 		mc_pricer_multi(theOption, rParam, ThePaths, NumberOfPaths, gatherer1, gatherer_time1);
 
@@ -180,15 +177,17 @@ int main(){
 		//---------------------------------------------------------------------------
 		
 		
-		steps = static_cast<unsigned long> (1);
+		steps = static_cast<unsigned long> (1e00);
 
-		generator->Reset();
+		ThePaths->SetSteps(steps);
+
+		//generator->ResetDimensionality(2 * steps);
 
 		ConvergenceTable gatherer2(gathererOne);
 
-		StatisticsKeepTrack _gatherer_time2;
+		//StatisticsKeepTrack _gatherer_time2;
 
-		ConvergenceTable gatherer_time2(_gatherer_time2);
+		ConvergenceTable gatherer_time2(_gatherer_time);
 
 		mc_pricer_multi(theOption1, rParam, ThePaths, NumberOfPaths, gatherer2, gatherer_time2);
 
@@ -208,6 +207,8 @@ int main(){
 		}
 		cout << endl;
 
+		//---------------------------------------------------------------------------
+
 		MJArray Spot01(2);
 		Spot01[0] = Spot;
 		Spot01[1] = Spot2;
@@ -224,16 +225,16 @@ int main(){
 
 		generator->Reset();
 
-		unique_ptr<PathGenerationMulti> ThePaths1(new PathGenerationMulti(generator,
+		shared_ptr<PathGenerationMulti> ThePaths1(new PathGenerationMulti(generator,
 			Spot01, Expiry, r1, steps, cov1));
 
 		//ParametersConstant rParam1(0.0);
 
 		ConvergenceTable gatherer3(gathererOne);
 
-		StatisticsKeepTrack _gatherer_time3;
+		//StatisticsKeepTrack _gatherer_time3;
 
-		ConvergenceTable gatherer_time3(_gatherer_time3);
+		ConvergenceTable gatherer_time3(_gatherer_time);
 
 		mc_pricer_multi(theOption2, rParam, ThePaths1, NumberOfPaths, gatherer3, gatherer_time3);
 
