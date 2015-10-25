@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <includedir>
+        <dir name="C:/Users/Mr No Name/Documents/joshi_dsgn_pattern_derivatives_pricing/library/include/"/>
+        <dir name="C:/Users/Mr No Name/Documents/joshi_dsgn_pattern_derivatives_pricing/library/source/"/>
+    </includedir>
+    <paths>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project4/ProjectB_6/ls_algo"/>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project4/ProjectB_6/test_framework"/>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project4/ProjectB_6/tree_methods"/>
+    </paths>
+</project>

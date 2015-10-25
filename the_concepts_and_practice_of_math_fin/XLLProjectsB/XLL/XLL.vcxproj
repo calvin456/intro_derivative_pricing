@@ -71,6 +71,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\american_ql.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\analytical_jdm_pricer.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\AntiThetic.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Arrays.h" />
@@ -97,6 +98,7 @@
     <ClInclude Include="..\source\cppinterface.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\american_ql.cpp" />
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\AntiThetic.cpp" />
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Arrays.cpp" />
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\barrier_options_analytical.cpp" />

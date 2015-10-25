@@ -1719,6 +1719,77 @@ EXCEL_END
 
 //////////////////////////
 
+namespace
+{
+XLRegistration::Arg
+_american_putArgs[]=
+{
+{ "Spot","spot ","B"},
+{ "Strike","strike ","B"},
+{ "r","interest rate ","B"},
+{ "d","dividend yield ","B"},
+{ "Vol","volatility ","B"},
+{ "Expiry","expiry ","B"}
+};
+  XLRegistration::XLFunctionRegistrationHelper
+register_american_put("xl_american_put",
+"_american_put",
+"The premium for the down-and-Out call option ",
+LibraryName,
+_american_putArgs,
+6
+,false
+,false
+,""
+,""
+,false
+,false
+,false
+);
+}
+
+
+
+extern "C"
+{
+LPXLFOPER EXCEL_EXPORT
+xl_american_put(
+double Spot,
+double Strike,
+double r,
+double d,
+double Vol,
+double Expiry)
+{
+EXCEL_BEGIN;
+
+	if (XlfExcel::Instance().IsCalledByFuncWiz())
+		return XlfOper(true);
+
+
+
+
+
+
+
+double result(
+	_american_put(
+		Spot,
+		Strike,
+		r,
+		d,
+		Vol,
+		Expiry)
+	);
+return XlfOper(result);
+EXCEL_END
+}
+}
+
+
+
+//////////////////////////
+
 //////////////////////////
 // Methods that will get registered to execute in AutoOpen
 //////////////////////////

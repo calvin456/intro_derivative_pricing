@@ -11,10 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EA6A7EAB-1C63-46D6-B59D-7338F76D4229}</ProjectGuid>
+    <ProjectGuid>{6584895C-0EBB-4ACB-88A8-83EF64A3EFE0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ProjectB_6</RootNamespace>
-    <ProjectName>test_framework</ProjectName>
+    <RootNamespace>ls_algo</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -42,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Mr No Name\Documents\joshi_dsgn_pattern_derivatives_pricing\library\include;C:\Users\Mr No Name\Documents\joshi_dsgn_pattern_derivatives_pricing\library\source;C:\GTEST\gtest-1.7.0\include;C:\Boost\boost_1_58_0;C:\QuantLib-1.6;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\GTEST\gtest-1.7.0\msvc\gtest-md\Debug;C:\Boost\boost_1_58_0\lib32-msvc-12.0;C:\QuantLib-1.6\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Mr No Name\Documents\joshi_dsgn_pattern_derivatives_pricing\library\include;C:\Users\Mr No Name\Documents\joshi_dsgn_pattern_derivatives_pricing\library\source;C:\Boost\boost_1_58_0;C:\QuantLib-1.6;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Boost\boost_1_58_0\lib32-msvc-12.0;C:\QuantLib-1.6\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -60,7 +59,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>gtestd.lib;QuantLib-vc120-mt-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>QuantLib-vc120-mt-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -82,17 +81,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\barrier_options_analytical.cpp" />
-    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BlackScholesFormulas.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\AntiThetic.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Arrays.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\MersenneTwister.cpp" />
     <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Normals.cpp" />
-    <ClCompile Include="barrier_ql.cpp" />
-    <ClCompile Include="unit_test_barrier.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Parameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\path_generation.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\path_generation_gbm.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\PayOff3.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\PayOffBridge.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Random2.cpp" />
+    <ClCompile Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Vanilla3Template.cpp" />
+    <ClCompile Include="test_ls_algo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\barrier_options_analytical.h" />
-    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BlackScholesFormulas.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\AntiThetic.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Arrays.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\engine_ls.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\MersenneTwister.h" />
     <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Normals.h" />
-    <ClInclude Include="barrier_ql.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Parameters.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\path_generation.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\path_generation_gbm.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\PayOff3.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\PayOffBridge.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Random2.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Vanilla3Template.h" />
+    <ClInclude Include="..\..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Wrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -14,6 +14,7 @@
 #include "implied_vol_ql.h"
 #include "VGPricingAnalytical.h"
 #include "barrier_options_analytical.h"
+#include "american_ql.h"
 
 using namespace BSFunction;
 
@@ -345,4 +346,24 @@ _down_out_put(double Spot //spot
 			, double Expiry //expiry
 ){
 	return down_out_put(Spot, Strike, Barrier, r, d, Vol, Expiry);
+}
+
+double //The premium for the down-and-Out call option	
+_american_put(double Spot //spot
+			, double Strike //strike
+			, double r //interest rate
+			, double d //dividend yield
+			, double Vol //volatility
+			, double Expiry //expiry
+)
+{
+	QuantLib::Date todaysDate(01, Jan, 2000);
+	QuantLib::Date settlementDate(03, Jan, 2000);
+	QuantLib::Date maturity = todaysDate + 12 * Expiry * QuantLib::Months;
+
+	double price = am_put_ls_ql(todaysDate, settlementDate, maturity, Spot, Strike, d, r, Vol);
+
+	return price;
+
+
 }

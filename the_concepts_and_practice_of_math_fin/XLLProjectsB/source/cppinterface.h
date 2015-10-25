@@ -246,4 +246,13 @@ _down_out_put(double Spot //spot
 			, double Expiry //expiry
 			);
 
+double //The premium for the down-and-Out call option	
+_american_put(double Spot //spot
+			, double Strike //strike
+			, double r //interest rate
+			, double d //dividend yield
+			, double Vol //volatility
+			, double Expiry //expiry
+);
+
 #endif

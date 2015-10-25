@@ -87,6 +87,9 @@
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\implied_vol_ql.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\american_ql.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\source.cpp">
@@ -144,6 +147,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\implied_vol_ql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\american_ql.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
