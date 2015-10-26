@@ -116,7 +116,7 @@ int main(){
 		shared_ptr<PathGenerationMulti> ThePaths(new PathGenerationMulti(generator,
 			Spot0, Expiry, r0, steps, cov));
 		
-		unsigned long NumberOfPaths(static_cast<unsigned long> (1e01));
+		unsigned long NumberOfPaths(static_cast<unsigned long> (1e05));
 		
 		mc_pricer_multi(theOption, rParam, ThePaths, NumberOfPaths, gatherer, gatherer_time);
 
@@ -141,15 +141,8 @@ int main(){
 		//---------------------------------------------------------------------------
 		steps = static_cast<unsigned long> (1e02);
 
-		NumberOfPaths = static_cast<unsigned long> (1e04);
-
 		ThePaths->SetSteps(steps);
-
-		//generator->Reset();
-
 		ConvergenceTable gatherer1(gathererOne);
-
-		//StatisticsKeepTrack _gatherer_time1;
 
 		ConvergenceTable gatherer_time1(_gatherer_time);
 
@@ -172,20 +165,13 @@ int main(){
 		}
 		cout << endl;
 		
-
-		
 		//---------------------------------------------------------------------------
-		
 		
 		steps = static_cast<unsigned long> (1e00);
 
 		ThePaths->SetSteps(steps);
 
-		//generator->ResetDimensionality(2 * steps);
-
 		ConvergenceTable gatherer2(gathererOne);
-
-		//StatisticsKeepTrack _gatherer_time2;
 
 		ConvergenceTable gatherer_time2(_gatherer_time);
 
@@ -228,17 +214,11 @@ int main(){
 		shared_ptr<PathGenerationMulti> ThePaths1(new PathGenerationMulti(generator,
 			Spot01, Expiry, r1, steps, cov1));
 
-		//ParametersConstant rParam1(0.0);
-
 		ConvergenceTable gatherer3(gathererOne);
-
-		//StatisticsKeepTrack _gatherer_time3;
 
 		ConvergenceTable gatherer_time3(_gatherer_time);
 
 		mc_pricer_multi(theOption2, rParam, ThePaths1, NumberOfPaths, gatherer3, gatherer_time3);
-
-		//cout << mc_pricer_multi(theOption2, rParam, ThePaths1, NumberOfPaths) << endl;
 
 		std::vector<std::vector<double> > results6 = gatherer3.GetResultsSoFar();
 		std::vector<std::vector<double> > results7 = gatherer_time3.GetResultsSoFar();
