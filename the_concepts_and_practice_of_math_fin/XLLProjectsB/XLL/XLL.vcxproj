@@ -80,6 +80,7 @@
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BSCallTwo.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\heston_ql.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\implied_vol_ql.h" />
+    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\interest_derivatives_analytical.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\MyFunctions.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\NewtonRaphson.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Normals.h" />
@@ -96,6 +97,7 @@
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\VGPricingAnalytical.h" />
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\Wrapper.h" />
     <ClInclude Include="..\source\cppinterface.h" />
+    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BlackSwaption.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\american_ql.cpp" />
@@ -106,6 +108,7 @@
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BSCallTwo.cpp" />
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\heston_ql.cpp" />
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\implied_vol_ql.cpp" />
+    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\interest_derivatives_analytical.cpp" />
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\MyFunctions.cpp" />
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\Normals.cpp" />
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\options.cpp" />
@@ -118,6 +121,7 @@
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\VGPricingAnalytical.cpp" />
     <ClCompile Include="..\source\source.cpp" />
     <ClCompile Include="..\source\xlwWrapper.cpp" />
+    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BlackSwaption.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

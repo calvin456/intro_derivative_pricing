@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <includedir>
+        <dir name="C:/Users/Mr No Name/Documents/joshi_dsgn_pattern_derivatives_pricing/library/include/"/>
+        <dir name="C:/Users/Mr No Name/Documents/joshi_dsgn_pattern_derivatives_pricing/library/source/"/>
+    </includedir>
+    <paths>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project10/projectB_12/monte_carlo"/>
+        <dir name="C:/Users/Mr No Name/Documents/intro_derivative_pricing/the_concepts_and_practice_of_math_fin/Project10/projectB_12/numerical_integration"/>
+    </paths>
+</project>

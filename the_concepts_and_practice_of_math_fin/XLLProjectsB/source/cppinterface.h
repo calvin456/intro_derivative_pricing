@@ -132,11 +132,19 @@ _ImpliedVolatility( double Price //option price
 					,double Expiry //expiry
 					,double Spot //spot
 					,double Strike //strike
-					, double Start //start vol. Set by default 20%
-					, double Tolerance //tolerance. Set by default 1e-6
+					,double Start //start vol. Set by default 20%
+					,double Tolerance //tolerance. Set by default 1e-6
 					);
 
-
+double // evaluate implied volatility using Black model for swaption
+_ImpliedVolatilityBlack(double Price //option price
+						, double annuity //annuity
+						, double Expiry //expiry
+						, double Spot //spot swap rate
+						, double Strike //strike
+						, double Start //start vol. Set by default 20%
+						, double Tolerance //tolerance. Set by default 1e-6
+						);
 
 double // evaluate jump diffusion model for vanilla call 
 _Analytical_jdm_pricer_call(double Spot //spot

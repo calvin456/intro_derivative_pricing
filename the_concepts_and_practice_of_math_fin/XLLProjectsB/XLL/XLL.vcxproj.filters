@@ -90,6 +90,12 @@
     <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\american_ql.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\interest_derivatives_analytical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\include\BlackSwaption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\source.cpp">
@@ -150,6 +156,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\american_ql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\interest_derivatives_analytical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\joshi_dsgn_pattern_derivatives_pricing\library\source\BlackSwaption.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

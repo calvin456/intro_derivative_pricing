@@ -28,9 +28,9 @@ int main(){
 		double Spot(100.0);
 		double Strike(100.0);
 
-		unsigned long M(static_cast<unsigned long>(1e4)); //1e4 # of simul
+		unsigned long M(static_cast<unsigned long>(1.0e04)); //1e4 # of simul
 
-		unsigned long N(static_cast<unsigned long>(1e2)); //1e2 # of tree nodes
+		unsigned long N(static_cast<unsigned long>(1.0e02)); //1e2 # of tree nodes
 
 		PayOffPut thePayOff(Strike);
 

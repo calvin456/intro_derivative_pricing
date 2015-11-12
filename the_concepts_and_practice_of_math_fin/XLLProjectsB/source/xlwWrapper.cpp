@@ -940,6 +940,81 @@ EXCEL_END
 namespace
 {
 XLRegistration::Arg
+_ImpliedVolatilityBlackArgs[]=
+{
+{ "Price","option price ","B"},
+{ "annuity","annuity ","B"},
+{ "Expiry","expiry ","B"},
+{ "Spot","spot swap rate ","B"},
+{ "Strike","strike ","B"},
+{ "Start","start vol. Set by default 20% ","B"},
+{ "Tolerance","tolerance. Set by default 1e-6 ","B"}
+};
+  XLRegistration::XLFunctionRegistrationHelper
+register_ImpliedVolatilityBlack("xl_ImpliedVolatilityBlack",
+"_ImpliedVolatilityBlack",
+" evaluate implied volatility using Black model for swaption ",
+LibraryName,
+_ImpliedVolatilityBlackArgs,
+7
+,false
+,false
+,""
+,""
+,false
+,false
+,false
+);
+}
+
+
+
+extern "C"
+{
+LPXLFOPER EXCEL_EXPORT
+xl_ImpliedVolatilityBlack(
+double Price,
+double annuity,
+double Expiry,
+double Spot,
+double Strike,
+double Start,
+double Tolerance)
+{
+EXCEL_BEGIN;
+
+	if (XlfExcel::Instance().IsCalledByFuncWiz())
+		return XlfOper(true);
+
+
+
+
+
+
+
+
+double result(
+	_ImpliedVolatilityBlack(
+		Price,
+		annuity,
+		Expiry,
+		Spot,
+		Strike,
+		Start,
+		Tolerance)
+	);
+return XlfOper(result);
+EXCEL_END
+}
+}
+
+
+
+//////////////////////////
+
+namespace
+{
+XLRegistration::Arg
 _Analytical_jdm_pricer_callArgs[]=
 {
 { "Spot","spot ","B"},

@@ -15,6 +15,7 @@
 #include "VGPricingAnalytical.h"
 #include "barrier_options_analytical.h"
 #include "american_ql.h"
+#include "BlackSwaption.h"
 
 using namespace BSFunction;
 
@@ -204,7 +205,24 @@ _ImpliedVolatility(double Price //option price
 	return iv;
 }
 
+double // evaluate implied volatility using Black model for swaption
+_ImpliedVolatilityBlack(double Price //option price
+						, double annuity //annuity
+						, double Expiry //expiry
+						, double Spot //spot swap rate
+						, double Strike //strike
+						, double Start //start vol. Set by default 20%
+						, double Tolerance //tolerance. Set by default 1e-6
+){
+	BlackSwaption theSwaption(annuity, Spot, Strike, Expiry);
 
+	Terminator terminator(5, 100); //5 sec, 100 max iter
+
+	return NewtonRaphson1<BlackSwaption, &BlackSwaption::Price, &BlackSwaption::Vega>(Price,
+		Start, Tolerance, theSwaption, terminator);
+
+
+}
 
 double // evaluate jump diffusion model for vanilla call 
 _Analytical_jdm_pricer_call(double Spot //spot

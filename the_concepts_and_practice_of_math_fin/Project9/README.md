@@ -1,1 +1,1 @@
-Deprecated. Should use multi-curve framework instead to price interest derivatives.
+Deprecated. Should use multi-curve framework instead to price interest derivatives. (CSA discounting)
