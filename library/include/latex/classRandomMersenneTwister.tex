@@ -1,0 +1,216 @@
+\hypertarget{classRandomMersenneTwister}{}\section{Random\+Mersenne\+Twister Class Reference}
+\label{classRandomMersenneTwister}\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+
+
+{\ttfamily \#include $<$Mersenne\+Twister.\+h$>$}
+
+
+
+Inheritance diagram for Random\+Mersenne\+Twister\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classRandomMersenneTwister__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Random\+Mersenne\+Twister\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classRandomMersenneTwister__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRandomMersenneTwister_ae9e37bfd7c85c150b68ab3fbe243bb7a}{Random\+Mersenne\+Twister} (unsigned long Dimensionality, unsigned long Seed=12411)
+\item 
+virtual \hyperlink{classRandomBase}{Random\+Base} $\ast$ \hyperlink{classRandomMersenneTwister_a0faf486ea7b17d013b3165ac9fc8171d}{clone} () const
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_a624044e5b2516f7947382ab38911b4a5}{Skip} (unsigned long number\+Of\+Paths)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_ac03508508fce508b21a53ce0739b061b}{Set\+Seed} (unsigned long Seed)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_aac2add88779d014d7722a3bfe9eed219}{Reset} ()
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_a5fdeed1a2eaabf7b61241b6f850cbaf1}{Reset\+Dimensionality} (unsigned long New\+Dimensionality)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_afd574ab3efab7a722a230bfc5680dea8}{Get\+Uniforms} (\hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_a6ee46c33d00d07921765033a9b0c471a}{Get\+Uniforms} (std\+::vector$<$ double $>$ \&variates, double a=0.\+0, double b=1.\+0)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_a550207d622d23ae8229b0953868bd65d}{Get\+Gaussians} (\hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_a8c76146a5c73d6396f35fd72cbaa1f08}{Get\+Gaussians} (std\+::vector$<$ double $>$ \&variates, double m=0.\+0, double s=1.\+0)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_a138aef807030513957f98abe6235e791}{Get\+Log\+Normals} (double m, double s, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_add67fcdb019b8f0eb43c50d3cdf1f8c1}{Get\+Exponentials} (double lambda, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_a7b53f211616ce5764705b192fbc0a009}{Get\+Poissons} (double lambda, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_a6bc8dbc22f258488161f800580574c0f}{Get\+Gammas} (double alpha, double beta, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomMersenneTwister_aac61b45bc4e003cad863d39e8333a434}{Get\+Betas} (double alpha, double beta, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRandomMersenneTwister_ae9e37bfd7c85c150b68ab3fbe243bb7a}{}\label{classRandomMersenneTwister_ae9e37bfd7c85c150b68ab3fbe243bb7a} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Random\+Mersenne\+Twister()}{RandomMersenneTwister()}}
+{\footnotesize\ttfamily Random\+Mersenne\+Twister\+::\+Random\+Mersenne\+Twister (\begin{DoxyParamCaption}\item[{unsigned long}]{Dimensionality,  }\item[{unsigned long}]{Seed = {\ttfamily 12411} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRandomMersenneTwister_a0faf486ea7b17d013b3165ac9fc8171d}{}\label{classRandomMersenneTwister_a0faf486ea7b17d013b3165ac9fc8171d} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!clone@{clone}}
+\index{clone@{clone}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classRandomBase}{Random\+Base}$\ast$ Random\+Mersenne\+Twister\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a0906f4590283535ec40427ad31ba7850}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_aac61b45bc4e003cad863d39e8333a434}{}\label{classRandomMersenneTwister_aac61b45bc4e003cad863d39e8333a434} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Betas@{Get\+Betas}}
+\index{Get\+Betas@{Get\+Betas}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Betas()}{GetBetas()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Betas (\begin{DoxyParamCaption}\item[{double}]{alpha,  }\item[{double}]{beta,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_aa3f3efa1333ab5d7689b8cc7ebd26622}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_add67fcdb019b8f0eb43c50d3cdf1f8c1}{}\label{classRandomMersenneTwister_add67fcdb019b8f0eb43c50d3cdf1f8c1} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Exponentials@{Get\+Exponentials}}
+\index{Get\+Exponentials@{Get\+Exponentials}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Exponentials()}{GetExponentials()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Exponentials (\begin{DoxyParamCaption}\item[{double}]{lambda,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_ad1d2c39a8440f67cffda3ad41a4f9975}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_a6bc8dbc22f258488161f800580574c0f}{}\label{classRandomMersenneTwister_a6bc8dbc22f258488161f800580574c0f} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Gammas@{Get\+Gammas}}
+\index{Get\+Gammas@{Get\+Gammas}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Gammas()}{GetGammas()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Gammas (\begin{DoxyParamCaption}\item[{double}]{alpha,  }\item[{double}]{beta,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_a5b5c89afe295ba49a5474cdc3bf80c3d}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_a550207d622d23ae8229b0953868bd65d}{}\label{classRandomMersenneTwister_a550207d622d23ae8229b0953868bd65d} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Gaussians@{Get\+Gaussians}}
+\index{Get\+Gaussians@{Get\+Gaussians}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Gaussians()}{GetGaussians()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Gaussians (\begin{DoxyParamCaption}\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_aac297a1b64959492831f5e9a1f28c03d}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_a8c76146a5c73d6396f35fd72cbaa1f08}{}\label{classRandomMersenneTwister_a8c76146a5c73d6396f35fd72cbaa1f08} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Gaussians@{Get\+Gaussians}}
+\index{Get\+Gaussians@{Get\+Gaussians}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Gaussians()}{GetGaussians()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Gaussians (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{variates,  }\item[{double}]{m = {\ttfamily 0.0},  }\item[{double}]{s = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_a8428b19f897b202363c12df1471a8d52}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_a138aef807030513957f98abe6235e791}{}\label{classRandomMersenneTwister_a138aef807030513957f98abe6235e791} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Log\+Normals@{Get\+Log\+Normals}}
+\index{Get\+Log\+Normals@{Get\+Log\+Normals}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Log\+Normals()}{GetLogNormals()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Log\+Normals (\begin{DoxyParamCaption}\item[{double}]{m,  }\item[{double}]{s,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_a734f1712b1179fb31380e04da4a27f20}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_a7b53f211616ce5764705b192fbc0a009}{}\label{classRandomMersenneTwister_a7b53f211616ce5764705b192fbc0a009} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Poissons@{Get\+Poissons}}
+\index{Get\+Poissons@{Get\+Poissons}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Poissons()}{GetPoissons()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Poissons (\begin{DoxyParamCaption}\item[{double}]{lambda,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_aa2e79f1f4c55c36df9c701d29e9b08a5}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_afd574ab3efab7a722a230bfc5680dea8}{}\label{classRandomMersenneTwister_afd574ab3efab7a722a230bfc5680dea8} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Uniforms@{Get\+Uniforms}}
+\index{Get\+Uniforms@{Get\+Uniforms}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Uniforms()}{GetUniforms()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Uniforms (\begin{DoxyParamCaption}\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_aa061fb77f53969f6fbe40c7454c69eb9}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_a6ee46c33d00d07921765033a9b0c471a}{}\label{classRandomMersenneTwister_a6ee46c33d00d07921765033a9b0c471a} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Get\+Uniforms@{Get\+Uniforms}}
+\index{Get\+Uniforms@{Get\+Uniforms}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Get\+Uniforms()}{GetUniforms()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Get\+Uniforms (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{variates,  }\item[{double}]{a = {\ttfamily 0.0},  }\item[{double}]{b = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a3bbf85695dbb1a9462a2b6c3f10af969}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_aac2add88779d014d7722a3bfe9eed219}{}\label{classRandomMersenneTwister_aac2add88779d014d7722a3bfe9eed219} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Reset@{Reset}}
+\index{Reset@{Reset}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a6e35c1467b37fc8c5e262297223685eb}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_a5fdeed1a2eaabf7b61241b6f850cbaf1}{}\label{classRandomMersenneTwister_a5fdeed1a2eaabf7b61241b6f850cbaf1} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Reset\+Dimensionality@{Reset\+Dimensionality}}
+\index{Reset\+Dimensionality@{Reset\+Dimensionality}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Reset\+Dimensionality()}{ResetDimensionality()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Reset\+Dimensionality (\begin{DoxyParamCaption}\item[{unsigned long}]{New\+Dimensionality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_a8931e429ae130ea44af5469dc6ae728f}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_ac03508508fce508b21a53ce0739b061b}{}\label{classRandomMersenneTwister_ac03508508fce508b21a53ce0739b061b} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Set\+Seed@{Set\+Seed}}
+\index{Set\+Seed@{Set\+Seed}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Set\+Seed()}{SetSeed()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Set\+Seed (\begin{DoxyParamCaption}\item[{unsigned long}]{Seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_ae93f26c38d1675ef07cb1fd29b894b26}{Random\+Base}.
+
+\hypertarget{classRandomMersenneTwister_a624044e5b2516f7947382ab38911b4a5}{}\label{classRandomMersenneTwister_a624044e5b2516f7947382ab38911b4a5} 
+\index{Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}!Skip@{Skip}}
+\index{Skip@{Skip}!Random\+Mersenne\+Twister@{Random\+Mersenne\+Twister}}
+\subsubsection{\texorpdfstring{Skip()}{Skip()}}
+{\footnotesize\ttfamily virtual void Random\+Mersenne\+Twister\+::\+Skip (\begin{DoxyParamCaption}\item[{unsigned long}]{number\+Of\+Paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a0531f44e3e2a71d14ef1490aa5d90b77}{Random\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{MersenneTwister_8h}{Mersenne\+Twister.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="DeltaHedgingCurrentVol&lt; U &gt;" name="DeltaHedgingCurrentVol&lt; U &gt;">
+<area shape="rect" id="node2" href="$classHedgingStrategySV.html" title="{HedgingStrategySV\&lt; U \&gt;\n|# ThePathGeneration\l|+ HedgingStrategySV()\l+ ~HedgingStrategySV()\l+ DoOnePath()\l+ GetSteps()\l}" alt="" coords="19,219,189,340"/>
+<area shape="rect" id="node3" href="$classHedgingStrategy.html" title="{HedgingStrategy\&lt; U \&gt;\n|# TheOption\l# r\l# OptionValue0\l# T\l|+ HedgingStrategy()\l+ ~HedgingStrategy()\l+ DoOnePath()\l+ GetSteps()\l}" alt="" coords="27,5,181,171"/>
+</map>

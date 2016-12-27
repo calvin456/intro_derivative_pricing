@@ -1,0 +1,129 @@
+\hypertarget{classPathGenerationHeston}{}\section{Path\+Generation\+Heston Class Reference}
+\label{classPathGenerationHeston}\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+
+
+{\ttfamily \#include $<$path\+\_\+generation\+\_\+heston.\+h$>$}
+
+
+
+Inheritance diagram for Path\+Generation\+Heston\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classPathGenerationHeston__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Path\+Generation\+Heston\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classPathGenerationHeston__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPathGenerationHeston_a0a5d87404d3ad4316ae0da262c77112a}{Path\+Generation\+Heston} (shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$ The\+Generator\+\_\+, double Spot0\+\_\+, double T\+\_\+, const \hyperlink{classParameters}{Parameters} \&drift\+\_\+, const \hyperlink{classParameters}{Parameters} \&vol\+\_\+, unsigned long steps\+\_\+, double correl\+\_\+, double kappa\+\_\+, double epsilon\+\_\+=1.\+0)
+\item 
+\hyperlink{classPathGenerationHeston_af108753ddab26252b6a8a11c1b7e60c6}{Path\+Generation\+Heston} (shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$ The\+Generator\+\_\+, double Spot0\+\_\+, double T\+\_\+, const \hyperlink{classParameters}{Parameters} \&drift\+\_\+, const \hyperlink{classParameters}{Parameters} \&vol\+\_\+, unsigned long steps\+\_\+, unsigned long steps1\+\_\+, double correl\+\_\+, double kappa\+\_\+, double epsilon\+\_\+=1.\+0)
+\item 
+virtual \hyperlink{classPathGenerationHeston_a53aa6464d915516232efa1cb8ae3ef70}{$\sim$\+Path\+Generation\+Heston} ()
+\item 
+virtual double \hyperlink{classPathGenerationHeston_ab523f2de8838e845405482b714656015}{Get\+One\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+) const
+\item 
+virtual \hyperlink{classMJArray}{M\+J\+Array} \hyperlink{classPathGenerationHeston_a2916170a243c003fb8362c13def63483}{Get\+Whole\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)
+\item 
+double \hyperlink{classPathGenerationHeston_a9dde14ddfe82fb957404c39998a0738b}{rms\+\_\+sigma} (size\+\_\+t s, size\+\_\+t t) const
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \hyperlink{classPathGenerationHeston_a965b1c92fc29da4d74ee457cd9d56cb1}{Get\+Sigma} () const
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \hyperlink{classPathGenerationHeston_aa195e4a13dc9d18165e4cf8a5e809e02}{Get\+Whole\+Path\+Instant} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)
+\item 
+double \hyperlink{classPathGenerationHeston_aacbd76b2461e546faf0e3d5bdd9988ab}{Get\+One\+Path\+LS} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)
+\item 
+double \hyperlink{classPathGenerationHeston_ad85097810cfc672f6250e4c8fa39ee75}{Get\+One\+Path\+Vol} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPathGenerationHeston_a0a5d87404d3ad4316ae0da262c77112a}{}\label{classPathGenerationHeston_a0a5d87404d3ad4316ae0da262c77112a} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{Path\+Generation\+Heston()}{PathGenerationHeston()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Path\+Generation\+Heston\+::\+Path\+Generation\+Heston (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$}]{The\+Generator\+\_\+,  }\item[{double}]{Spot0\+\_\+,  }\item[{double}]{T\+\_\+,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{drift\+\_\+,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{vol\+\_\+,  }\item[{unsigned long}]{steps\+\_\+,  }\item[{double}]{correl\+\_\+,  }\item[{double}]{kappa\+\_\+,  }\item[{double}]{epsilon\+\_\+ = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classPathGenerationHeston_af108753ddab26252b6a8a11c1b7e60c6}{}\label{classPathGenerationHeston_af108753ddab26252b6a8a11c1b7e60c6} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{Path\+Generation\+Heston()}{PathGenerationHeston()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Path\+Generation\+Heston\+::\+Path\+Generation\+Heston (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$}]{The\+Generator\+\_\+,  }\item[{double}]{Spot0\+\_\+,  }\item[{double}]{T\+\_\+,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{drift\+\_\+,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{vol\+\_\+,  }\item[{unsigned long}]{steps\+\_\+,  }\item[{unsigned long}]{steps1\+\_\+,  }\item[{double}]{correl\+\_\+,  }\item[{double}]{kappa\+\_\+,  }\item[{double}]{epsilon\+\_\+ = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classPathGenerationHeston_a53aa6464d915516232efa1cb8ae3ef70}{}\label{classPathGenerationHeston_a53aa6464d915516232efa1cb8ae3ef70} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!````~Path\+Generation\+Heston@{$\sim$\+Path\+Generation\+Heston}}
+\index{````~Path\+Generation\+Heston@{$\sim$\+Path\+Generation\+Heston}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{$\sim$\+Path\+Generation\+Heston()}{~PathGenerationHeston()}}
+{\footnotesize\ttfamily virtual Path\+Generation\+Heston\+::$\sim$\+Path\+Generation\+Heston (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPathGenerationHeston_ab523f2de8838e845405482b714656015}{}\label{classPathGenerationHeston_ab523f2de8838e845405482b714656015} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Get\+One\+Path@{Get\+One\+Path}}
+\index{Get\+One\+Path@{Get\+One\+Path}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{Get\+One\+Path()}{GetOnePath()}}
+{\footnotesize\ttfamily virtual double Path\+Generation\+Heston\+::\+Get\+One\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPathGeneration_a9a64a37f4dd9b2b3ef84f3cb66aed843}{Path\+Generation}.
+
+\hypertarget{classPathGenerationHeston_aacbd76b2461e546faf0e3d5bdd9988ab}{}\label{classPathGenerationHeston_aacbd76b2461e546faf0e3d5bdd9988ab} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Get\+One\+Path\+LS@{Get\+One\+Path\+LS}}
+\index{Get\+One\+Path\+LS@{Get\+One\+Path\+LS}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{Get\+One\+Path\+L\+S()}{GetOnePathLS()}}
+{\footnotesize\ttfamily double Path\+Generation\+Heston\+::\+Get\+One\+Path\+LS (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classPathGenerationHeston_ad85097810cfc672f6250e4c8fa39ee75}{}\label{classPathGenerationHeston_ad85097810cfc672f6250e4c8fa39ee75} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Get\+One\+Path\+Vol@{Get\+One\+Path\+Vol}}
+\index{Get\+One\+Path\+Vol@{Get\+One\+Path\+Vol}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{Get\+One\+Path\+Vol()}{GetOnePathVol()}}
+{\footnotesize\ttfamily double Path\+Generation\+Heston\+::\+Get\+One\+Path\+Vol (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classPathGenerationHeston_a965b1c92fc29da4d74ee457cd9d56cb1}{}\label{classPathGenerationHeston_a965b1c92fc29da4d74ee457cd9d56cb1} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Get\+Sigma@{Get\+Sigma}}
+\index{Get\+Sigma@{Get\+Sigma}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{Get\+Sigma()}{GetSigma()}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array} Path\+Generation\+Heston\+::\+Get\+Sigma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{classPathGenerationHeston_a2916170a243c003fb8362c13def63483}{}\label{classPathGenerationHeston_a2916170a243c003fb8362c13def63483} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Get\+Whole\+Path@{Get\+Whole\+Path}}
+\index{Get\+Whole\+Path@{Get\+Whole\+Path}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{Get\+Whole\+Path()}{GetWholePath()}}
+{\footnotesize\ttfamily virtual \hyperlink{classMJArray}{M\+J\+Array} Path\+Generation\+Heston\+::\+Get\+Whole\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPathGeneration_ace7520fed7b6a7711f4d3684c974cb76}{Path\+Generation}.
+
+\hypertarget{classPathGenerationHeston_aa195e4a13dc9d18165e4cf8a5e809e02}{}\label{classPathGenerationHeston_aa195e4a13dc9d18165e4cf8a5e809e02} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!Get\+Whole\+Path\+Instant@{Get\+Whole\+Path\+Instant}}
+\index{Get\+Whole\+Path\+Instant@{Get\+Whole\+Path\+Instant}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{Get\+Whole\+Path\+Instant()}{GetWholePathInstant()}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array} Path\+Generation\+Heston\+::\+Get\+Whole\+Path\+Instant (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classPathGenerationHeston_a9dde14ddfe82fb957404c39998a0738b}{}\label{classPathGenerationHeston_a9dde14ddfe82fb957404c39998a0738b} 
+\index{Path\+Generation\+Heston@{Path\+Generation\+Heston}!rms\+\_\+sigma@{rms\+\_\+sigma}}
+\index{rms\+\_\+sigma@{rms\+\_\+sigma}!Path\+Generation\+Heston@{Path\+Generation\+Heston}}
+\subsubsection{\texorpdfstring{rms\+\_\+sigma()}{rms\_sigma()}}
+{\footnotesize\ttfamily double Path\+Generation\+Heston\+::rms\+\_\+sigma (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{s,  }\item[{size\+\_\+t}]{t }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{path__generation__heston_8h}{path\+\_\+generation\+\_\+heston.\+h}\end{DoxyCompactItemize}

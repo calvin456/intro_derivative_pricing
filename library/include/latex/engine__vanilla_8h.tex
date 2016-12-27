@@ -1,0 +1,48 @@
+\hypertarget{engine__vanilla_8h}{}\section{engine\+\_\+vanilla.\+h File Reference}
+\label{engine__vanilla_8h}\index{engine\+\_\+vanilla.\+h@{engine\+\_\+vanilla.\+h}}
+{\ttfamily \#include $<$Parameters.\+h$>$}\newline
+{\ttfamily \#include $<$M\+C\+Statistics.\+h$>$}\newline
+{\ttfamily \#include $<$path\+\_\+generation.\+h$>$}\newline
+{\ttfamily \#include $<$path\+\_\+generation\+\_\+gbm.\+h$>$}\newline
+{\ttfamily \#include $<$Timer.\+h$>$}\newline
+Include dependency graph for engine\+\_\+vanilla.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{engine__vanilla_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{engine__vanilla_8h_a0fdbdc90e9b093257f3e16b8eb2392b9}{mc\+\_\+pricer\+\_\+vanilla} (const T \&The\+Option, const \hyperlink{classParameters}{Parameters} \&r, shared\+\_\+ptr$<$ \hyperlink{classPathGeneration}{Path\+Generation} $>$ \&The\+Paths, unsigned long Number\+Of\+Paths, \hyperlink{classStatisticsMC}{Statistics\+MC} \&gatherer, \hyperlink{classStatisticsMC}{Statistics\+MC} \&gatherer\+\_\+time)
+\item 
+{\footnotesize template$<$typename T $>$ }\\double \hyperlink{engine__vanilla_8h_af8abfbe831412d64a1069119f8c6c561}{mc\+\_\+pricer\+\_\+vanilla} (const T \&The\+Option, const \hyperlink{classParameters}{Parameters} \&r, shared\+\_\+ptr$<$ \hyperlink{classPathGeneration}{Path\+Generation} $>$ \&The\+Paths, unsigned long Number\+Of\+Paths)
+\item 
+{\footnotesize template$<$typename T $>$ }\\double \hyperlink{engine__vanilla_8h_a2b74b095feed197de87f1b23811213ff}{pathwise\+\_\+mc\+\_\+delta} (const T \&The\+Option, const \hyperlink{classParameters}{Parameters} \&r, shared\+\_\+ptr$<$ \hyperlink{classPathGeneration}{Path\+Generation} $>$ \&The\+Paths, unsigned long Number\+Of\+Paths)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{engine__vanilla_8h_a0fdbdc90e9b093257f3e16b8eb2392b9}{}\label{engine__vanilla_8h_a0fdbdc90e9b093257f3e16b8eb2392b9} 
+\index{engine\+\_\+vanilla.\+h@{engine\+\_\+vanilla.\+h}!mc\+\_\+pricer\+\_\+vanilla@{mc\+\_\+pricer\+\_\+vanilla}}
+\index{mc\+\_\+pricer\+\_\+vanilla@{mc\+\_\+pricer\+\_\+vanilla}!engine\+\_\+vanilla.\+h@{engine\+\_\+vanilla.\+h}}
+\subsubsection{\texorpdfstring{mc\+\_\+pricer\+\_\+vanilla()}{mc\_pricer\_vanilla()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void mc\+\_\+pricer\+\_\+vanilla (\begin{DoxyParamCaption}\item[{const T \&}]{The\+Option,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{r,  }\item[{shared\+\_\+ptr$<$ \hyperlink{classPathGeneration}{Path\+Generation} $>$ \&}]{The\+Paths,  }\item[{unsigned long}]{Number\+Of\+Paths,  }\item[{\hyperlink{classStatisticsMC}{Statistics\+MC} \&}]{gatherer,  }\item[{\hyperlink{classStatisticsMC}{Statistics\+MC} \&}]{gatherer\+\_\+time }\end{DoxyParamCaption})}
+
+\hypertarget{engine__vanilla_8h_af8abfbe831412d64a1069119f8c6c561}{}\label{engine__vanilla_8h_af8abfbe831412d64a1069119f8c6c561} 
+\index{engine\+\_\+vanilla.\+h@{engine\+\_\+vanilla.\+h}!mc\+\_\+pricer\+\_\+vanilla@{mc\+\_\+pricer\+\_\+vanilla}}
+\index{mc\+\_\+pricer\+\_\+vanilla@{mc\+\_\+pricer\+\_\+vanilla}!engine\+\_\+vanilla.\+h@{engine\+\_\+vanilla.\+h}}
+\subsubsection{\texorpdfstring{mc\+\_\+pricer\+\_\+vanilla()}{mc\_pricer\_vanilla()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+double mc\+\_\+pricer\+\_\+vanilla (\begin{DoxyParamCaption}\item[{const T \&}]{The\+Option,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{r,  }\item[{shared\+\_\+ptr$<$ \hyperlink{classPathGeneration}{Path\+Generation} $>$ \&}]{The\+Paths,  }\item[{unsigned long}]{Number\+Of\+Paths }\end{DoxyParamCaption})}
+
+\hypertarget{engine__vanilla_8h_a2b74b095feed197de87f1b23811213ff}{}\label{engine__vanilla_8h_a2b74b095feed197de87f1b23811213ff} 
+\index{engine\+\_\+vanilla.\+h@{engine\+\_\+vanilla.\+h}!pathwise\+\_\+mc\+\_\+delta@{pathwise\+\_\+mc\+\_\+delta}}
+\index{pathwise\+\_\+mc\+\_\+delta@{pathwise\+\_\+mc\+\_\+delta}!engine\+\_\+vanilla.\+h@{engine\+\_\+vanilla.\+h}}
+\subsubsection{\texorpdfstring{pathwise\+\_\+mc\+\_\+delta()}{pathwise\_mc\_delta()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+double pathwise\+\_\+mc\+\_\+delta (\begin{DoxyParamCaption}\item[{const T \&}]{The\+Option,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{r,  }\item[{shared\+\_\+ptr$<$ \hyperlink{classPathGeneration}{Path\+Generation} $>$ \&}]{The\+Paths,  }\item[{unsigned long}]{Number\+Of\+Paths }\end{DoxyParamCaption})}
+

@@ -1,0 +1,4 @@
+<map id="QuantoPut" name="QuantoPut">
+<area shape="rect" id="node2" href="$classPayOffMulti.html" title="{PayOffMulti\n||+ PayOffMulti()\l+ operator()()\l+ operator()()\l+ ~PayOffMulti()\l}" alt="" coords="5,292,124,413"/>
+<area shape="rect" id="node3" href="$classPayOff.html" title="{PayOff\n||+ PayOff()\l+ PayOff()\l+ operator()()\l+ PayOff()\l+ operator()()\l+ ~PayOff()\l+ PayOff()\l+ operator()()\l+ ~PayOff()\l+ clone()\l+ GetStrike()\l+ SetStrike()\l}" alt="" coords="16,5,113,244"/>
+</map>

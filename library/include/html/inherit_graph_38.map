@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classStatisticsMC.html" title="StatisticsMC" alt="" coords="5,233,104,260"/>
+<area shape="rect" id="node2" href="$classConvergenceTable.html" title="ConvergenceTable" alt="" coords="157,5,287,32"/>
+<area shape="rect" id="node3" href="$classStatisticsKeepTrack.html" title="StatisticsKeepTrack" alt="" coords="152,56,292,83"/>
+<area shape="rect" id="node4" href="$classStatisticsMean.html" title="StatisticsMean" alt="" coords="167,107,277,133"/>
+<area shape="rect" id="node5" href="$classStatisticsMoments4.html" title="StatisticsMoments4" alt="" coords="153,157,291,184"/>
+<area shape="rect" id="node6" href="$classStatisticsRMS.html" title="StatisticsRMS" alt="" coords="169,208,275,235"/>
+<area shape="rect" id="node7" href="$classStatisticsSE.html" title="StatisticsSE" alt="" coords="175,259,269,285"/>
+<area shape="rect" id="node8" href="$classStatisticsStdDev.html" title="StatisticsStdDev" alt="" coords="161,309,283,336"/>
+<area shape="rect" id="node9" href="$classStatisticsVariance.html" title="StatisticsVariance" alt="" coords="158,360,286,387"/>
+<area shape="rect" id="node10" href="$classStatsGatherer.html" title="StatsGatherer" alt="" coords="171,411,273,437"/>
+<area shape="rect" id="node11" href="$classValueAtRisk.html" title="ValueAtRisk" alt="" coords="175,461,269,488"/>
+</map>

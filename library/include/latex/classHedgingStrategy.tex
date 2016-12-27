@@ -1,0 +1,126 @@
+\hypertarget{classHedgingStrategy}{}\section{Hedging\+Strategy$<$ U $>$ Class Template Reference}
+\label{classHedgingStrategy}\index{Hedging\+Strategy$<$ U $>$@{Hedging\+Strategy$<$ U $>$}}
+
+
+{\ttfamily \#include $<$hedging\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for Hedging\+Strategy$<$ U $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHedgingStrategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hedging\+Strategy$<$ U $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classHedgingStrategy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHedgingStrategy_a7b25f86f2901f200a27c73f812aef4d3}{Hedging\+Strategy} (double Option\+Value0\+\_\+, double r\+\_\+, shared\+\_\+ptr$<$ U $>$ The\+Option\+\_\+, double T\+\_\+)
+\item 
+virtual \hyperlink{classHedgingStrategy_a799ea631e5b22c0c3579495596aec59c}{$\sim$\+Hedging\+Strategy} ()
+\item 
+virtual double \hyperlink{classHedgingStrategy_ad2a7c02ee59750c40f29a03ee6fee140}{Do\+One\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)=0
+\item 
+virtual unsigned long \hyperlink{classHedgingStrategy_a4df1155158f019fb0c4f565045b9e633}{Get\+Steps} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+shared\+\_\+ptr$<$ U $>$ \hyperlink{classHedgingStrategy_a65699a183423af9d947bb939ae8e907d}{The\+Option}
+\item 
+double \hyperlink{classHedgingStrategy_a313da7bc1911dba2a166d2c7bed5f1d7}{r}
+\item 
+double \hyperlink{classHedgingStrategy_ac96528e9f4e5a0d1e5aadcc2ebdcab55}{Option\+Value0}
+\item 
+double \hyperlink{classHedgingStrategy_aedb4069f0709b49482a72b9d9c906a5e}{T}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHedgingStrategy_a7b25f86f2901f200a27c73f812aef4d3}{}\label{classHedgingStrategy_a7b25f86f2901f200a27c73f812aef4d3} 
+\index{Hedging\+Strategy@{Hedging\+Strategy}!Hedging\+Strategy@{Hedging\+Strategy}}
+\index{Hedging\+Strategy@{Hedging\+Strategy}!Hedging\+Strategy@{Hedging\+Strategy}}
+\subsubsection{\texorpdfstring{Hedging\+Strategy()}{HedgingStrategy()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+\hyperlink{classHedgingStrategy}{Hedging\+Strategy}$<$ U $>$\+::\hyperlink{classHedgingStrategy}{Hedging\+Strategy} (\begin{DoxyParamCaption}\item[{double}]{Option\+Value0\+\_\+,  }\item[{double}]{r\+\_\+,  }\item[{shared\+\_\+ptr$<$ U $>$}]{The\+Option\+\_\+,  }\item[{double}]{T\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classHedgingStrategy_a799ea631e5b22c0c3579495596aec59c}{}\label{classHedgingStrategy_a799ea631e5b22c0c3579495596aec59c} 
+\index{Hedging\+Strategy@{Hedging\+Strategy}!````~Hedging\+Strategy@{$\sim$\+Hedging\+Strategy}}
+\index{````~Hedging\+Strategy@{$\sim$\+Hedging\+Strategy}!Hedging\+Strategy@{Hedging\+Strategy}}
+\subsubsection{\texorpdfstring{$\sim$\+Hedging\+Strategy()}{~HedgingStrategy()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual \hyperlink{classHedgingStrategy}{Hedging\+Strategy}$<$ U $>$\+::$\sim$\hyperlink{classHedgingStrategy}{Hedging\+Strategy} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHedgingStrategy_ad2a7c02ee59750c40f29a03ee6fee140}{}\label{classHedgingStrategy_ad2a7c02ee59750c40f29a03ee6fee140} 
+\index{Hedging\+Strategy@{Hedging\+Strategy}!Do\+One\+Path@{Do\+One\+Path}}
+\index{Do\+One\+Path@{Do\+One\+Path}!Hedging\+Strategy@{Hedging\+Strategy}}
+\subsubsection{\texorpdfstring{Do\+One\+Path()}{DoOnePath()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual double \hyperlink{classHedgingStrategy}{Hedging\+Strategy}$<$ U $>$\+::Do\+One\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classDeltaHedgingInstantVol_ac05386c300db720ed07d8465123a8f7a}{Delta\+Hedging\+Instant\+Vol$<$ U $>$}, \hyperlink{classGammaHedging_afbdeab9edb6f515f8df2c1aac8ad54c0}{Gamma\+Hedging$<$ U, V $>$}, \hyperlink{classDeltaHedgingCurrentVol_ad235325f348bd58eb54d9dec389aa2e9}{Delta\+Hedging\+Current\+Vol$<$ U $>$}, \hyperlink{classSnLHedging_a6d3f4f5b4e0a56935b9155222a95a76e}{Sn\+L\+Hedging$<$ U $>$}, \hyperlink{classDeltaHedgingRMSDec_aa9118ce56921178e38a7ed8a6acee656}{Delta\+Hedging\+R\+M\+S\+Dec$<$ U $>$}, \hyperlink{classDeltaHedging_a670264651c7c2a3ce404bca291d2194f}{Delta\+Hedging$<$ U $>$}, \hyperlink{classDeltaHedgingRMS_ad1dfe5625f1064b9b1f8a45b20f0ee50}{Delta\+Hedging\+R\+M\+S$<$ U $>$}, and \hyperlink{classHedgingStrategySV_abb9531c069f4d1e758fc23c4bc7ed09c}{Hedging\+Strategy\+S\+V$<$ U $>$}.
+
+\hypertarget{classHedgingStrategy_a4df1155158f019fb0c4f565045b9e633}{}\label{classHedgingStrategy_a4df1155158f019fb0c4f565045b9e633} 
+\index{Hedging\+Strategy@{Hedging\+Strategy}!Get\+Steps@{Get\+Steps}}
+\index{Get\+Steps@{Get\+Steps}!Hedging\+Strategy@{Hedging\+Strategy}}
+\subsubsection{\texorpdfstring{Get\+Steps()}{GetSteps()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual unsigned long \hyperlink{classHedgingStrategy}{Hedging\+Strategy}$<$ U $>$\+::Get\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classGammaHedging_a69b52f6cdb02d3289bf00029331625fe}{Gamma\+Hedging$<$ U, V $>$}, \hyperlink{classSnLHedging_ac44156b45dd20237fc5030877f9b6c66}{Sn\+L\+Hedging$<$ U $>$}, \hyperlink{classDeltaHedging_a0a6d6d2f73dfcf3425927cc45a012a2a}{Delta\+Hedging$<$ U $>$}, and \hyperlink{classHedgingStrategySV_a8cdbb26bfa8da99f16161f2449928a5e}{Hedging\+Strategy\+S\+V$<$ U $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHedgingStrategy_ac96528e9f4e5a0d1e5aadcc2ebdcab55}{}\label{classHedgingStrategy_ac96528e9f4e5a0d1e5aadcc2ebdcab55} 
+\index{Hedging\+Strategy@{Hedging\+Strategy}!Option\+Value0@{Option\+Value0}}
+\index{Option\+Value0@{Option\+Value0}!Hedging\+Strategy@{Hedging\+Strategy}}
+\subsubsection{\texorpdfstring{Option\+Value0}{OptionValue0}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+double \hyperlink{classHedgingStrategy}{Hedging\+Strategy}$<$ U $>$\+::Option\+Value0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classHedgingStrategy_a313da7bc1911dba2a166d2c7bed5f1d7}{}\label{classHedgingStrategy_a313da7bc1911dba2a166d2c7bed5f1d7} 
+\index{Hedging\+Strategy@{Hedging\+Strategy}!r@{r}}
+\index{r@{r}!Hedging\+Strategy@{Hedging\+Strategy}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+double \hyperlink{classHedgingStrategy}{Hedging\+Strategy}$<$ U $>$\+::r\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classHedgingStrategy_aedb4069f0709b49482a72b9d9c906a5e}{}\label{classHedgingStrategy_aedb4069f0709b49482a72b9d9c906a5e} 
+\index{Hedging\+Strategy@{Hedging\+Strategy}!T@{T}}
+\index{T@{T}!Hedging\+Strategy@{Hedging\+Strategy}}
+\subsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+double \hyperlink{classHedgingStrategy}{Hedging\+Strategy}$<$ U $>$\+::T\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classHedgingStrategy_a65699a183423af9d947bb939ae8e907d}{}\label{classHedgingStrategy_a65699a183423af9d947bb939ae8e907d} 
+\index{Hedging\+Strategy@{Hedging\+Strategy}!The\+Option@{The\+Option}}
+\index{The\+Option@{The\+Option}!Hedging\+Strategy@{Hedging\+Strategy}}
+\subsubsection{\texorpdfstring{The\+Option}{TheOption}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+shared\+\_\+ptr$<$U$>$ \hyperlink{classHedgingStrategy}{Hedging\+Strategy}$<$ U $>$\+::The\+Option\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hedging__strategy_8h}{hedging\+\_\+strategy.\+h}\end{DoxyCompactItemize}

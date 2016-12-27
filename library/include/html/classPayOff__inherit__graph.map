@@ -1,0 +1,28 @@
+<map id="PayOff" name="PayOff">
+<area shape="rect" id="node2" href="$classCaplet.html" title="{Caplet\n||+ Caplet()\l+ operator()()\l+ ~Caplet()\l+ clone()\l}" alt="" coords="39,358,136,479"/>
+<area shape="rect" id="node3" href="$classCapletIA.html" title="{CapletIA\n||+ CapletIA()\l+ operator()()\l+ ~CapletIA()\l+ clone()\l}" alt="" coords="161,358,262,479"/>
+<area shape="rect" id="node4" href="$classFloorletIA.html" title="{FloorletIA\n||+ FloorletIA()\l+ operator()()\l+ ~FloorletIA()\l+ clone()\l}" alt="" coords="286,358,393,479"/>
+<area shape="rect" id="node5" href="$classFRA.html" title="{FRA\n||+ FRA()\l+ operator()()\l+ ~FRA()\l+ clone()\l}" alt="" coords="417,358,515,479"/>
+<area shape="rect" id="node6" href="$classFRAIA.html" title="{FRAIA\n||+ FRAIA()\l+ operator()()\l+ ~FRAIA()\l+ clone()\l}" alt="" coords="539,358,636,479"/>
+<area shape="rect" id="node7" href="$classPayOffBarrier.html" title="{PayOffBarrier\n|# Barrier\l# Rebate\l|+ PayOffBarrier()\l+ ~PayOffBarrier()\l+ IsTouched()\l+ GetBarrier()\l+ GetRebate()\l}" alt="" coords="660,343,789,494"/>
+<area shape="rect" id="node16" href="$classPayOffCall.html" title="{PayOffCall\n||+ PayOffCall()\l+ operator()()\l+ ~PayOffCall()\l+ PayOffCall()\l+ PayOffCall()\l+ operator()()\l+ ~PayOffCall()\l+ clone()\l}" alt="" coords="814,329,929,509"/>
+<area shape="rect" id="node17" href="$classPayOffDigitalCall.html" title="{PayOffDigitalCall\n||+ PayOffDigitalCall()\l+ operator()()\l+ ~PayOffDigitalCall()\l+ clone()\l+ GetStrike()\l+ SetStrike()\l}" alt="" coords="953,343,1104,494"/>
+<area shape="rect" id="node18" href="$classPayOffDigitalPut.html" title="{PayOffDigitalPut\n||+ PayOffDigitalPut()\l+ operator()()\l+ ~PayOffDigitalPut()\l+ clone()\l+ GetStrike()\l+ SetStrike()\l}" alt="" coords="1128,343,1276,494"/>
+<area shape="rect" id="node19" href="$classPayOffDoubleDigital.html" title="{PayOffDoubleDigital\n||+ PayOffDoubleDigital()\l+ operator()()\l+ ~PayOffDoubleDigital()\l+ GetStrike()\l+ SetStrike()\l+ PayOffDoubleDigital()\l+ PayOffDoubleDigital()\l+ operator()()\l+ ~PayOffDoubleDigital()\l+ clone()\l+ GetLowerLevel()\l+ GetUpperLevel()\l+ SetStrike()\l}" alt="" coords="1300,292,1469,545"/>
+<area shape="rect" id="node20" href="$classPayOffForward.html" title="{PayOffForward\n||+ PayOffForward()\l+ operator()()\l+ ~PayOffForward()\l+ clone()\l+ GetStrike()\l+ SetStrike()\l}" alt="" coords="1494,343,1633,494"/>
+<area shape="rect" id="node21" href="$classPayOffMulti.html" title="{PayOffMulti\n||+ PayOffMulti()\l+ operator()()\l+ operator()()\l+ ~PayOffMulti()\l}" alt="" coords="1657,358,1776,479"/>
+<area shape="rect" id="node26" href="$classPayOffPut.html" title="{PayOffPut\n||+ PayOffPut()\l+ operator()()\l+ ~PayOffPut()\l+ PayOffPut()\l+ PayOffPut()\l+ operator()()\l+ ~PayOffPut()\l+ clone()\l}" alt="" coords="1800,329,1911,509"/>
+<area shape="rect" id="node27" href="$classPayOffStraddle.html" title="{PayOffStraddle\n||+ PayOffStraddle()\l+ PayOffStraddle()\l+ operator()()\l+ ~PayOffStraddle()\l+ clone()\l}" alt="" coords="1935,351,2074,487"/>
+<area shape="rect" id="node8" href="$classPayOffDownInCall.html" title="{PayOffDownInCall\n||+ PayOffDownInCall()\l+ operator()()\l+ ~PayOffDownInCall()\l+ IsTouched()\l+ clone()\l}" alt="" coords="5,593,164,729"/>
+<area shape="rect" id="node9" href="$classPayOffDownOutCall.html" title="{PayOffDownOutCall\n||+ PayOffDownOutCall()\l+ operator()()\l+ ~PayOffDownOutCall()\l+ IsTouched()\l+ clone()\l}" alt="" coords="188,593,357,729"/>
+<area shape="rect" id="node10" href="$classPayOffKICall.html" title="{PayOffKICall\n||+ PayOffKICall()\l+ operator()()\l+ ~PayOffKICall()\l+ IsTouched()\l+ clone()\l}" alt="" coords="381,593,508,729"/>
+<area shape="rect" id="node11" href="$classPayOffKIPut.html" title="{PayOffKIPut\n||+ PayOffKIPut()\l+ operator()()\l+ ~PayOffKIPut()\l+ IsTouched()\l+ clone()\l}" alt="" coords="532,593,656,729"/>
+<area shape="rect" id="node12" href="$classPayOffKOCall.html" title="{PayOffKOCall\n||+ PayOffKOCall()\l+ operator()()\l+ ~PayOffKOCall()\l+ IsTouched()\l+ clone()\l}" alt="" coords="681,593,814,729"/>
+<area shape="rect" id="node13" href="$classPayOffKOPut.html" title="{PayOffKOPut\n||+ PayOffKOPut()\l+ operator()()\l+ ~PayOffKOPut()\l+ IsTouched()\l+ clone()\l}" alt="" coords="838,593,969,729"/>
+<area shape="rect" id="node14" href="$classPayOffUpInPut.html" title="{PayOffUpInPut\n||+ PayOffUpInPut()\l+ operator()()\l+ ~PayOffUpInPut()\l+ IsTouched()\l+ clone()\l}" alt="" coords="993,593,1131,729"/>
+<area shape="rect" id="node15" href="$classPayOffUpOutPut.html" title="{PayOffUpOutPut\n||+ PayOffUpOutPut()\l+ operator()()\l+ ~PayOffUpOutPut()\l+ IsTouched()\l+ clone()\l}" alt="" coords="1155,593,1305,729"/>
+<area shape="rect" id="node22" href="$classExchangeOption.html" title="{ExchangeOption\n||+ ExchangeOption()\l+ ExchangeOption()\l+ operator()()\l+ ~ExchangeOption()\l+ clone()\l}" alt="" coords="1419,593,1566,729"/>
+<area shape="rect" id="node23" href="$classQuantoCall.html" title="{QuantoCall\n||+ QuantoCall()\l+ QuantoCall()\l+ operator()()\l+ ~QuantoCall()\l+ clone()\l}" alt="" coords="1590,593,1705,729"/>
+<area shape="rect" id="node24" href="$classQuantoPut.html" title="{QuantoPut\n||+ QuantoPut()\l+ QuantoPut()\l+ operator()()\l+ ~QuantoPut()\l+ clone()\l}" alt="" coords="1729,593,1841,729"/>
+<area shape="rect" id="node25" href="$classSpreadOption.html" title="{SpreadOption\n||+ SpreadOption()\l+ SpreadOption()\l+ operator()()\l+ ~SpreadOption()\l+ clone()\l}" alt="" coords="1864,593,1993,729"/>
+</map>

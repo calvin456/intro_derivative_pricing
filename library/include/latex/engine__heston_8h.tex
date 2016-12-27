@@ -1,0 +1,49 @@
+\hypertarget{engine__heston_8h}{}\section{engine\+\_\+heston.\+h File Reference}
+\label{engine__heston_8h}\index{engine\+\_\+heston.\+h@{engine\+\_\+heston.\+h}}
+{\ttfamily \#include $<$wrapper.\+h$>$}\newline
+{\ttfamily \#include $<$Parameters.\+h$>$}\newline
+{\ttfamily \#include $<$M\+C\+Statistics.\+h$>$}\newline
+{\ttfamily \#include $<$path\+\_\+generation\+\_\+heston.\+h$>$}\newline
+{\ttfamily \#include $<$timer.\+h$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+Include dependency graph for engine\+\_\+heston.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{engine__heston_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{engine__heston_8h_a32741584d9618e386a7ee0c5a9c8ba53}{mc\+\_\+pricer\+\_\+heston} (const T \&The\+Option, const \hyperlink{classParameters}{Parameters} \&r, unique\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$ \&The\+Paths, unsigned long Number\+Of\+Paths, \hyperlink{classStatisticsMC}{Statistics\+MC} \&gatherer, \hyperlink{classStatisticsMC}{Statistics\+MC} \&gatherer\+\_\+time)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{engine__heston_8h_a9f8642f88e8d7e3a4e909b574376cdaf}{mc\+\_\+pricer\+\_\+heston\+\_\+ls} (const T \&The\+Option, const \hyperlink{classParameters}{Parameters} \&r, unique\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$ \&The\+Paths, unsigned long Number\+Of\+Paths, \hyperlink{classStatisticsMC}{Statistics\+MC} \&gatherer, \hyperlink{classStatisticsMC}{Statistics\+MC} \&gatherer\+\_\+time)
+\item 
+{\footnotesize template$<$typename T $>$ }\\double \hyperlink{engine__heston_8h_a6437dc4034b8761ce03775c8733f8019}{mc\+\_\+pricer\+\_\+heston} (const T \&The\+Option, const \hyperlink{classParameters}{Parameters} \&r, unique\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$ \&The\+Paths, unsigned long Number\+Of\+Paths)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{engine__heston_8h_a32741584d9618e386a7ee0c5a9c8ba53}{}\label{engine__heston_8h_a32741584d9618e386a7ee0c5a9c8ba53} 
+\index{engine\+\_\+heston.\+h@{engine\+\_\+heston.\+h}!mc\+\_\+pricer\+\_\+heston@{mc\+\_\+pricer\+\_\+heston}}
+\index{mc\+\_\+pricer\+\_\+heston@{mc\+\_\+pricer\+\_\+heston}!engine\+\_\+heston.\+h@{engine\+\_\+heston.\+h}}
+\subsubsection{\texorpdfstring{mc\+\_\+pricer\+\_\+heston()}{mc\_pricer\_heston()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void mc\+\_\+pricer\+\_\+heston (\begin{DoxyParamCaption}\item[{const T \&}]{The\+Option,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{r,  }\item[{unique\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$ \&}]{The\+Paths,  }\item[{unsigned long}]{Number\+Of\+Paths,  }\item[{\hyperlink{classStatisticsMC}{Statistics\+MC} \&}]{gatherer,  }\item[{\hyperlink{classStatisticsMC}{Statistics\+MC} \&}]{gatherer\+\_\+time }\end{DoxyParamCaption})}
+
+\hypertarget{engine__heston_8h_a6437dc4034b8761ce03775c8733f8019}{}\label{engine__heston_8h_a6437dc4034b8761ce03775c8733f8019} 
+\index{engine\+\_\+heston.\+h@{engine\+\_\+heston.\+h}!mc\+\_\+pricer\+\_\+heston@{mc\+\_\+pricer\+\_\+heston}}
+\index{mc\+\_\+pricer\+\_\+heston@{mc\+\_\+pricer\+\_\+heston}!engine\+\_\+heston.\+h@{engine\+\_\+heston.\+h}}
+\subsubsection{\texorpdfstring{mc\+\_\+pricer\+\_\+heston()}{mc\_pricer\_heston()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+double mc\+\_\+pricer\+\_\+heston (\begin{DoxyParamCaption}\item[{const T \&}]{The\+Option,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{r,  }\item[{unique\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$ \&}]{The\+Paths,  }\item[{unsigned long}]{Number\+Of\+Paths }\end{DoxyParamCaption})}
+
+\hypertarget{engine__heston_8h_a9f8642f88e8d7e3a4e909b574376cdaf}{}\label{engine__heston_8h_a9f8642f88e8d7e3a4e909b574376cdaf} 
+\index{engine\+\_\+heston.\+h@{engine\+\_\+heston.\+h}!mc\+\_\+pricer\+\_\+heston\+\_\+ls@{mc\+\_\+pricer\+\_\+heston\+\_\+ls}}
+\index{mc\+\_\+pricer\+\_\+heston\+\_\+ls@{mc\+\_\+pricer\+\_\+heston\+\_\+ls}!engine\+\_\+heston.\+h@{engine\+\_\+heston.\+h}}
+\subsubsection{\texorpdfstring{mc\+\_\+pricer\+\_\+heston\+\_\+ls()}{mc\_pricer\_heston\_ls()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void mc\+\_\+pricer\+\_\+heston\+\_\+ls (\begin{DoxyParamCaption}\item[{const T \&}]{The\+Option,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{r,  }\item[{unique\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$ \&}]{The\+Paths,  }\item[{unsigned long}]{Number\+Of\+Paths,  }\item[{\hyperlink{classStatisticsMC}{Statistics\+MC} \&}]{gatherer,  }\item[{\hyperlink{classStatisticsMC}{Statistics\+MC} \&}]{gatherer\+\_\+time }\end{DoxyParamCaption})}
+

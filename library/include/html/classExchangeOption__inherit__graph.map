@@ -1,0 +1,4 @@
+<map id="ExchangeOption" name="ExchangeOption">
+<area shape="rect" id="node2" href="$classPayOffMulti.html" title="{PayOffMulti\n||+ PayOffMulti()\l+ operator()()\l+ operator()()\l+ ~PayOffMulti()\l}" alt="" coords="19,292,138,413"/>
+<area shape="rect" id="node3" href="$classPayOff.html" title="{PayOff\n||+ PayOff()\l+ PayOff()\l+ operator()()\l+ PayOff()\l+ operator()()\l+ ~PayOff()\l+ PayOff()\l+ operator()()\l+ ~PayOff()\l+ clone()\l+ GetStrike()\l+ SetStrike()\l}" alt="" coords="30,5,127,244"/>
+</map>

@@ -1,0 +1,194 @@
+\hypertarget{classPayOff}{}\section{Pay\+Off Class Reference}
+\label{classPayOff}\index{Pay\+Off@{Pay\+Off}}
+
+
+{\ttfamily \#include $<$Pay\+Off1.\+h$>$}
+
+
+
+Inheritance diagram for Pay\+Off\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPayOff__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pay\+Off\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classPayOff__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8}{Option\+Type} \{ \hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8aad6767ec9b93244ffd4e14721eca7680}{call}, 
+\hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8adb6d4e9e109094df2a9c436b3df9c44b}{put}, 
+\hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8a2bb397a3598d77cef3de8770a380322c}{digital\+Call}, 
+\hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8a26293140c6f69e03ca018019fba51af1}{double\+Digital}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPayOff_a5c8db63f8e94e514b7e0963beb8a852a}{Pay\+Off} (double Strike\+\_\+, \hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8}{Option\+Type} The\+Options\+Type\+\_\+)
+\item 
+\hyperlink{classPayOff_a185b279eeea3e2d52f5acb225eaf8d64}{Pay\+Off} (double Strike\+\_\+, double Strike1\+\_\+, \hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8}{Option\+Type} The\+Options\+Type\+\_\+)
+\item 
+double \hyperlink{classPayOff_a0f08e9967d3ae5d9b41005451cefd76d}{operator()} (double Spot) const
+\item 
+\hyperlink{classPayOff_ade8032093538388f53c706bda715f39f}{Pay\+Off} ()
+\item 
+virtual double \hyperlink{classPayOff_a5ae17d82c233ef5568c8fb0539703000}{operator()} (double Spot) const =0
+\item 
+virtual \hyperlink{classPayOff_ad7aa3a49e4a7e9cab7dc283d69a3f1ff}{$\sim$\+Pay\+Off} ()
+\item 
+\hyperlink{classPayOff_a811923da1ef0f1c6a49076791c453886}{Pay\+Off} (double Strike\+\_\+=0.\+0)
+\item 
+virtual double \hyperlink{classPayOff_a5ae17d82c233ef5568c8fb0539703000}{operator()} (double Spot) const =0
+\item 
+virtual \hyperlink{classPayOff_ad7aa3a49e4a7e9cab7dc283d69a3f1ff}{$\sim$\+Pay\+Off} ()
+\item 
+virtual \hyperlink{classPayOff}{Pay\+Off} $\ast$ \hyperlink{classPayOff_ad8194d5b82247ae89c25c515f0ba806a}{clone} () const =0
+\item 
+virtual double \hyperlink{classPayOff_aa7a2451e286496c8d5a153000a818d34}{Get\+Strike} () const
+\item 
+virtual void \hyperlink{classPayOff_a3fdefed95df90a057acfd697f5703e04}{Set\+Strike} (double Strike\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classPayOff_a57262243a4bf56ddf5b78d7f563440c8}{}\label{classPayOff_a57262243a4bf56ddf5b78d7f563440c8} 
+\index{Pay\+Off@{Pay\+Off}!Option\+Type@{Option\+Type}}
+\index{Option\+Type@{Option\+Type}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{Option\+Type}{OptionType}}
+{\footnotesize\ttfamily enum \hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8}{Pay\+Off\+::\+Option\+Type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{call@{call}!Pay\+Off@{Pay\+Off}}\index{Pay\+Off@{Pay\+Off}!call@{call}}}\hypertarget{classPayOff_a57262243a4bf56ddf5b78d7f563440c8aad6767ec9b93244ffd4e14721eca7680}{}\label{classPayOff_a57262243a4bf56ddf5b78d7f563440c8aad6767ec9b93244ffd4e14721eca7680} 
+call&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{put@{put}!Pay\+Off@{Pay\+Off}}\index{Pay\+Off@{Pay\+Off}!put@{put}}}\hypertarget{classPayOff_a57262243a4bf56ddf5b78d7f563440c8adb6d4e9e109094df2a9c436b3df9c44b}{}\label{classPayOff_a57262243a4bf56ddf5b78d7f563440c8adb6d4e9e109094df2a9c436b3df9c44b} 
+put&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{digital\+Call@{digital\+Call}!Pay\+Off@{Pay\+Off}}\index{Pay\+Off@{Pay\+Off}!digital\+Call@{digital\+Call}}}\hypertarget{classPayOff_a57262243a4bf56ddf5b78d7f563440c8a2bb397a3598d77cef3de8770a380322c}{}\label{classPayOff_a57262243a4bf56ddf5b78d7f563440c8a2bb397a3598d77cef3de8770a380322c} 
+digital\+Call&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{double\+Digital@{double\+Digital}!Pay\+Off@{Pay\+Off}}\index{Pay\+Off@{Pay\+Off}!double\+Digital@{double\+Digital}}}\hypertarget{classPayOff_a57262243a4bf56ddf5b78d7f563440c8a26293140c6f69e03ca018019fba51af1}{}\label{classPayOff_a57262243a4bf56ddf5b78d7f563440c8a26293140c6f69e03ca018019fba51af1} 
+double\+Digital&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPayOff_a5c8db63f8e94e514b7e0963beb8a852a}{}\label{classPayOff_a5c8db63f8e94e514b7e0963beb8a852a} 
+\index{Pay\+Off@{Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\index{Pay\+Off@{Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{Pay\+Off()}{PayOff()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Pay\+Off\+::\+Pay\+Off (\begin{DoxyParamCaption}\item[{double}]{Strike\+\_\+,  }\item[{\hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8}{Option\+Type}}]{The\+Options\+Type\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classPayOff_a185b279eeea3e2d52f5acb225eaf8d64}{}\label{classPayOff_a185b279eeea3e2d52f5acb225eaf8d64} 
+\index{Pay\+Off@{Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\index{Pay\+Off@{Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{Pay\+Off()}{PayOff()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Pay\+Off\+::\+Pay\+Off (\begin{DoxyParamCaption}\item[{double}]{Strike\+\_\+,  }\item[{double}]{Strike1\+\_\+,  }\item[{\hyperlink{classPayOff_a57262243a4bf56ddf5b78d7f563440c8}{Option\+Type}}]{The\+Options\+Type\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classPayOff_ade8032093538388f53c706bda715f39f}{}\label{classPayOff_ade8032093538388f53c706bda715f39f} 
+\index{Pay\+Off@{Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\index{Pay\+Off@{Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{Pay\+Off()}{PayOff()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Pay\+Off\+::\+Pay\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{classPayOff_ad7aa3a49e4a7e9cab7dc283d69a3f1ff}{}\label{classPayOff_ad7aa3a49e4a7e9cab7dc283d69a3f1ff} 
+\index{Pay\+Off@{Pay\+Off}!````~Pay\+Off@{$\sim$\+Pay\+Off}}
+\index{````~Pay\+Off@{$\sim$\+Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{$\sim$\+Pay\+Off()}{~PayOff()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual Pay\+Off\+::$\sim$\+Pay\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\hypertarget{classPayOff_a811923da1ef0f1c6a49076791c453886}{}\label{classPayOff_a811923da1ef0f1c6a49076791c453886} 
+\index{Pay\+Off@{Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\index{Pay\+Off@{Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{Pay\+Off()}{PayOff()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Pay\+Off\+::\+Pay\+Off (\begin{DoxyParamCaption}\item[{double}]{Strike\+\_\+ = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classPayOff_ad7aa3a49e4a7e9cab7dc283d69a3f1ff}{}\label{classPayOff_ad7aa3a49e4a7e9cab7dc283d69a3f1ff} 
+\index{Pay\+Off@{Pay\+Off}!````~Pay\+Off@{$\sim$\+Pay\+Off}}
+\index{````~Pay\+Off@{$\sim$\+Pay\+Off}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{$\sim$\+Pay\+Off()}{~PayOff()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual Pay\+Off\+::$\sim$\+Pay\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPayOff_ad8194d5b82247ae89c25c515f0ba806a}{}\label{classPayOff_ad8194d5b82247ae89c25c515f0ba806a} 
+\index{Pay\+Off@{Pay\+Off}!clone@{clone}}
+\index{clone@{clone}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classPayOff}{Pay\+Off}$\ast$ Pay\+Off\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classPayOffUpOutPut_ac754f661e8dbe25f447baddc8b2d302f}{Pay\+Off\+Up\+Out\+Put}, \hyperlink{classPayOffUpInPut_ab56f32e37426f6662448aeaef9c8b4eb}{Pay\+Off\+Up\+In\+Put}, \hyperlink{classPayOffDownOutCall_a3c52ed87e5ca563883a37f55ca99ecd1}{Pay\+Off\+Down\+Out\+Call}, \hyperlink{classSpreadOption_a872a849b2671bf96ceda5adb7a938ce7}{Spread\+Option}, \hyperlink{classPayOffDownInCall_a2e8bda4a06ef878d1344a8752e04b7df}{Pay\+Off\+Down\+In\+Call}, \hyperlink{classFloorletIA_a8eb08ed3039bb2ef7f5881bcbc8cb85b}{Floorlet\+IA}, \hyperlink{classExchangeOption_ac780838b87eff5b33af728e5e38c1475}{Exchange\+Option}, \hyperlink{classPayOffKIPut_ae6a387c91133eedbe19600bb7b455a48}{Pay\+Off\+K\+I\+Put}, \hyperlink{classPayOffKICall_a88d8fbd976608d0a4da969e638a261b4}{Pay\+Off\+K\+I\+Call}, \hyperlink{classCapletIA_aebfbd05a398b551b43ac3118732934ba}{Caplet\+IA}, \hyperlink{classQuantoPut_af6ffdcc7c2ebb6f38f306192aa471960}{Quanto\+Put}, \hyperlink{classPayOffPut_a95fe4c1716cf0f078967acdb31cf87e4}{Pay\+Off\+Put}, \hyperlink{classPayOffKOPut_a5d1bfbac10d0d7d061d8c629042d2a58}{Pay\+Off\+K\+O\+Put}, \hyperlink{classFRAIA_aa11775b4c17e62bed9c6f4114b2a49a7}{F\+R\+A\+IA}, \hyperlink{classPayOffDigitalPut_a5c3b4ad40c3cc3c6a1c9711963fa5126}{Pay\+Off\+Digital\+Put}, \hyperlink{classQuantoCall_a93f79639f06467ab145108dc15bba830}{Quanto\+Call}, \hyperlink{classPayOffKOCall_ae54e9d15a598a2ec7ef2b68712a70009}{Pay\+Off\+K\+O\+Call}, \hyperlink{classPayOffCall_a3eb9cf318975edf458873f812b7e9138}{Pay\+Off\+Call}, \hyperlink{classPayOffDoubleDigital_a27dab8d62e8262d190853b0a4eea3bf3}{Pay\+Off\+Double\+Digital}, \hyperlink{classCaplet_aeadd950733f02c066c474badceb277ef}{Caplet}, \hyperlink{classPayOffStraddle_a7909db1ef33e12454c02d289d39f667a}{Pay\+Off\+Straddle}, \hyperlink{classPayOffDigitalCall_a442824c18722ef620a6d4ac884cd39be}{Pay\+Off\+Digital\+Call}, \hyperlink{classPayOffForward_aca37e8270f086f8e55ff9fd1038d64b4}{Pay\+Off\+Forward}, and \hyperlink{classFRA_a0f2a7b7852bbd747b5673bd9016f5cf0}{F\+RA}.
+
+\hypertarget{classPayOff_aa7a2451e286496c8d5a153000a818d34}{}\label{classPayOff_aa7a2451e286496c8d5a153000a818d34} 
+\index{Pay\+Off@{Pay\+Off}!Get\+Strike@{Get\+Strike}}
+\index{Get\+Strike@{Get\+Strike}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{Get\+Strike()}{GetStrike()}}
+{\footnotesize\ttfamily virtual double Pay\+Off\+::\+Get\+Strike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classPayOffDigitalPut_acd323410d45f6c99a532116f8fbfbc02}{Pay\+Off\+Digital\+Put}, \hyperlink{classPayOffDoubleDigital_a58e92fda1c78721ff68494aafd42616e}{Pay\+Off\+Double\+Digital}, \hyperlink{classPayOffDigitalCall_ad8953d367e291925ab5d963f57ed35bc}{Pay\+Off\+Digital\+Call}, and \hyperlink{classPayOffForward_aa485cf251b7121a71396d3f107b35ff9}{Pay\+Off\+Forward}.
+
+\hypertarget{classPayOff_a5ae17d82c233ef5568c8fb0539703000}{}\label{classPayOff_a5ae17d82c233ef5568c8fb0539703000} 
+\index{Pay\+Off@{Pay\+Off}!operator()@{operator()}}
+\index{operator()@{operator()}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual double Pay\+Off\+::operator() (\begin{DoxyParamCaption}\item[{double}]{Spot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classPayOffUpOutPut_a5ed17bb2111a9066eb6d29526a28a113}{Pay\+Off\+Up\+Out\+Put}, \hyperlink{classPayOffUpInPut_ad5173b4e12554d96780b4c6d10818daf}{Pay\+Off\+Up\+In\+Put}, \hyperlink{classPayOffDownOutCall_abbc1f3cb88555c9b01acac09b38832b1}{Pay\+Off\+Down\+Out\+Call}, \hyperlink{classPayOffDownInCall_a606871776edae20190b3b0b4ce822dcc}{Pay\+Off\+Down\+In\+Call}, \hyperlink{classFloorletIA_aab8c119bc89c1a1000b5185384cf56bc}{Floorlet\+IA}, \hyperlink{classPayOffKIPut_a50dc6bc5327116097c208ae470567b86}{Pay\+Off\+K\+I\+Put}, \hyperlink{classPayOffKICall_a4acdec35a77873ea44f529fad9a348d5}{Pay\+Off\+K\+I\+Call}, \hyperlink{classCapletIA_a8dca8c52160a378ac2331ce95c688313}{Caplet\+IA}, \hyperlink{classPayOffPut_a6dc8b470aaa1544814cfdf6bbed273df}{Pay\+Off\+Put}, \hyperlink{classPayOffPut_a6dc8b470aaa1544814cfdf6bbed273df}{Pay\+Off\+Put}, \hyperlink{classPayOffKOPut_af773c102b127b0d58091d37a1d8737a0}{Pay\+Off\+K\+O\+Put}, \hyperlink{classFRAIA_a4b1c0992470500cfab0ce3bbecbc9176}{F\+R\+A\+IA}, \hyperlink{classPayOffDigitalPut_a8b70e39ce33fdb23e78b593d08b623ce}{Pay\+Off\+Digital\+Put}, \hyperlink{classPayOffCall_af6472a1bc2034da730d2375bf9750142}{Pay\+Off\+Call}, \hyperlink{classPayOffKOCall_ae147980a5239924341f9f19ab8ac0ee1}{Pay\+Off\+K\+O\+Call}, \hyperlink{classPayOffCall_af6472a1bc2034da730d2375bf9750142}{Pay\+Off\+Call}, \hyperlink{classPayOffDoubleDigital_a158d8976f26fbb2ae1508d5e945e32d9}{Pay\+Off\+Double\+Digital}, \hyperlink{classCaplet_a6b75d621f3c7631b50b7486306466daa}{Caplet}, \hyperlink{classPayOffDoubleDigital_a158d8976f26fbb2ae1508d5e945e32d9}{Pay\+Off\+Double\+Digital}, \hyperlink{classPayOffStraddle_a28143540c0f8f858d8c00aaea188f4c1}{Pay\+Off\+Straddle}, \hyperlink{classPayOffDigitalCall_a719ac152051a88a7a6a34d2431bc15b0}{Pay\+Off\+Digital\+Call}, \hyperlink{classPayOffForward_a4b2921e71a9cb7eba5175c8f331061f8}{Pay\+Off\+Forward}, \hyperlink{classPayOffMulti_a1fc1c64c8db3c7b17dd1e51062874775}{Pay\+Off\+Multi}, and \hyperlink{classFRA_a48544283b697cd1d25c476acb6ed62df}{F\+RA}.
+
+\hypertarget{classPayOff_a5ae17d82c233ef5568c8fb0539703000}{}\label{classPayOff_a5ae17d82c233ef5568c8fb0539703000} 
+\index{Pay\+Off@{Pay\+Off}!operator()@{operator()}}
+\index{operator()@{operator()}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual double Pay\+Off\+::operator() (\begin{DoxyParamCaption}\item[{double}]{Spot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classPayOffUpOutPut_a5ed17bb2111a9066eb6d29526a28a113}{Pay\+Off\+Up\+Out\+Put}, \hyperlink{classPayOffUpInPut_ad5173b4e12554d96780b4c6d10818daf}{Pay\+Off\+Up\+In\+Put}, \hyperlink{classPayOffDownOutCall_abbc1f3cb88555c9b01acac09b38832b1}{Pay\+Off\+Down\+Out\+Call}, \hyperlink{classPayOffDownInCall_a606871776edae20190b3b0b4ce822dcc}{Pay\+Off\+Down\+In\+Call}, \hyperlink{classFloorletIA_aab8c119bc89c1a1000b5185384cf56bc}{Floorlet\+IA}, \hyperlink{classPayOffKIPut_a50dc6bc5327116097c208ae470567b86}{Pay\+Off\+K\+I\+Put}, \hyperlink{classPayOffKICall_a4acdec35a77873ea44f529fad9a348d5}{Pay\+Off\+K\+I\+Call}, \hyperlink{classCapletIA_a8dca8c52160a378ac2331ce95c688313}{Caplet\+IA}, \hyperlink{classPayOffPut_a6dc8b470aaa1544814cfdf6bbed273df}{Pay\+Off\+Put}, \hyperlink{classPayOffPut_a6dc8b470aaa1544814cfdf6bbed273df}{Pay\+Off\+Put}, \hyperlink{classPayOffKOPut_af773c102b127b0d58091d37a1d8737a0}{Pay\+Off\+K\+O\+Put}, \hyperlink{classFRAIA_a4b1c0992470500cfab0ce3bbecbc9176}{F\+R\+A\+IA}, \hyperlink{classPayOffDigitalPut_a8b70e39ce33fdb23e78b593d08b623ce}{Pay\+Off\+Digital\+Put}, \hyperlink{classPayOffCall_af6472a1bc2034da730d2375bf9750142}{Pay\+Off\+Call}, \hyperlink{classPayOffKOCall_ae147980a5239924341f9f19ab8ac0ee1}{Pay\+Off\+K\+O\+Call}, \hyperlink{classPayOffCall_af6472a1bc2034da730d2375bf9750142}{Pay\+Off\+Call}, \hyperlink{classPayOffDoubleDigital_a158d8976f26fbb2ae1508d5e945e32d9}{Pay\+Off\+Double\+Digital}, \hyperlink{classCaplet_a6b75d621f3c7631b50b7486306466daa}{Caplet}, \hyperlink{classPayOffDoubleDigital_a158d8976f26fbb2ae1508d5e945e32d9}{Pay\+Off\+Double\+Digital}, \hyperlink{classPayOffStraddle_a28143540c0f8f858d8c00aaea188f4c1}{Pay\+Off\+Straddle}, \hyperlink{classPayOffDigitalCall_a719ac152051a88a7a6a34d2431bc15b0}{Pay\+Off\+Digital\+Call}, \hyperlink{classPayOffForward_a4b2921e71a9cb7eba5175c8f331061f8}{Pay\+Off\+Forward}, \hyperlink{classPayOffMulti_a1fc1c64c8db3c7b17dd1e51062874775}{Pay\+Off\+Multi}, and \hyperlink{classFRA_a48544283b697cd1d25c476acb6ed62df}{F\+RA}.
+
+\hypertarget{classPayOff_a0f08e9967d3ae5d9b41005451cefd76d}{}\label{classPayOff_a0f08e9967d3ae5d9b41005451cefd76d} 
+\index{Pay\+Off@{Pay\+Off}!operator()@{operator()}}
+\index{operator()@{operator()}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double Pay\+Off\+::operator() (\begin{DoxyParamCaption}\item[{double}]{Spot }\end{DoxyParamCaption}) const}
+
+\hypertarget{classPayOff_a3fdefed95df90a057acfd697f5703e04}{}\label{classPayOff_a3fdefed95df90a057acfd697f5703e04} 
+\index{Pay\+Off@{Pay\+Off}!Set\+Strike@{Set\+Strike}}
+\index{Set\+Strike@{Set\+Strike}!Pay\+Off@{Pay\+Off}}
+\subsubsection{\texorpdfstring{Set\+Strike()}{SetStrike()}}
+{\footnotesize\ttfamily virtual void Pay\+Off\+::\+Set\+Strike (\begin{DoxyParamCaption}\item[{double}]{Strike\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classPayOffDigitalPut_aaf343c40b07b7405d192416ce23b00a8}{Pay\+Off\+Digital\+Put}, \hyperlink{classPayOffDoubleDigital_a2c0474c7433e29ca53a156086d1ac47b}{Pay\+Off\+Double\+Digital}, \hyperlink{classPayOffDigitalCall_a9f491f0704d09a233af8bb49c4eaed9e}{Pay\+Off\+Digital\+Call}, and \hyperlink{classPayOffForward_a3c0f3d6400d4d8fb0339edfca3d5b2bb}{Pay\+Off\+Forward}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PayOff1_8h}{Pay\+Off1.\+h}\item 
+\hyperlink{PayOff3_8h}{Pay\+Off3.\+h}\item 
+\hyperlink{PayOff2_8h}{Pay\+Off2.\+h}\end{DoxyCompactItemize}

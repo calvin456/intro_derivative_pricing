@@ -1,0 +1,105 @@
+\hypertarget{interest__derivatives__analytical_8h}{}\section{interest\+\_\+derivatives\+\_\+analytical.\+h File Reference}
+\label{interest__derivatives__analytical_8h}\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for interest\+\_\+derivatives\+\_\+analytical.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{interest__derivatives__analytical_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_a4d6887574514d3cf97076a388140a835}{p\+\_\+t} (double rate, double tenor)
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_a54e0baa69f43c420dcdd8a3b13c29c14}{annuity\+\_\+swap} (const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&zcps, size\+\_\+t start, size\+\_\+t end)
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_a17a6a24930bba570261cf8c343219a32}{swap\+\_\+rate} (const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&zcps, double tenor)
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_aaca73f7520266d2057b64282ced02eed}{swap\+\_\+rate\+\_\+co\+\_\+initial} (const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&zcps, double tenor)
+\item 
+void \hyperlink{interest__derivatives__analytical_8h_a4ad2f19ef789a64fd0ec51af06d0a1fb}{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+initial} (const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&swap\+\_\+rates, std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&dsct\+\_\+factors)
+\item 
+void \hyperlink{interest__derivatives__analytical_8h_aab04d0a4293c0152e5cf7497bacc12d9}{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+terminal} (const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&swap\+\_\+rates, std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&dsct\+\_\+factors)
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_a33536ff92b4b28df41a4729111bd44cd}{black\+\_\+formula\+\_\+caplet} (double annuity, double fwd\+\_\+libor, double t1, double t2, double strike, double vol)
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_a8d20cbc849b897da1b651112845d3c62}{black\+\_\+formula\+\_\+floorlet} (double annuity, double fwd\+\_\+libor, double t1, double t2, double strike, double vol)
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_a693d765a30ea33022d870ccaae6490a2}{black\+\_\+formula\+\_\+payer\+\_\+swaption} (double annuity, double \hyperlink{interest__derivatives__analytical_8h_a17a6a24930bba570261cf8c343219a32}{swap\+\_\+rate}, double strike, double vol, double expiry)
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_ab0dd97ad910025c5e386289e89b1d91c}{black\+\_\+formula\+\_\+rec\+\_\+swaption} (double annuity, double \hyperlink{interest__derivatives__analytical_8h_a17a6a24930bba570261cf8c343219a32}{swap\+\_\+rate}, double strike, double vol, double expiry)
+\item 
+double \hyperlink{interest__derivatives__analytical_8h_aebb85e0db40a3b16b6b923937ae7d167}{black\+\_\+swaption\+\_\+vega} (double annuity, double \hyperlink{interest__derivatives__analytical_8h_a17a6a24930bba570261cf8c343219a32}{swap\+\_\+rate}, double strike, double vol, double expiry)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{interest__derivatives__analytical_8h_a54e0baa69f43c420dcdd8a3b13c29c14}{}\label{interest__derivatives__analytical_8h_a54e0baa69f43c420dcdd8a3b13c29c14} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!annuity\+\_\+swap@{annuity\+\_\+swap}}
+\index{annuity\+\_\+swap@{annuity\+\_\+swap}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{annuity\+\_\+swap()}{annuity\_swap()}}
+{\footnotesize\ttfamily double annuity\+\_\+swap (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{zcps,  }\item[{size\+\_\+t}]{start,  }\item[{size\+\_\+t}]{end }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_a33536ff92b4b28df41a4729111bd44cd}{}\label{interest__derivatives__analytical_8h_a33536ff92b4b28df41a4729111bd44cd} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!black\+\_\+formula\+\_\+caplet@{black\+\_\+formula\+\_\+caplet}}
+\index{black\+\_\+formula\+\_\+caplet@{black\+\_\+formula\+\_\+caplet}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{black\+\_\+formula\+\_\+caplet()}{black\_formula\_caplet()}}
+{\footnotesize\ttfamily double black\+\_\+formula\+\_\+caplet (\begin{DoxyParamCaption}\item[{double}]{annuity,  }\item[{double}]{fwd\+\_\+libor,  }\item[{double}]{t1,  }\item[{double}]{t2,  }\item[{double}]{strike,  }\item[{double}]{vol }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_a8d20cbc849b897da1b651112845d3c62}{}\label{interest__derivatives__analytical_8h_a8d20cbc849b897da1b651112845d3c62} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!black\+\_\+formula\+\_\+floorlet@{black\+\_\+formula\+\_\+floorlet}}
+\index{black\+\_\+formula\+\_\+floorlet@{black\+\_\+formula\+\_\+floorlet}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{black\+\_\+formula\+\_\+floorlet()}{black\_formula\_floorlet()}}
+{\footnotesize\ttfamily double black\+\_\+formula\+\_\+floorlet (\begin{DoxyParamCaption}\item[{double}]{annuity,  }\item[{double}]{fwd\+\_\+libor,  }\item[{double}]{t1,  }\item[{double}]{t2,  }\item[{double}]{strike,  }\item[{double}]{vol }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_a693d765a30ea33022d870ccaae6490a2}{}\label{interest__derivatives__analytical_8h_a693d765a30ea33022d870ccaae6490a2} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!black\+\_\+formula\+\_\+payer\+\_\+swaption@{black\+\_\+formula\+\_\+payer\+\_\+swaption}}
+\index{black\+\_\+formula\+\_\+payer\+\_\+swaption@{black\+\_\+formula\+\_\+payer\+\_\+swaption}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{black\+\_\+formula\+\_\+payer\+\_\+swaption()}{black\_formula\_payer\_swaption()}}
+{\footnotesize\ttfamily double black\+\_\+formula\+\_\+payer\+\_\+swaption (\begin{DoxyParamCaption}\item[{double}]{annuity,  }\item[{double}]{swap\+\_\+rate,  }\item[{double}]{strike,  }\item[{double}]{vol,  }\item[{double}]{expiry }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_ab0dd97ad910025c5e386289e89b1d91c}{}\label{interest__derivatives__analytical_8h_ab0dd97ad910025c5e386289e89b1d91c} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!black\+\_\+formula\+\_\+rec\+\_\+swaption@{black\+\_\+formula\+\_\+rec\+\_\+swaption}}
+\index{black\+\_\+formula\+\_\+rec\+\_\+swaption@{black\+\_\+formula\+\_\+rec\+\_\+swaption}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{black\+\_\+formula\+\_\+rec\+\_\+swaption()}{black\_formula\_rec\_swaption()}}
+{\footnotesize\ttfamily double black\+\_\+formula\+\_\+rec\+\_\+swaption (\begin{DoxyParamCaption}\item[{double}]{annuity,  }\item[{double}]{swap\+\_\+rate,  }\item[{double}]{strike,  }\item[{double}]{vol,  }\item[{double}]{expiry }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_aebb85e0db40a3b16b6b923937ae7d167}{}\label{interest__derivatives__analytical_8h_aebb85e0db40a3b16b6b923937ae7d167} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!black\+\_\+swaption\+\_\+vega@{black\+\_\+swaption\+\_\+vega}}
+\index{black\+\_\+swaption\+\_\+vega@{black\+\_\+swaption\+\_\+vega}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{black\+\_\+swaption\+\_\+vega()}{black\_swaption\_vega()}}
+{\footnotesize\ttfamily double black\+\_\+swaption\+\_\+vega (\begin{DoxyParamCaption}\item[{double}]{annuity,  }\item[{double}]{swap\+\_\+rate,  }\item[{double}]{strike,  }\item[{double}]{vol,  }\item[{double}]{expiry }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_a4ad2f19ef789a64fd0ec51af06d0a1fb}{}\label{interest__derivatives__analytical_8h_a4ad2f19ef789a64fd0ec51af06d0a1fb} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+initial@{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+initial}}
+\index{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+initial@{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+initial}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+initial()}{discount\_from\_swap\_rate\_co\_initial()}}
+{\footnotesize\ttfamily void discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+initial (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{swap\+\_\+rates,  }\item[{std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{dsct\+\_\+factors }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_aab04d0a4293c0152e5cf7497bacc12d9}{}\label{interest__derivatives__analytical_8h_aab04d0a4293c0152e5cf7497bacc12d9} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+terminal@{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+terminal}}
+\index{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+terminal@{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+terminal}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+terminal()}{discount\_from\_swap\_rate\_co\_terminal()}}
+{\footnotesize\ttfamily void discount\+\_\+from\+\_\+swap\+\_\+rate\+\_\+co\+\_\+terminal (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{swap\+\_\+rates,  }\item[{std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{dsct\+\_\+factors }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_a4d6887574514d3cf97076a388140a835}{}\label{interest__derivatives__analytical_8h_a4d6887574514d3cf97076a388140a835} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!p\+\_\+t@{p\+\_\+t}}
+\index{p\+\_\+t@{p\+\_\+t}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{p\+\_\+t()}{p\_t()}}
+{\footnotesize\ttfamily double p\+\_\+t (\begin{DoxyParamCaption}\item[{double}]{rate,  }\item[{double}]{tenor }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_a17a6a24930bba570261cf8c343219a32}{}\label{interest__derivatives__analytical_8h_a17a6a24930bba570261cf8c343219a32} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!swap\+\_\+rate@{swap\+\_\+rate}}
+\index{swap\+\_\+rate@{swap\+\_\+rate}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{swap\+\_\+rate()}{swap\_rate()}}
+{\footnotesize\ttfamily double swap\+\_\+rate (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{zcps,  }\item[{double}]{tenor }\end{DoxyParamCaption})}
+
+\hypertarget{interest__derivatives__analytical_8h_aaca73f7520266d2057b64282ced02eed}{}\label{interest__derivatives__analytical_8h_aaca73f7520266d2057b64282ced02eed} 
+\index{interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}!swap\+\_\+rate\+\_\+co\+\_\+initial@{swap\+\_\+rate\+\_\+co\+\_\+initial}}
+\index{swap\+\_\+rate\+\_\+co\+\_\+initial@{swap\+\_\+rate\+\_\+co\+\_\+initial}!interest\+\_\+derivatives\+\_\+analytical.\+h@{interest\+\_\+derivatives\+\_\+analytical.\+h}}
+\subsubsection{\texorpdfstring{swap\+\_\+rate\+\_\+co\+\_\+initial()}{swap\_rate\_co\_initial()}}
+{\footnotesize\ttfamily double swap\+\_\+rate\+\_\+co\+\_\+initial (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ double $>$$>$ \&}]{zcps,  }\item[{double}]{tenor }\end{DoxyParamCaption})}
+

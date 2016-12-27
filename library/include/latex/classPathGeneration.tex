@@ -1,0 +1,154 @@
+\hypertarget{classPathGeneration}{}\section{Path\+Generation Class Reference}
+\label{classPathGeneration}\index{Path\+Generation@{Path\+Generation}}
+
+
+{\ttfamily \#include $<$path\+\_\+generation.\+h$>$}
+
+
+
+Inheritance diagram for Path\+Generation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPathGeneration__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Path\+Generation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classPathGeneration__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPathGeneration_ac8b6d80fa6fb84c11e66f1546963ba16}{Path\+Generation} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$ The\+Generator\+\_\+, double Spot0\+\_\+, double T\+\_\+, unsigned long steps\+\_\+=1)
+\item 
+virtual \hyperlink{classPathGeneration_a2677068f680c321802258f97403c008f}{$\sim$\+Path\+Generation} ()
+\item 
+virtual double \hyperlink{classPathGeneration_a9a64a37f4dd9b2b3ef84f3cb66aed843}{Get\+One\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+) const =0
+\item 
+virtual \hyperlink{classMJArray}{M\+J\+Array} \hyperlink{classPathGeneration_ace7520fed7b6a7711f4d3684c974cb76}{Get\+Whole\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)=0
+\item 
+virtual double \hyperlink{classPathGeneration_a53f386b51d74fb8e100e18cf904ef801}{Get\+Spot} () const
+\item 
+virtual void \hyperlink{classPathGeneration_a5e3349bb16f3d5eb0a3d059572bfe3c8}{Set\+Spot} (double Spot0\+\_\+)
+\item 
+virtual unsigned long \hyperlink{classPathGeneration_a7a7ad14af906f2282663ac78d7b21706}{Get\+Steps} () const
+\item 
+virtual void \hyperlink{classPathGeneration_afc14af2b771829ca2581463e4e4c1213}{Set\+Steps} (unsigned long steps\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$ \hyperlink{classPathGeneration_abc5192a7165581ac6943ad4672a0cbd8}{The\+Generator}
+\item 
+double \hyperlink{classPathGeneration_ae476651fa3c08266b79c5e20726c0c67}{Spot0}
+\item 
+double \hyperlink{classPathGeneration_a5c62e982138106c6846600a2f484d6d3}{T}
+\item 
+unsigned long \hyperlink{classPathGeneration_acd3ff6bbb1c24794ccc0f39277c671a9}{steps}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPathGeneration_ac8b6d80fa6fb84c11e66f1546963ba16}{}\label{classPathGeneration_ac8b6d80fa6fb84c11e66f1546963ba16} 
+\index{Path\+Generation@{Path\+Generation}!Path\+Generation@{Path\+Generation}}
+\index{Path\+Generation@{Path\+Generation}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{Path\+Generation()}{PathGeneration()}}
+{\footnotesize\ttfamily Path\+Generation\+::\+Path\+Generation (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$}]{The\+Generator\+\_\+,  }\item[{double}]{Spot0\+\_\+,  }\item[{double}]{T\+\_\+,  }\item[{unsigned long}]{steps\+\_\+ = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\hypertarget{classPathGeneration_a2677068f680c321802258f97403c008f}{}\label{classPathGeneration_a2677068f680c321802258f97403c008f} 
+\index{Path\+Generation@{Path\+Generation}!````~Path\+Generation@{$\sim$\+Path\+Generation}}
+\index{````~Path\+Generation@{$\sim$\+Path\+Generation}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{$\sim$\+Path\+Generation()}{~PathGeneration()}}
+{\footnotesize\ttfamily virtual Path\+Generation\+::$\sim$\+Path\+Generation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPathGeneration_a9a64a37f4dd9b2b3ef84f3cb66aed843}{}\label{classPathGeneration_a9a64a37f4dd9b2b3ef84f3cb66aed843} 
+\index{Path\+Generation@{Path\+Generation}!Get\+One\+Path@{Get\+One\+Path}}
+\index{Get\+One\+Path@{Get\+One\+Path}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{Get\+One\+Path()}{GetOnePath()}}
+{\footnotesize\ttfamily virtual double Path\+Generation\+::\+Get\+One\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classPathEulerStepping_a7e38aa13e5807f3010892f7a4772fac6}{Path\+Euler\+Stepping}, \hyperlink{classPathGenerationGBM__SV_a9db1428d6599489d22b2fa843c56fc31}{Path\+Generation\+G\+B\+M\+\_\+\+SV}, \hyperlink{classPathGenerationHeston_ab523f2de8838e845405482b714656015}{Path\+Generation\+Heston}, \hyperlink{classPathGenerationJDP_ad30abaeb2b4793a5fde77e9ce77e8691}{Path\+Generation\+J\+DP}, \hyperlink{classPathGenerationMulti_aca9ffcbef7f0ae7e00177104b97abbf1}{Path\+Generation\+Multi}, \hyperlink{classPathGenerationVG_ae5b96a684d59be9b06aa3b2eb8ac5b5f}{Path\+Generation\+VG}, and \hyperlink{classPathGenerationGBM_ac8bbe44a4ec2fd4a2249086d912dff33}{Path\+Generation\+G\+BM}.
+
+\hypertarget{classPathGeneration_a53f386b51d74fb8e100e18cf904ef801}{}\label{classPathGeneration_a53f386b51d74fb8e100e18cf904ef801} 
+\index{Path\+Generation@{Path\+Generation}!Get\+Spot@{Get\+Spot}}
+\index{Get\+Spot@{Get\+Spot}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{Get\+Spot()}{GetSpot()}}
+{\footnotesize\ttfamily virtual double Path\+Generation\+::\+Get\+Spot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\hypertarget{classPathGeneration_a7a7ad14af906f2282663ac78d7b21706}{}\label{classPathGeneration_a7a7ad14af906f2282663ac78d7b21706} 
+\index{Path\+Generation@{Path\+Generation}!Get\+Steps@{Get\+Steps}}
+\index{Get\+Steps@{Get\+Steps}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{Get\+Steps()}{GetSteps()}}
+{\footnotesize\ttfamily virtual unsigned long Path\+Generation\+::\+Get\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\hypertarget{classPathGeneration_ace7520fed7b6a7711f4d3684c974cb76}{}\label{classPathGeneration_ace7520fed7b6a7711f4d3684c974cb76} 
+\index{Path\+Generation@{Path\+Generation}!Get\+Whole\+Path@{Get\+Whole\+Path}}
+\index{Get\+Whole\+Path@{Get\+Whole\+Path}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{Get\+Whole\+Path()}{GetWholePath()}}
+{\footnotesize\ttfamily virtual \hyperlink{classMJArray}{M\+J\+Array} Path\+Generation\+::\+Get\+Whole\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classPathEulerStepping_afb4f8e7ce3c81671111486c0fa92a9d2}{Path\+Euler\+Stepping}, \hyperlink{classPathGenerationGBM__SV_abb36f42991ec304d6efeaf772b8367c1}{Path\+Generation\+G\+B\+M\+\_\+\+SV}, \hyperlink{classPathGenerationHeston_a2916170a243c003fb8362c13def63483}{Path\+Generation\+Heston}, \hyperlink{classPathGenerationJDP_a6bd084a32f7ad0a65039f1e77c1d428e}{Path\+Generation\+J\+DP}, \hyperlink{classPathGenerationMulti_ab47e41a3cc266a81ac1770868b5ac7ca}{Path\+Generation\+Multi}, \hyperlink{classPathGenerationVG_a298f0f8b2b11e912558044a8a2b5d8e9}{Path\+Generation\+VG}, and \hyperlink{classPathGenerationGBM_abcf6790de9e9b4deef334653409a5c3f}{Path\+Generation\+G\+BM}.
+
+\hypertarget{classPathGeneration_a5e3349bb16f3d5eb0a3d059572bfe3c8}{}\label{classPathGeneration_a5e3349bb16f3d5eb0a3d059572bfe3c8} 
+\index{Path\+Generation@{Path\+Generation}!Set\+Spot@{Set\+Spot}}
+\index{Set\+Spot@{Set\+Spot}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{Set\+Spot()}{SetSpot()}}
+{\footnotesize\ttfamily virtual void Path\+Generation\+::\+Set\+Spot (\begin{DoxyParamCaption}\item[{double}]{Spot0\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\hypertarget{classPathGeneration_afc14af2b771829ca2581463e4e4c1213}{}\label{classPathGeneration_afc14af2b771829ca2581463e4e4c1213} 
+\index{Path\+Generation@{Path\+Generation}!Set\+Steps@{Set\+Steps}}
+\index{Set\+Steps@{Set\+Steps}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{Set\+Steps()}{SetSteps()}}
+{\footnotesize\ttfamily virtual void Path\+Generation\+::\+Set\+Steps (\begin{DoxyParamCaption}\item[{unsigned long}]{steps\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classPathGenerationMulti_ac650e3d724dc4cf3443305b8d1f48a4d}{Path\+Generation\+Multi}, and \hyperlink{classPathGenerationGBM_ad6e5900646658170c9491b2897c3a4bf}{Path\+Generation\+G\+BM}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPathGeneration_ae476651fa3c08266b79c5e20726c0c67}{}\label{classPathGeneration_ae476651fa3c08266b79c5e20726c0c67} 
+\index{Path\+Generation@{Path\+Generation}!Spot0@{Spot0}}
+\index{Spot0@{Spot0}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{Spot0}{Spot0}}
+{\footnotesize\ttfamily double Path\+Generation\+::\+Spot0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classPathGeneration_acd3ff6bbb1c24794ccc0f39277c671a9}{}\label{classPathGeneration_acd3ff6bbb1c24794ccc0f39277c671a9} 
+\index{Path\+Generation@{Path\+Generation}!steps@{steps}}
+\index{steps@{steps}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{steps}{steps}}
+{\footnotesize\ttfamily unsigned long Path\+Generation\+::steps\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classPathGeneration_a5c62e982138106c6846600a2f484d6d3}{}\label{classPathGeneration_a5c62e982138106c6846600a2f484d6d3} 
+\index{Path\+Generation@{Path\+Generation}!T@{T}}
+\index{T@{T}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily double Path\+Generation\+::T\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classPathGeneration_abc5192a7165581ac6943ad4672a0cbd8}{}\label{classPathGeneration_abc5192a7165581ac6943ad4672a0cbd8} 
+\index{Path\+Generation@{Path\+Generation}!The\+Generator@{The\+Generator}}
+\index{The\+Generator@{The\+Generator}!Path\+Generation@{Path\+Generation}}
+\subsubsection{\texorpdfstring{The\+Generator}{TheGenerator}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classRandomBase}{Random\+Base}$>$ Path\+Generation\+::\+The\+Generator\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{path__generation_8h}{path\+\_\+generation.\+h}\end{DoxyCompactItemize}

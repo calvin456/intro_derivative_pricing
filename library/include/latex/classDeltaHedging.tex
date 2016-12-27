@@ -1,0 +1,85 @@
+\hypertarget{classDeltaHedging}{}\section{Delta\+Hedging$<$ U $>$ Class Template Reference}
+\label{classDeltaHedging}\index{Delta\+Hedging$<$ U $>$@{Delta\+Hedging$<$ U $>$}}
+
+
+{\ttfamily \#include $<$hedging\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for Delta\+Hedging$<$ U $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classDeltaHedging__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Delta\+Hedging$<$ U $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classDeltaHedging__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDeltaHedging_ae1e5687d0d2c9ba019e58cd2433fe81d}{Delta\+Hedging} (double \hyperlink{classHedgingStrategy_ac96528e9f4e5a0d1e5aadcc2ebdcab55}{Option\+Value0}, double \hyperlink{classHedgingStrategy_a313da7bc1911dba2a166d2c7bed5f1d7}{r}, shared\+\_\+ptr$<$ U $>$ \hyperlink{classHedgingStrategy_a65699a183423af9d947bb939ae8e907d}{The\+Option}, \hyperlink{classPathGenerationGBM}{Path\+Generation\+G\+BM} $\ast$The\+Path\+Generation, double \hyperlink{classHedgingStrategy_aedb4069f0709b49482a72b9d9c906a5e}{T})
+\item 
+virtual \hyperlink{classDeltaHedging_a019b8bef20aaec88a6e1e7bacb8c0015}{$\sim$\+Delta\+Hedging} ()
+\item 
+virtual double \hyperlink{classDeltaHedging_a670264651c7c2a3ce404bca291d2194f}{Do\+One\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)
+\item 
+virtual unsigned long \hyperlink{classDeltaHedging_a0a6d6d2f73dfcf3425927cc45a012a2a}{Get\+Steps} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDeltaHedging_ae1e5687d0d2c9ba019e58cd2433fe81d}{}\label{classDeltaHedging_ae1e5687d0d2c9ba019e58cd2433fe81d} 
+\index{Delta\+Hedging@{Delta\+Hedging}!Delta\+Hedging@{Delta\+Hedging}}
+\index{Delta\+Hedging@{Delta\+Hedging}!Delta\+Hedging@{Delta\+Hedging}}
+\subsubsection{\texorpdfstring{Delta\+Hedging()}{DeltaHedging()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+\hyperlink{classDeltaHedging}{Delta\+Hedging}$<$ U $>$\+::\hyperlink{classDeltaHedging}{Delta\+Hedging} (\begin{DoxyParamCaption}\item[{double}]{Option\+Value0,  }\item[{double}]{r,  }\item[{shared\+\_\+ptr$<$ U $>$}]{The\+Option,  }\item[{\hyperlink{classPathGenerationGBM}{Path\+Generation\+G\+BM} $\ast$}]{The\+Path\+Generation,  }\item[{double}]{T }\end{DoxyParamCaption})}
+
+\hypertarget{classDeltaHedging_a019b8bef20aaec88a6e1e7bacb8c0015}{}\label{classDeltaHedging_a019b8bef20aaec88a6e1e7bacb8c0015} 
+\index{Delta\+Hedging@{Delta\+Hedging}!````~Delta\+Hedging@{$\sim$\+Delta\+Hedging}}
+\index{````~Delta\+Hedging@{$\sim$\+Delta\+Hedging}!Delta\+Hedging@{Delta\+Hedging}}
+\subsubsection{\texorpdfstring{$\sim$\+Delta\+Hedging()}{~DeltaHedging()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual \hyperlink{classDeltaHedging}{Delta\+Hedging}$<$ U $>$\+::$\sim$\hyperlink{classDeltaHedging}{Delta\+Hedging} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDeltaHedging_a670264651c7c2a3ce404bca291d2194f}{}\label{classDeltaHedging_a670264651c7c2a3ce404bca291d2194f} 
+\index{Delta\+Hedging@{Delta\+Hedging}!Do\+One\+Path@{Do\+One\+Path}}
+\index{Do\+One\+Path@{Do\+One\+Path}!Delta\+Hedging@{Delta\+Hedging}}
+\subsubsection{\texorpdfstring{Do\+One\+Path()}{DoOnePath()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual double \hyperlink{classDeltaHedging}{Delta\+Hedging}$<$ U $>$\+::Do\+One\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classHedgingStrategy_ad2a7c02ee59750c40f29a03ee6fee140}{Hedging\+Strategy$<$ U $>$}.
+
+\hypertarget{classDeltaHedging_a0a6d6d2f73dfcf3425927cc45a012a2a}{}\label{classDeltaHedging_a0a6d6d2f73dfcf3425927cc45a012a2a} 
+\index{Delta\+Hedging@{Delta\+Hedging}!Get\+Steps@{Get\+Steps}}
+\index{Get\+Steps@{Get\+Steps}!Delta\+Hedging@{Delta\+Hedging}}
+\subsubsection{\texorpdfstring{Get\+Steps()}{GetSteps()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual unsigned long \hyperlink{classDeltaHedging}{Delta\+Hedging}$<$ U $>$\+::Get\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classHedgingStrategy_a4df1155158f019fb0c4f565045b9e633}{Hedging\+Strategy$<$ U $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hedging__strategy_8h}{hedging\+\_\+strategy.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,208 @@
+\hypertarget{classRandomParkMiller}{}\section{Random\+Park\+Miller Class Reference}
+\label{classRandomParkMiller}\index{Random\+Park\+Miller@{Random\+Park\+Miller}}
+
+
+{\ttfamily \#include $<$Park\+Miller.\+h$>$}
+
+
+
+Inheritance diagram for Random\+Park\+Miller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classRandomParkMiller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Random\+Park\+Miller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classRandomParkMiller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRandomParkMiller_a60884154bf954e8b5a7fcbcc41772cfd}{Random\+Park\+Miller} (unsigned long Dimensionality, unsigned long Seed=1)
+\item 
+virtual \hyperlink{classRandomBase}{Random\+Base} $\ast$ \hyperlink{classRandomParkMiller_abeadf7c9bd2549c604b56b4fbf05278d}{clone} () const
+\item 
+virtual void \hyperlink{classRandomParkMiller_a5a72cd434c23c8f79898b5fb5c455208}{Skip} (unsigned long number\+Of\+Paths)
+\item 
+virtual void \hyperlink{classRandomParkMiller_aff4bf7d5efe1b695c88372ff9f9fa46e}{Set\+Seed} (unsigned long Seed)
+\item 
+virtual void \hyperlink{classRandomParkMiller_a3149e8b0b8f2bba6b389325cd6d61cc0}{Reset} ()
+\item 
+virtual void \hyperlink{classRandomParkMiller_a2dff7d05b001445fe8e322f2bdc98ac7}{Reset\+Dimensionality} (unsigned long New\+Dimensionality)
+\item 
+virtual void \hyperlink{classRandomParkMiller_a3dbbbb95c40e2a8794659fa38630b784}{Get\+Uniforms} (\hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomParkMiller_a8662b99ba7a4a082d694f831cf6f43d8}{Get\+Uniforms} (vector$<$ double $>$ \&variates, double a=0.\+0, double b=1.\+0)
+\item 
+virtual void \hyperlink{classRandomParkMiller_a7c7f7c1079bdf8462af5bcce3787ae03}{Get\+Gaussians} (\hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomParkMiller_adbc2537add4042bb4d0bb162f8d2b998}{Get\+Gaussians} (vector$<$ double $>$ \&variates, double m=0.\+0, double s=1.\+0)
+\item 
+virtual void \hyperlink{classRandomParkMiller_ac9ecb9d60e18a611f4e4458cae09998c}{Get\+Log\+Normals} (double m, double s, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomParkMiller_a33b21750d1694fec01ed7c10d49e8fba}{Get\+Exponentials} (double lambda, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomParkMiller_adcc2619058ca8a30dab9618a54c82dd2}{Get\+Poissons} (double lambda, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomParkMiller_a819811663cba7da72678c0a05aae62ce}{Get\+Gammas} (double alpha, double beta, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomParkMiller_a100f104e3e067070906db8847be9b5d7}{Get\+Betas} (double alpha, double beta, \hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRandomParkMiller_a60884154bf954e8b5a7fcbcc41772cfd}{}\label{classRandomParkMiller_a60884154bf954e8b5a7fcbcc41772cfd} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Random\+Park\+Miller()}{RandomParkMiller()}}
+{\footnotesize\ttfamily Random\+Park\+Miller\+::\+Random\+Park\+Miller (\begin{DoxyParamCaption}\item[{unsigned long}]{Dimensionality,  }\item[{unsigned long}]{Seed = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRandomParkMiller_abeadf7c9bd2549c604b56b4fbf05278d}{}\label{classRandomParkMiller_abeadf7c9bd2549c604b56b4fbf05278d} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!clone@{clone}}
+\index{clone@{clone}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classRandomBase}{Random\+Base}$\ast$ Random\+Park\+Miller\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a0906f4590283535ec40427ad31ba7850}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_a100f104e3e067070906db8847be9b5d7}{}\label{classRandomParkMiller_a100f104e3e067070906db8847be9b5d7} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Betas@{Get\+Betas}}
+\index{Get\+Betas@{Get\+Betas}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Betas()}{GetBetas()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Betas (\begin{DoxyParamCaption}\item[{double}]{alpha,  }\item[{double}]{beta,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_aa3f3efa1333ab5d7689b8cc7ebd26622}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_a33b21750d1694fec01ed7c10d49e8fba}{}\label{classRandomParkMiller_a33b21750d1694fec01ed7c10d49e8fba} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Exponentials@{Get\+Exponentials}}
+\index{Get\+Exponentials@{Get\+Exponentials}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Exponentials()}{GetExponentials()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Exponentials (\begin{DoxyParamCaption}\item[{double}]{lambda,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_ad1d2c39a8440f67cffda3ad41a4f9975}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_a819811663cba7da72678c0a05aae62ce}{}\label{classRandomParkMiller_a819811663cba7da72678c0a05aae62ce} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Gammas@{Get\+Gammas}}
+\index{Get\+Gammas@{Get\+Gammas}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Gammas()}{GetGammas()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Gammas (\begin{DoxyParamCaption}\item[{double}]{alpha,  }\item[{double}]{beta,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_a5b5c89afe295ba49a5474cdc3bf80c3d}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_a7c7f7c1079bdf8462af5bcce3787ae03}{}\label{classRandomParkMiller_a7c7f7c1079bdf8462af5bcce3787ae03} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Gaussians@{Get\+Gaussians}}
+\index{Get\+Gaussians@{Get\+Gaussians}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Gaussians()}{GetGaussians()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Gaussians (\begin{DoxyParamCaption}\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_aac297a1b64959492831f5e9a1f28c03d}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_adbc2537add4042bb4d0bb162f8d2b998}{}\label{classRandomParkMiller_adbc2537add4042bb4d0bb162f8d2b998} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Gaussians@{Get\+Gaussians}}
+\index{Get\+Gaussians@{Get\+Gaussians}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Gaussians()}{GetGaussians()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Gaussians (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ \&}]{variates,  }\item[{double}]{m = {\ttfamily 0.0},  }\item[{double}]{s = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\hypertarget{classRandomParkMiller_ac9ecb9d60e18a611f4e4458cae09998c}{}\label{classRandomParkMiller_ac9ecb9d60e18a611f4e4458cae09998c} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Log\+Normals@{Get\+Log\+Normals}}
+\index{Get\+Log\+Normals@{Get\+Log\+Normals}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Log\+Normals()}{GetLogNormals()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Log\+Normals (\begin{DoxyParamCaption}\item[{double}]{m,  }\item[{double}]{s,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_a734f1712b1179fb31380e04da4a27f20}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_adcc2619058ca8a30dab9618a54c82dd2}{}\label{classRandomParkMiller_adcc2619058ca8a30dab9618a54c82dd2} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Poissons@{Get\+Poissons}}
+\index{Get\+Poissons@{Get\+Poissons}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Poissons()}{GetPoissons()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Poissons (\begin{DoxyParamCaption}\item[{double}]{lambda,  }\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_aa2e79f1f4c55c36df9c701d29e9b08a5}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_a3dbbbb95c40e2a8794659fa38630b784}{}\label{classRandomParkMiller_a3dbbbb95c40e2a8794659fa38630b784} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Uniforms@{Get\+Uniforms}}
+\index{Get\+Uniforms@{Get\+Uniforms}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Uniforms()}{GetUniforms()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Uniforms (\begin{DoxyParamCaption}\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_aa061fb77f53969f6fbe40c7454c69eb9}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_a8662b99ba7a4a082d694f831cf6f43d8}{}\label{classRandomParkMiller_a8662b99ba7a4a082d694f831cf6f43d8} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Get\+Uniforms@{Get\+Uniforms}}
+\index{Get\+Uniforms@{Get\+Uniforms}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+Uniforms()}{GetUniforms()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Get\+Uniforms (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ \&}]{variates,  }\item[{double}]{a = {\ttfamily 0.0},  }\item[{double}]{b = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\hypertarget{classRandomParkMiller_a3149e8b0b8f2bba6b389325cd6d61cc0}{}\label{classRandomParkMiller_a3149e8b0b8f2bba6b389325cd6d61cc0} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Reset@{Reset}}
+\index{Reset@{Reset}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a6e35c1467b37fc8c5e262297223685eb}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_a2dff7d05b001445fe8e322f2bdc98ac7}{}\label{classRandomParkMiller_a2dff7d05b001445fe8e322f2bdc98ac7} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Reset\+Dimensionality@{Reset\+Dimensionality}}
+\index{Reset\+Dimensionality@{Reset\+Dimensionality}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Reset\+Dimensionality()}{ResetDimensionality()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Reset\+Dimensionality (\begin{DoxyParamCaption}\item[{unsigned long}]{New\+Dimensionality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_a8931e429ae130ea44af5469dc6ae728f}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_aff4bf7d5efe1b695c88372ff9f9fa46e}{}\label{classRandomParkMiller_aff4bf7d5efe1b695c88372ff9f9fa46e} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Set\+Seed@{Set\+Seed}}
+\index{Set\+Seed@{Set\+Seed}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Set\+Seed()}{SetSeed()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Set\+Seed (\begin{DoxyParamCaption}\item[{unsigned long}]{Seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_ae93f26c38d1675ef07cb1fd29b894b26}{Random\+Base}.
+
+\hypertarget{classRandomParkMiller_a5a72cd434c23c8f79898b5fb5c455208}{}\label{classRandomParkMiller_a5a72cd434c23c8f79898b5fb5c455208} 
+\index{Random\+Park\+Miller@{Random\+Park\+Miller}!Skip@{Skip}}
+\index{Skip@{Skip}!Random\+Park\+Miller@{Random\+Park\+Miller}}
+\subsubsection{\texorpdfstring{Skip()}{Skip()}}
+{\footnotesize\ttfamily virtual void Random\+Park\+Miller\+::\+Skip (\begin{DoxyParamCaption}\item[{unsigned long}]{number\+Of\+Paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a0531f44e3e2a71d14ef1490aa5d90b77}{Random\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ParkMiller_8h}{Park\+Miller.\+h}\end{DoxyCompactItemize}

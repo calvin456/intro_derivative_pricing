@@ -1,0 +1,85 @@
+\hypertarget{classGammaHedging}{}\section{Gamma\+Hedging$<$ U, V $>$ Class Template Reference}
+\label{classGammaHedging}\index{Gamma\+Hedging$<$ U, V $>$@{Gamma\+Hedging$<$ U, V $>$}}
+
+
+{\ttfamily \#include $<$hedging\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for Gamma\+Hedging$<$ U, V $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classGammaHedging__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Gamma\+Hedging$<$ U, V $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classGammaHedging__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGammaHedging_aa93e888fe06bc5ec877364dfaed43f5e}{Gamma\+Hedging} (double \hyperlink{classHedgingStrategy_ac96528e9f4e5a0d1e5aadcc2ebdcab55}{Option\+Value0}, double \hyperlink{classHedgingStrategy_a313da7bc1911dba2a166d2c7bed5f1d7}{r}, shared\+\_\+ptr$<$ U $>$ \hyperlink{classHedgingStrategy_a65699a183423af9d947bb939ae8e907d}{The\+Option}, shared\+\_\+ptr$<$ V $>$ The\+Option1, \hyperlink{classPathGenerationGBM}{Path\+Generation\+G\+BM} $\ast$The\+Path\+Generation, double \hyperlink{classHedgingStrategy_aedb4069f0709b49482a72b9d9c906a5e}{T})
+\item 
+virtual \hyperlink{classGammaHedging_ad2d180e1aec52c7e58af34dbf8c7c66e}{$\sim$\+Gamma\+Hedging} ()
+\item 
+virtual double \hyperlink{classGammaHedging_afbdeab9edb6f515f8df2c1aac8ad54c0}{Do\+One\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)
+\item 
+virtual unsigned long \hyperlink{classGammaHedging_a69b52f6cdb02d3289bf00029331625fe}{Get\+Steps} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGammaHedging_aa93e888fe06bc5ec877364dfaed43f5e}{}\label{classGammaHedging_aa93e888fe06bc5ec877364dfaed43f5e} 
+\index{Gamma\+Hedging@{Gamma\+Hedging}!Gamma\+Hedging@{Gamma\+Hedging}}
+\index{Gamma\+Hedging@{Gamma\+Hedging}!Gamma\+Hedging@{Gamma\+Hedging}}
+\subsubsection{\texorpdfstring{Gamma\+Hedging()}{GammaHedging()}}
+{\footnotesize\ttfamily template$<$typename U , typename V $>$ \\
+\hyperlink{classGammaHedging}{Gamma\+Hedging}$<$ U, V $>$\+::\hyperlink{classGammaHedging}{Gamma\+Hedging} (\begin{DoxyParamCaption}\item[{double}]{Option\+Value0,  }\item[{double}]{r,  }\item[{shared\+\_\+ptr$<$ U $>$}]{The\+Option,  }\item[{shared\+\_\+ptr$<$ V $>$}]{The\+Option1,  }\item[{\hyperlink{classPathGenerationGBM}{Path\+Generation\+G\+BM} $\ast$}]{The\+Path\+Generation,  }\item[{double}]{T }\end{DoxyParamCaption})}
+
+\hypertarget{classGammaHedging_ad2d180e1aec52c7e58af34dbf8c7c66e}{}\label{classGammaHedging_ad2d180e1aec52c7e58af34dbf8c7c66e} 
+\index{Gamma\+Hedging@{Gamma\+Hedging}!````~Gamma\+Hedging@{$\sim$\+Gamma\+Hedging}}
+\index{````~Gamma\+Hedging@{$\sim$\+Gamma\+Hedging}!Gamma\+Hedging@{Gamma\+Hedging}}
+\subsubsection{\texorpdfstring{$\sim$\+Gamma\+Hedging()}{~GammaHedging()}}
+{\footnotesize\ttfamily template$<$typename U , typename V $>$ \\
+virtual \hyperlink{classGammaHedging}{Gamma\+Hedging}$<$ U, V $>$\+::$\sim$\hyperlink{classGammaHedging}{Gamma\+Hedging} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGammaHedging_afbdeab9edb6f515f8df2c1aac8ad54c0}{}\label{classGammaHedging_afbdeab9edb6f515f8df2c1aac8ad54c0} 
+\index{Gamma\+Hedging@{Gamma\+Hedging}!Do\+One\+Path@{Do\+One\+Path}}
+\index{Do\+One\+Path@{Do\+One\+Path}!Gamma\+Hedging@{Gamma\+Hedging}}
+\subsubsection{\texorpdfstring{Do\+One\+Path()}{DoOnePath()}}
+{\footnotesize\ttfamily template$<$typename U , typename V $>$ \\
+virtual double \hyperlink{classGammaHedging}{Gamma\+Hedging}$<$ U, V $>$\+::Do\+One\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classHedgingStrategy_ad2a7c02ee59750c40f29a03ee6fee140}{Hedging\+Strategy$<$ U $>$}.
+
+\hypertarget{classGammaHedging_a69b52f6cdb02d3289bf00029331625fe}{}\label{classGammaHedging_a69b52f6cdb02d3289bf00029331625fe} 
+\index{Gamma\+Hedging@{Gamma\+Hedging}!Get\+Steps@{Get\+Steps}}
+\index{Get\+Steps@{Get\+Steps}!Gamma\+Hedging@{Gamma\+Hedging}}
+\subsubsection{\texorpdfstring{Get\+Steps()}{GetSteps()}}
+{\footnotesize\ttfamily template$<$typename U , typename V $>$ \\
+virtual unsigned long \hyperlink{classGammaHedging}{Gamma\+Hedging}$<$ U, V $>$\+::Get\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classHedgingStrategy_a4df1155158f019fb0c4f565045b9e633}{Hedging\+Strategy$<$ U $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hedging__strategy_8h}{hedging\+\_\+strategy.\+h}\end{DoxyCompactItemize}

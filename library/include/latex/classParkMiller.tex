@@ -1,0 +1,129 @@
+\hypertarget{classParkMiller}{}\section{Park\+Miller Class Reference}
+\label{classParkMiller}\index{Park\+Miller@{Park\+Miller}}
+
+
+{\ttfamily \#include $<$Park\+Miller.\+h$>$}
+
+
+
+Collaboration diagram for Park\+Miller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classParkMiller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParkMiller_a481e3b13d3418fb101da56061bfc584c}{Park\+Miller} (unsigned long Seed=1)
+\item 
+void \hyperlink{classParkMiller_a8ce7de074caf860ea6dfbaa99379a1e7}{Set\+Seed} (unsigned long Seed)
+\item 
+void \hyperlink{classParkMiller_a3d88f2c2e95baca1f5ac628705fa6f15}{Skip} (unsigned long number\+Of\+Paths)
+\item 
+double \hyperlink{classParkMiller_aec52ec51d2ae52497a7ace62d8982a8b}{Get\+One\+Uniform} (double a=0.\+0, double b=1.\+0)
+\item 
+double \hyperlink{classParkMiller_acf46034ebd112741d620c36c72b73d39}{Get\+One\+Gaussian} (double m=0.\+0, double s=1.\+0)
+\item 
+double \hyperlink{classParkMiller_a812ca3d4d91694bdfa2453978c6324b3}{Get\+One\+Log\+Normal} (double m, double s)
+\item 
+double \hyperlink{classParkMiller_a0dab2b782320012c1e339f4848cb32c7}{Get\+One\+Exponential} (double lambda)
+\item 
+double \hyperlink{classParkMiller_a442faf6c8b598b54295852e0c5c4a3c6}{Get\+One\+Poisson} (double lambda)
+\item 
+double \hyperlink{classParkMiller_a7b1adfa2d2ea88542842a00281c70e94}{Get\+One\+Gamma} (double alpha, double beta)
+\item 
+double \hyperlink{classParkMiller_a76e1a3f096128dbd63208dd1a7880279}{Get\+One\+Beta} (double alpha, double beta)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned long \hyperlink{classParkMiller_a2bd97c9ae7113ed67aa533eb62d7097d}{Max} ()
+\item 
+static unsigned long \hyperlink{classParkMiller_a6033d2fe1a8e143e673fdb53b3ee5523}{Min} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classParkMiller_a481e3b13d3418fb101da56061bfc584c}{}\label{classParkMiller_a481e3b13d3418fb101da56061bfc584c} 
+\index{Park\+Miller@{Park\+Miller}!Park\+Miller@{Park\+Miller}}
+\index{Park\+Miller@{Park\+Miller}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Park\+Miller()}{ParkMiller()}}
+{\footnotesize\ttfamily Park\+Miller\+::\+Park\+Miller (\begin{DoxyParamCaption}\item[{unsigned long}]{Seed = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classParkMiller_a76e1a3f096128dbd63208dd1a7880279}{}\label{classParkMiller_a76e1a3f096128dbd63208dd1a7880279} 
+\index{Park\+Miller@{Park\+Miller}!Get\+One\+Beta@{Get\+One\+Beta}}
+\index{Get\+One\+Beta@{Get\+One\+Beta}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+One\+Beta()}{GetOneBeta()}}
+{\footnotesize\ttfamily double Park\+Miller\+::\+Get\+One\+Beta (\begin{DoxyParamCaption}\item[{double}]{alpha,  }\item[{double}]{beta }\end{DoxyParamCaption})}
+
+\hypertarget{classParkMiller_a0dab2b782320012c1e339f4848cb32c7}{}\label{classParkMiller_a0dab2b782320012c1e339f4848cb32c7} 
+\index{Park\+Miller@{Park\+Miller}!Get\+One\+Exponential@{Get\+One\+Exponential}}
+\index{Get\+One\+Exponential@{Get\+One\+Exponential}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+One\+Exponential()}{GetOneExponential()}}
+{\footnotesize\ttfamily double Park\+Miller\+::\+Get\+One\+Exponential (\begin{DoxyParamCaption}\item[{double}]{lambda }\end{DoxyParamCaption})}
+
+\hypertarget{classParkMiller_a7b1adfa2d2ea88542842a00281c70e94}{}\label{classParkMiller_a7b1adfa2d2ea88542842a00281c70e94} 
+\index{Park\+Miller@{Park\+Miller}!Get\+One\+Gamma@{Get\+One\+Gamma}}
+\index{Get\+One\+Gamma@{Get\+One\+Gamma}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+One\+Gamma()}{GetOneGamma()}}
+{\footnotesize\ttfamily double Park\+Miller\+::\+Get\+One\+Gamma (\begin{DoxyParamCaption}\item[{double}]{alpha,  }\item[{double}]{beta }\end{DoxyParamCaption})}
+
+\hypertarget{classParkMiller_acf46034ebd112741d620c36c72b73d39}{}\label{classParkMiller_acf46034ebd112741d620c36c72b73d39} 
+\index{Park\+Miller@{Park\+Miller}!Get\+One\+Gaussian@{Get\+One\+Gaussian}}
+\index{Get\+One\+Gaussian@{Get\+One\+Gaussian}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+One\+Gaussian()}{GetOneGaussian()}}
+{\footnotesize\ttfamily double Park\+Miller\+::\+Get\+One\+Gaussian (\begin{DoxyParamCaption}\item[{double}]{m = {\ttfamily 0.0},  }\item[{double}]{s = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classParkMiller_a812ca3d4d91694bdfa2453978c6324b3}{}\label{classParkMiller_a812ca3d4d91694bdfa2453978c6324b3} 
+\index{Park\+Miller@{Park\+Miller}!Get\+One\+Log\+Normal@{Get\+One\+Log\+Normal}}
+\index{Get\+One\+Log\+Normal@{Get\+One\+Log\+Normal}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+One\+Log\+Normal()}{GetOneLogNormal()}}
+{\footnotesize\ttfamily double Park\+Miller\+::\+Get\+One\+Log\+Normal (\begin{DoxyParamCaption}\item[{double}]{m,  }\item[{double}]{s }\end{DoxyParamCaption})}
+
+\hypertarget{classParkMiller_a442faf6c8b598b54295852e0c5c4a3c6}{}\label{classParkMiller_a442faf6c8b598b54295852e0c5c4a3c6} 
+\index{Park\+Miller@{Park\+Miller}!Get\+One\+Poisson@{Get\+One\+Poisson}}
+\index{Get\+One\+Poisson@{Get\+One\+Poisson}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+One\+Poisson()}{GetOnePoisson()}}
+{\footnotesize\ttfamily double Park\+Miller\+::\+Get\+One\+Poisson (\begin{DoxyParamCaption}\item[{double}]{lambda }\end{DoxyParamCaption})}
+
+\hypertarget{classParkMiller_aec52ec51d2ae52497a7ace62d8982a8b}{}\label{classParkMiller_aec52ec51d2ae52497a7ace62d8982a8b} 
+\index{Park\+Miller@{Park\+Miller}!Get\+One\+Uniform@{Get\+One\+Uniform}}
+\index{Get\+One\+Uniform@{Get\+One\+Uniform}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Get\+One\+Uniform()}{GetOneUniform()}}
+{\footnotesize\ttfamily double Park\+Miller\+::\+Get\+One\+Uniform (\begin{DoxyParamCaption}\item[{double}]{a = {\ttfamily 0.0},  }\item[{double}]{b = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classParkMiller_a2bd97c9ae7113ed67aa533eb62d7097d}{}\label{classParkMiller_a2bd97c9ae7113ed67aa533eb62d7097d} 
+\index{Park\+Miller@{Park\+Miller}!Max@{Max}}
+\index{Max@{Max}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Max()}{Max()}}
+{\footnotesize\ttfamily static unsigned long Park\+Miller\+::\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{classParkMiller_a6033d2fe1a8e143e673fdb53b3ee5523}{}\label{classParkMiller_a6033d2fe1a8e143e673fdb53b3ee5523} 
+\index{Park\+Miller@{Park\+Miller}!Min@{Min}}
+\index{Min@{Min}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Min()}{Min()}}
+{\footnotesize\ttfamily static unsigned long Park\+Miller\+::\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{classParkMiller_a8ce7de074caf860ea6dfbaa99379a1e7}{}\label{classParkMiller_a8ce7de074caf860ea6dfbaa99379a1e7} 
+\index{Park\+Miller@{Park\+Miller}!Set\+Seed@{Set\+Seed}}
+\index{Set\+Seed@{Set\+Seed}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Set\+Seed()}{SetSeed()}}
+{\footnotesize\ttfamily void Park\+Miller\+::\+Set\+Seed (\begin{DoxyParamCaption}\item[{unsigned long}]{Seed }\end{DoxyParamCaption})}
+
+\hypertarget{classParkMiller_a3d88f2c2e95baca1f5ac628705fa6f15}{}\label{classParkMiller_a3d88f2c2e95baca1f5ac628705fa6f15} 
+\index{Park\+Miller@{Park\+Miller}!Skip@{Skip}}
+\index{Skip@{Skip}!Park\+Miller@{Park\+Miller}}
+\subsubsection{\texorpdfstring{Skip()}{Skip()}}
+{\footnotesize\ttfamily void Park\+Miller\+::\+Skip (\begin{DoxyParamCaption}\item[{unsigned long}]{number\+Of\+Paths }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ParkMiller_8h}{Park\+Miller.\+h}\end{DoxyCompactItemize}

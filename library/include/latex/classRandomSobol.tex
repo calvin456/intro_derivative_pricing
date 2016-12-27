@@ -1,0 +1,132 @@
+\hypertarget{classRandomSobol}{}\section{Random\+Sobol Class Reference}
+\label{classRandomSobol}\index{Random\+Sobol@{Random\+Sobol}}
+
+
+{\ttfamily \#include $<$Sobol.\+h$>$}
+
+
+
+Inheritance diagram for Random\+Sobol\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classRandomSobol__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Random\+Sobol\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classRandomSobol__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRandomSobol_a45c752ed9fafc8e520856b825050edf1}{Random\+Sobol} (unsigned long Dimensionality, unsigned long Seed=123456)
+\item 
+virtual \hyperlink{classRandomBase}{Random\+Base} $\ast$ \hyperlink{classRandomSobol_ac0c06a34aa22ed8caa009d42d3212365}{clone} () const
+\item 
+virtual void \hyperlink{classRandomSobol_a1bd5c22ad3a808a4ff9ca8706fdb0b58}{Skip} (unsigned long number\+Of\+Paths)
+\item 
+virtual void \hyperlink{classRandomSobol_a6ede3a4386bf79e05dd0c1985cc4b3ca}{Set\+Seed} (unsigned long Seed)
+\item 
+virtual void \hyperlink{classRandomSobol_a7a749c87dec7a74d18d22edbb753f65a}{Reset} ()
+\item 
+virtual void \hyperlink{classRandomSobol_a14db32657f70fcbb0b3847caacddabc2}{Reset\+Dimensionality} (unsigned long New\+Dimensionality)
+\item 
+virtual void \hyperlink{classRandomSobol_ad4174c772925a5895828bcc87cc69fd6}{Get\+Uniforms} (\hyperlink{classMJArray}{M\+J\+Array} \&variates)
+\item 
+virtual void \hyperlink{classRandomSobol_ab358820392404ae723a0148d4d014553}{Get\+Uniforms} (std\+::vector$<$ double $>$ \&variates, double a=0.\+0, double b=1.\+0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRandomSobol_a45c752ed9fafc8e520856b825050edf1}{}\label{classRandomSobol_a45c752ed9fafc8e520856b825050edf1} 
+\index{Random\+Sobol@{Random\+Sobol}!Random\+Sobol@{Random\+Sobol}}
+\index{Random\+Sobol@{Random\+Sobol}!Random\+Sobol@{Random\+Sobol}}
+\subsubsection{\texorpdfstring{Random\+Sobol()}{RandomSobol()}}
+{\footnotesize\ttfamily Random\+Sobol\+::\+Random\+Sobol (\begin{DoxyParamCaption}\item[{unsigned long}]{Dimensionality,  }\item[{unsigned long}]{Seed = {\ttfamily 123456} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRandomSobol_ac0c06a34aa22ed8caa009d42d3212365}{}\label{classRandomSobol_ac0c06a34aa22ed8caa009d42d3212365} 
+\index{Random\+Sobol@{Random\+Sobol}!clone@{clone}}
+\index{clone@{clone}!Random\+Sobol@{Random\+Sobol}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classRandomBase}{Random\+Base}$\ast$ Random\+Sobol\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a0906f4590283535ec40427ad31ba7850}{Random\+Base}.
+
+\hypertarget{classRandomSobol_ad4174c772925a5895828bcc87cc69fd6}{}\label{classRandomSobol_ad4174c772925a5895828bcc87cc69fd6} 
+\index{Random\+Sobol@{Random\+Sobol}!Get\+Uniforms@{Get\+Uniforms}}
+\index{Get\+Uniforms@{Get\+Uniforms}!Random\+Sobol@{Random\+Sobol}}
+\subsubsection{\texorpdfstring{Get\+Uniforms()}{GetUniforms()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Random\+Sobol\+::\+Get\+Uniforms (\begin{DoxyParamCaption}\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{variates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_aa061fb77f53969f6fbe40c7454c69eb9}{Random\+Base}.
+
+\hypertarget{classRandomSobol_ab358820392404ae723a0148d4d014553}{}\label{classRandomSobol_ab358820392404ae723a0148d4d014553} 
+\index{Random\+Sobol@{Random\+Sobol}!Get\+Uniforms@{Get\+Uniforms}}
+\index{Get\+Uniforms@{Get\+Uniforms}!Random\+Sobol@{Random\+Sobol}}
+\subsubsection{\texorpdfstring{Get\+Uniforms()}{GetUniforms()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Random\+Sobol\+::\+Get\+Uniforms (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{variates,  }\item[{double}]{a = {\ttfamily 0.0},  }\item[{double}]{b = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a3bbf85695dbb1a9462a2b6c3f10af969}{Random\+Base}.
+
+\hypertarget{classRandomSobol_a7a749c87dec7a74d18d22edbb753f65a}{}\label{classRandomSobol_a7a749c87dec7a74d18d22edbb753f65a} 
+\index{Random\+Sobol@{Random\+Sobol}!Reset@{Reset}}
+\index{Reset@{Reset}!Random\+Sobol@{Random\+Sobol}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Random\+Sobol\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a6e35c1467b37fc8c5e262297223685eb}{Random\+Base}.
+
+\hypertarget{classRandomSobol_a14db32657f70fcbb0b3847caacddabc2}{}\label{classRandomSobol_a14db32657f70fcbb0b3847caacddabc2} 
+\index{Random\+Sobol@{Random\+Sobol}!Reset\+Dimensionality@{Reset\+Dimensionality}}
+\index{Reset\+Dimensionality@{Reset\+Dimensionality}!Random\+Sobol@{Random\+Sobol}}
+\subsubsection{\texorpdfstring{Reset\+Dimensionality()}{ResetDimensionality()}}
+{\footnotesize\ttfamily virtual void Random\+Sobol\+::\+Reset\+Dimensionality (\begin{DoxyParamCaption}\item[{unsigned long}]{New\+Dimensionality }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classRandomBase_a8931e429ae130ea44af5469dc6ae728f}{Random\+Base}.
+
+\hypertarget{classRandomSobol_a6ede3a4386bf79e05dd0c1985cc4b3ca}{}\label{classRandomSobol_a6ede3a4386bf79e05dd0c1985cc4b3ca} 
+\index{Random\+Sobol@{Random\+Sobol}!Set\+Seed@{Set\+Seed}}
+\index{Set\+Seed@{Set\+Seed}!Random\+Sobol@{Random\+Sobol}}
+\subsubsection{\texorpdfstring{Set\+Seed()}{SetSeed()}}
+{\footnotesize\ttfamily virtual void Random\+Sobol\+::\+Set\+Seed (\begin{DoxyParamCaption}\item[{unsigned long}]{Seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_ae93f26c38d1675ef07cb1fd29b894b26}{Random\+Base}.
+
+\hypertarget{classRandomSobol_a1bd5c22ad3a808a4ff9ca8706fdb0b58}{}\label{classRandomSobol_a1bd5c22ad3a808a4ff9ca8706fdb0b58} 
+\index{Random\+Sobol@{Random\+Sobol}!Skip@{Skip}}
+\index{Skip@{Skip}!Random\+Sobol@{Random\+Sobol}}
+\subsubsection{\texorpdfstring{Skip()}{Skip()}}
+{\footnotesize\ttfamily virtual void Random\+Sobol\+::\+Skip (\begin{DoxyParamCaption}\item[{unsigned long}]{number\+Of\+Paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classRandomBase_a0531f44e3e2a71d14ef1490aa5d90b77}{Random\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sobol_8h}{Sobol.\+h}\end{DoxyCompactItemize}

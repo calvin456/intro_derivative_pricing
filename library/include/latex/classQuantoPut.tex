@@ -1,0 +1,89 @@
+\hypertarget{classQuantoPut}{}\section{Quanto\+Put Class Reference}
+\label{classQuantoPut}\index{Quanto\+Put@{Quanto\+Put}}
+
+
+{\ttfamily \#include $<$Pay\+Off\+Multi.\+h$>$}
+
+
+
+Inheritance diagram for Quanto\+Put\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classQuantoPut__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Quanto\+Put\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classQuantoPut__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQuantoPut_ad3f3ade278eb64e7327523f4c8454ceb}{Quanto\+Put} (double Strike\+\_\+, double fx\+Rate\+\_\+=1.\+0)
+\item 
+\hyperlink{classQuantoPut_ad153cb9f172e6afa3fd6a7e6d9eb087a}{Quanto\+Put} (const \hyperlink{classMJArray}{M\+J\+Array} \&\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args})
+\item 
+virtual double \hyperlink{classQuantoPut_a76cf359e7b7c31dc39b8f2c20d145b92}{operator()} (const \hyperlink{classMJArray}{M\+J\+Array} \&Spots) const
+\item 
+virtual \hyperlink{classQuantoPut_a2c07de96ba733c2963001cd9dc98ac94}{$\sim$\+Quanto\+Put} ()
+\item 
+virtual \hyperlink{classPayOff}{Pay\+Off} $\ast$ \hyperlink{classQuantoPut_af6ffdcc7c2ebb6f38f306192aa471960}{clone} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQuantoPut_ad3f3ade278eb64e7327523f4c8454ceb}{}\label{classQuantoPut_ad3f3ade278eb64e7327523f4c8454ceb} 
+\index{Quanto\+Put@{Quanto\+Put}!Quanto\+Put@{Quanto\+Put}}
+\index{Quanto\+Put@{Quanto\+Put}!Quanto\+Put@{Quanto\+Put}}
+\subsubsection{\texorpdfstring{Quanto\+Put()}{QuantoPut()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Quanto\+Put\+::\+Quanto\+Put (\begin{DoxyParamCaption}\item[{double}]{Strike\+\_\+,  }\item[{double}]{fx\+Rate\+\_\+ = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classQuantoPut_ad153cb9f172e6afa3fd6a7e6d9eb087a}{}\label{classQuantoPut_ad153cb9f172e6afa3fd6a7e6d9eb087a} 
+\index{Quanto\+Put@{Quanto\+Put}!Quanto\+Put@{Quanto\+Put}}
+\index{Quanto\+Put@{Quanto\+Put}!Quanto\+Put@{Quanto\+Put}}
+\subsubsection{\texorpdfstring{Quanto\+Put()}{QuantoPut()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Quanto\+Put\+::\+Quanto\+Put (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{args }\end{DoxyParamCaption})}
+
+\hypertarget{classQuantoPut_a2c07de96ba733c2963001cd9dc98ac94}{}\label{classQuantoPut_a2c07de96ba733c2963001cd9dc98ac94} 
+\index{Quanto\+Put@{Quanto\+Put}!````~Quanto\+Put@{$\sim$\+Quanto\+Put}}
+\index{````~Quanto\+Put@{$\sim$\+Quanto\+Put}!Quanto\+Put@{Quanto\+Put}}
+\subsubsection{\texorpdfstring{$\sim$\+Quanto\+Put()}{~QuantoPut()}}
+{\footnotesize\ttfamily virtual Quanto\+Put\+::$\sim$\+Quanto\+Put (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classQuantoPut_af6ffdcc7c2ebb6f38f306192aa471960}{}\label{classQuantoPut_af6ffdcc7c2ebb6f38f306192aa471960} 
+\index{Quanto\+Put@{Quanto\+Put}!clone@{clone}}
+\index{clone@{clone}!Quanto\+Put@{Quanto\+Put}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classPayOff}{Pay\+Off}$\ast$ Quanto\+Put\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPayOff_ad8194d5b82247ae89c25c515f0ba806a}{Pay\+Off}.
+
+\hypertarget{classQuantoPut_a76cf359e7b7c31dc39b8f2c20d145b92}{}\label{classQuantoPut_a76cf359e7b7c31dc39b8f2c20d145b92} 
+\index{Quanto\+Put@{Quanto\+Put}!operator()@{operator()}}
+\index{operator()@{operator()}!Quanto\+Put@{Quanto\+Put}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual double Quanto\+Put\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{Spots }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPayOffMulti_a61039e0c0ee136842b5d6f340b9f8155}{Pay\+Off\+Multi}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PayOffMulti_8h}{Pay\+Off\+Multi.\+h}\end{DoxyCompactItemize}

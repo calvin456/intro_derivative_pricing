@@ -1,0 +1,142 @@
+\hypertarget{classTreeAmericanBarrier}{}\section{Tree\+American\+Barrier Class Reference}
+\label{classTreeAmericanBarrier}\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+
+
+{\ttfamily \#include $<$Tree\+American\+Barrier.\+h$>$}
+
+
+
+Inheritance diagram for Tree\+American\+Barrier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classTreeAmericanBarrier__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tree\+American\+Barrier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classTreeAmericanBarrier__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbb}{Type} \{ \hyperlink{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba9a1ef199e0c0f3e15e20087cecfeb650}{Pay\+Off\+K\+O\+Call}, 
+\hyperlink{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba8bdc8f8e0877e620e517197d3f466d50}{Pay\+Off\+K\+O\+Put}, 
+\hyperlink{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba177db45433de276900e92cf4b54dbff3}{Pay\+Off\+K\+I\+Call}, 
+\hyperlink{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba07234b5bb2685df5d0c5cb23192e34f7}{Pay\+Off\+K\+I\+Put}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTreeAmericanBarrier_a8c87d94ce1a1978d44b36f32d741a79b}{Tree\+American\+Barrier} (double Final\+Time, const \hyperlink{classPayOffBridge}{Pay\+Off\+Bridge} \&\hyperlink{classTreeAmericanBarrier_a30b4998595cdd89426043fc11522f325}{The\+Pay\+Off\+\_\+})
+\item 
+virtual \hyperlink{classTreeProduct}{Tree\+Product} $\ast$ \hyperlink{classTreeAmericanBarrier_a25a7d1fdcfd55228de1b4f50d0b3943d}{clone} () const
+\item 
+virtual double \hyperlink{classTreeAmericanBarrier_a55218e00428e49c18186358ae1b54b58}{Final\+Pay\+Off} (double Spot) const
+\item 
+virtual double \hyperlink{classTreeAmericanBarrier_a66ac7ef18f10dbc5232b7c18e3093805}{Pre\+Final\+Value} (double Spot, double Time, double Discounted\+Future\+Value) const
+\item 
+virtual \hyperlink{classTreeAmericanBarrier_afe01588c2d43d611877baf510a2ed651}{$\sim$\+Tree\+American\+Barrier} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbb}{Type} \hyperlink{classTreeAmericanBarrier_a30b4998595cdd89426043fc11522f325}{The\+Pay\+Off\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbb}{}\label{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbb} 
+\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Type@{Type}}
+\index{Type@{Type}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \hyperlink{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbb}{Tree\+American\+Barrier\+::\+Type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pay\+Off\+K\+O\+Call@{Pay\+Off\+K\+O\+Call}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Pay\+Off\+K\+O\+Call@{Pay\+Off\+K\+O\+Call}}}\hypertarget{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba9a1ef199e0c0f3e15e20087cecfeb650}{}\label{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba9a1ef199e0c0f3e15e20087cecfeb650} 
+Pay\+Off\+K\+O\+Call&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pay\+Off\+K\+O\+Put@{Pay\+Off\+K\+O\+Put}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Pay\+Off\+K\+O\+Put@{Pay\+Off\+K\+O\+Put}}}\hypertarget{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba8bdc8f8e0877e620e517197d3f466d50}{}\label{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba8bdc8f8e0877e620e517197d3f466d50} 
+Pay\+Off\+K\+O\+Put&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}}}\hypertarget{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba177db45433de276900e92cf4b54dbff3}{}\label{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba177db45433de276900e92cf4b54dbff3} 
+Pay\+Off\+K\+I\+Call&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pay\+Off\+K\+I\+Put@{Pay\+Off\+K\+I\+Put}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Pay\+Off\+K\+I\+Put@{Pay\+Off\+K\+I\+Put}}}\hypertarget{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba07234b5bb2685df5d0c5cb23192e34f7}{}\label{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbba07234b5bb2685df5d0c5cb23192e34f7} 
+Pay\+Off\+K\+I\+Put&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTreeAmericanBarrier_a8c87d94ce1a1978d44b36f32d741a79b}{}\label{classTreeAmericanBarrier_a8c87d94ce1a1978d44b36f32d741a79b} 
+\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+\subsubsection{\texorpdfstring{Tree\+American\+Barrier()}{TreeAmericanBarrier()}}
+{\footnotesize\ttfamily Tree\+American\+Barrier\+::\+Tree\+American\+Barrier (\begin{DoxyParamCaption}\item[{double}]{Final\+Time,  }\item[{const \hyperlink{classPayOffBridge}{Pay\+Off\+Bridge} \&}]{The\+Pay\+Off\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classTreeAmericanBarrier_afe01588c2d43d611877baf510a2ed651}{}\label{classTreeAmericanBarrier_afe01588c2d43d611877baf510a2ed651} 
+\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!````~Tree\+American\+Barrier@{$\sim$\+Tree\+American\+Barrier}}
+\index{````~Tree\+American\+Barrier@{$\sim$\+Tree\+American\+Barrier}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+\subsubsection{\texorpdfstring{$\sim$\+Tree\+American\+Barrier()}{~TreeAmericanBarrier()}}
+{\footnotesize\ttfamily virtual Tree\+American\+Barrier\+::$\sim$\+Tree\+American\+Barrier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTreeAmericanBarrier_a25a7d1fdcfd55228de1b4f50d0b3943d}{}\label{classTreeAmericanBarrier_a25a7d1fdcfd55228de1b4f50d0b3943d} 
+\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!clone@{clone}}
+\index{clone@{clone}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classTreeProduct}{Tree\+Product}$\ast$ Tree\+American\+Barrier\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classTreeProduct_a38edda2bee3c7203e94511df96a18c32}{Tree\+Product}.
+
+\hypertarget{classTreeAmericanBarrier_a55218e00428e49c18186358ae1b54b58}{}\label{classTreeAmericanBarrier_a55218e00428e49c18186358ae1b54b58} 
+\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Final\+Pay\+Off@{Final\+Pay\+Off}}
+\index{Final\+Pay\+Off@{Final\+Pay\+Off}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+\subsubsection{\texorpdfstring{Final\+Pay\+Off()}{FinalPayOff()}}
+{\footnotesize\ttfamily virtual double Tree\+American\+Barrier\+::\+Final\+Pay\+Off (\begin{DoxyParamCaption}\item[{double}]{Spot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classTreeProduct_acda7abc61cf6ac1b0f69a09eb0709832}{Tree\+Product}.
+
+\hypertarget{classTreeAmericanBarrier_a66ac7ef18f10dbc5232b7c18e3093805}{}\label{classTreeAmericanBarrier_a66ac7ef18f10dbc5232b7c18e3093805} 
+\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!Pre\+Final\+Value@{Pre\+Final\+Value}}
+\index{Pre\+Final\+Value@{Pre\+Final\+Value}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+\subsubsection{\texorpdfstring{Pre\+Final\+Value()}{PreFinalValue()}}
+{\footnotesize\ttfamily virtual double Tree\+American\+Barrier\+::\+Pre\+Final\+Value (\begin{DoxyParamCaption}\item[{double}]{Spot,  }\item[{double}]{Time,  }\item[{double}]{Discounted\+Future\+Value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classTreeProduct_a0b58b8acdd3759f55212c1c65361056e}{Tree\+Product}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classTreeAmericanBarrier_a30b4998595cdd89426043fc11522f325}{}\label{classTreeAmericanBarrier_a30b4998595cdd89426043fc11522f325} 
+\index{Tree\+American\+Barrier@{Tree\+American\+Barrier}!The\+Pay\+Off\+\_\+@{The\+Pay\+Off\+\_\+}}
+\index{The\+Pay\+Off\+\_\+@{The\+Pay\+Off\+\_\+}!Tree\+American\+Barrier@{Tree\+American\+Barrier}}
+\subsubsection{\texorpdfstring{The\+Pay\+Off\+\_\+}{ThePayOff\_}}
+{\footnotesize\ttfamily \hyperlink{classTreeAmericanBarrier_a52c7d9a606b0075d8d1b69c877771cbb}{Type} Tree\+American\+Barrier\+::\+The\+Pay\+Off\+\_\+}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{TreeAmericanBarrier_8h}{Tree\+American\+Barrier.\+h}\end{DoxyCompactItemize}

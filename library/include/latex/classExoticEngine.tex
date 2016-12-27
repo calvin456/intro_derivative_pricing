@@ -1,0 +1,138 @@
+\hypertarget{classExoticEngine}{}\section{Exotic\+Engine Class Reference}
+\label{classExoticEngine}\index{Exotic\+Engine@{Exotic\+Engine}}
+
+
+{\ttfamily \#include $<$Exotic\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Exotic\+Engine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classExoticEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Exotic\+Engine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classExoticEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExoticEngine_a8f2b07aae083e53933b539a9e36df536}{Exotic\+Engine} (const \hyperlink{classWrapper}{Wrapper}$<$ \hyperlink{classPathDependent}{Path\+Dependent} $>$ \&The\+Product\+\_\+, const \hyperlink{classParameters}{Parameters} \&r\+\_\+, bool speed\+\_\+up\+\_\+=false)
+\item 
+virtual void \hyperlink{classExoticEngine_a1be567d24e89abadb95bb2af7224b54e}{Get\+One\+Path} (\hyperlink{classMJArray}{M\+J\+Array} \&Log\+Spot\+Values)=0
+\item 
+void \hyperlink{classExoticEngine_a50efae4a77089d6a596153c9c94f1412}{Do\+Simulation} (\hyperlink{classStatisticsMC}{Statistics\+MC} \&The\+Gatherer, unsigned long Number\+Of\+Paths)
+\item 
+virtual \hyperlink{classExoticEngine_a9ca6c7fadc943a9f00460ae6371bd6a2}{$\sim$\+Exotic\+Engine} ()
+\item 
+double \hyperlink{classExoticEngine_ac52ddfbb69f3bd1aa2f87114406e1725}{Do\+One\+Path} (const \hyperlink{classMJArray}{M\+J\+Array} \&Spot\+Values) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PathDependent_8h_abed946c62f140eb7ff2ac742e6ad9497}{method} \hyperlink{classExoticEngine_aa0046882f659ebb2e5efa29e28a28c20}{method\+\_\+}
+\item 
+bool \hyperlink{classExoticEngine_a2a770397b5cb3f352bcd4a7834883607}{speed\+\_\+up}
+\item 
+\hyperlink{classWrapper}{Wrapper}$<$ \hyperlink{classPathDependent}{Path\+Dependent} $>$ \hyperlink{classExoticEngine_a16475790e675a12ac23a01d81c5557de}{The\+Product}
+\item 
+\hyperlink{classParameters}{Parameters} \hyperlink{classExoticEngine_a8efb47da1329445047b7d041bf9c4d7b}{r}
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \hyperlink{classExoticEngine_acb40f9478cb8d11947bf2052e5ebea0c}{Discounts}
+\item 
+std\+::vector$<$ \hyperlink{classMyCashFlow_1_1CashFlow}{My\+Cash\+Flow\+::\+Cash\+Flow} $>$ \hyperlink{classExoticEngine_af4c36f88d17b753e174b6db02bade7e6}{These\+Cash\+Flows}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classExoticEngine_a8f2b07aae083e53933b539a9e36df536}{}\label{classExoticEngine_a8f2b07aae083e53933b539a9e36df536} 
+\index{Exotic\+Engine@{Exotic\+Engine}!Exotic\+Engine@{Exotic\+Engine}}
+\index{Exotic\+Engine@{Exotic\+Engine}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{Exotic\+Engine()}{ExoticEngine()}}
+{\footnotesize\ttfamily Exotic\+Engine\+::\+Exotic\+Engine (\begin{DoxyParamCaption}\item[{const \hyperlink{classWrapper}{Wrapper}$<$ \hyperlink{classPathDependent}{Path\+Dependent} $>$ \&}]{The\+Product\+\_\+,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{r\+\_\+,  }\item[{bool}]{speed\+\_\+up\+\_\+ = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\hypertarget{classExoticEngine_a9ca6c7fadc943a9f00460ae6371bd6a2}{}\label{classExoticEngine_a9ca6c7fadc943a9f00460ae6371bd6a2} 
+\index{Exotic\+Engine@{Exotic\+Engine}!````~Exotic\+Engine@{$\sim$\+Exotic\+Engine}}
+\index{````~Exotic\+Engine@{$\sim$\+Exotic\+Engine}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Exotic\+Engine()}{~ExoticEngine()}}
+{\footnotesize\ttfamily virtual Exotic\+Engine\+::$\sim$\+Exotic\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classExoticEngine_ac52ddfbb69f3bd1aa2f87114406e1725}{}\label{classExoticEngine_ac52ddfbb69f3bd1aa2f87114406e1725} 
+\index{Exotic\+Engine@{Exotic\+Engine}!Do\+One\+Path@{Do\+One\+Path}}
+\index{Do\+One\+Path@{Do\+One\+Path}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{Do\+One\+Path()}{DoOnePath()}}
+{\footnotesize\ttfamily double Exotic\+Engine\+::\+Do\+One\+Path (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{Spot\+Values }\end{DoxyParamCaption}) const}
+
+\hypertarget{classExoticEngine_a50efae4a77089d6a596153c9c94f1412}{}\label{classExoticEngine_a50efae4a77089d6a596153c9c94f1412} 
+\index{Exotic\+Engine@{Exotic\+Engine}!Do\+Simulation@{Do\+Simulation}}
+\index{Do\+Simulation@{Do\+Simulation}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{Do\+Simulation()}{DoSimulation()}}
+{\footnotesize\ttfamily void Exotic\+Engine\+::\+Do\+Simulation (\begin{DoxyParamCaption}\item[{\hyperlink{classStatisticsMC}{Statistics\+MC} \&}]{The\+Gatherer,  }\item[{unsigned long}]{Number\+Of\+Paths }\end{DoxyParamCaption})}
+
+\hypertarget{classExoticEngine_a1be567d24e89abadb95bb2af7224b54e}{}\label{classExoticEngine_a1be567d24e89abadb95bb2af7224b54e} 
+\index{Exotic\+Engine@{Exotic\+Engine}!Get\+One\+Path@{Get\+One\+Path}}
+\index{Get\+One\+Path@{Get\+One\+Path}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{Get\+One\+Path()}{GetOnePath()}}
+{\footnotesize\ttfamily virtual void Exotic\+Engine\+::\+Get\+One\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{classMJArray}{M\+J\+Array} \&}]{Log\+Spot\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classExoticNormalEngine_ab86b50858bc7159d23d18b8f692651d5}{Exotic\+Normal\+Engine}, \hyperlink{classExoticBSEngineBB_ad11cfbdc7c2096d8493e0de6eb1eec4b}{Exotic\+B\+S\+Engine\+BB}, \hyperlink{classExoticBSEnginePCA_ad34270f94895d699ff3d3a0ebc020e9f}{Exotic\+B\+S\+Engine\+P\+CA}, \hyperlink{classExoticBSEngineReverse_ad60a172cfb94070d61b07c4140949b74}{Exotic\+B\+S\+Engine\+Reverse}, and \hyperlink{classExoticBSEngine_a4f621796857e8cf1b867d66daea2d690}{Exotic\+B\+S\+Engine}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classExoticEngine_acb40f9478cb8d11947bf2052e5ebea0c}{}\label{classExoticEngine_acb40f9478cb8d11947bf2052e5ebea0c} 
+\index{Exotic\+Engine@{Exotic\+Engine}!Discounts@{Discounts}}
+\index{Discounts@{Discounts}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{Discounts}{Discounts}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array} Exotic\+Engine\+::\+Discounts\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classExoticEngine_aa0046882f659ebb2e5efa29e28a28c20}{}\label{classExoticEngine_aa0046882f659ebb2e5efa29e28a28c20} 
+\index{Exotic\+Engine@{Exotic\+Engine}!method\+\_\+@{method\+\_\+}}
+\index{method\+\_\+@{method\+\_\+}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{method\+\_\+}{method\_}}
+{\footnotesize\ttfamily \hyperlink{PathDependent_8h_abed946c62f140eb7ff2ac742e6ad9497}{method} Exotic\+Engine\+::method\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classExoticEngine_a8efb47da1329445047b7d041bf9c4d7b}{}\label{classExoticEngine_a8efb47da1329445047b7d041bf9c4d7b} 
+\index{Exotic\+Engine@{Exotic\+Engine}!r@{r}}
+\index{r@{r}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily \hyperlink{classParameters}{Parameters} Exotic\+Engine\+::r\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classExoticEngine_a2a770397b5cb3f352bcd4a7834883607}{}\label{classExoticEngine_a2a770397b5cb3f352bcd4a7834883607} 
+\index{Exotic\+Engine@{Exotic\+Engine}!speed\+\_\+up@{speed\+\_\+up}}
+\index{speed\+\_\+up@{speed\+\_\+up}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{speed\+\_\+up}{speed\_up}}
+{\footnotesize\ttfamily bool Exotic\+Engine\+::speed\+\_\+up\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classExoticEngine_a16475790e675a12ac23a01d81c5557de}{}\label{classExoticEngine_a16475790e675a12ac23a01d81c5557de} 
+\index{Exotic\+Engine@{Exotic\+Engine}!The\+Product@{The\+Product}}
+\index{The\+Product@{The\+Product}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{The\+Product}{TheProduct}}
+{\footnotesize\ttfamily \hyperlink{classWrapper}{Wrapper}$<$\hyperlink{classPathDependent}{Path\+Dependent}$>$ Exotic\+Engine\+::\+The\+Product\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classExoticEngine_af4c36f88d17b753e174b6db02bade7e6}{}\label{classExoticEngine_af4c36f88d17b753e174b6db02bade7e6} 
+\index{Exotic\+Engine@{Exotic\+Engine}!These\+Cash\+Flows@{These\+Cash\+Flows}}
+\index{These\+Cash\+Flows@{These\+Cash\+Flows}!Exotic\+Engine@{Exotic\+Engine}}
+\subsubsection{\texorpdfstring{These\+Cash\+Flows}{TheseCashFlows}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classMyCashFlow_1_1CashFlow}{My\+Cash\+Flow\+::\+Cash\+Flow}$>$ Exotic\+Engine\+::\+These\+Cash\+Flows\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ExoticEngine_8h}{Exotic\+Engine.\+h}\end{DoxyCompactItemize}

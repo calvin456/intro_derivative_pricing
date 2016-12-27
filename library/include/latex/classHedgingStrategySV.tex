@@ -1,0 +1,103 @@
+\hypertarget{classHedgingStrategySV}{}\section{Hedging\+Strategy\+SV$<$ U $>$ Class Template Reference}
+\label{classHedgingStrategySV}\index{Hedging\+Strategy\+S\+V$<$ U $>$@{Hedging\+Strategy\+S\+V$<$ U $>$}}
+
+
+{\ttfamily \#include $<$hedging\+\_\+strategy\+\_\+sv.\+h$>$}
+
+
+
+Inheritance diagram for Hedging\+Strategy\+SV$<$ U $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHedgingStrategySV__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hedging\+Strategy\+SV$<$ U $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classHedgingStrategySV__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHedgingStrategySV_a84ab774ac65cd01cbac84230f7b42eb9}{Hedging\+Strategy\+SV} (double \hyperlink{classHedgingStrategy_ac96528e9f4e5a0d1e5aadcc2ebdcab55}{Option\+Value0}, double \hyperlink{classHedgingStrategy_a313da7bc1911dba2a166d2c7bed5f1d7}{r}, shared\+\_\+ptr$<$ U $>$ \hyperlink{classHedgingStrategy_a65699a183423af9d947bb939ae8e907d}{The\+Option}, shared\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$ The\+Path\+Generation\+\_\+, double \hyperlink{classHedgingStrategy_aedb4069f0709b49482a72b9d9c906a5e}{T})
+\item 
+virtual \hyperlink{classHedgingStrategySV_ae9105e2ff747d92d970fda66de06d8d0}{$\sim$\+Hedging\+Strategy\+SV} ()
+\item 
+virtual double \hyperlink{classHedgingStrategySV_abb9531c069f4d1e758fc23c4bc7ed09c}{Do\+One\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)=0
+\item 
+virtual unsigned long \hyperlink{classHedgingStrategySV_a8cdbb26bfa8da99f16161f2449928a5e}{Get\+Steps} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+shared\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$ \hyperlink{classHedgingStrategySV_aa341650c5b2846606e59e3e6c6225aca}{The\+Path\+Generation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHedgingStrategySV_a84ab774ac65cd01cbac84230f7b42eb9}{}\label{classHedgingStrategySV_a84ab774ac65cd01cbac84230f7b42eb9} 
+\index{Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}!Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}}
+\index{Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}!Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}}
+\subsubsection{\texorpdfstring{Hedging\+Strategy\+S\+V()}{HedgingStrategySV()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+\hyperlink{classHedgingStrategySV}{Hedging\+Strategy\+SV}$<$ U $>$\+::\hyperlink{classHedgingStrategySV}{Hedging\+Strategy\+SV} (\begin{DoxyParamCaption}\item[{double}]{Option\+Value0,  }\item[{double}]{r,  }\item[{shared\+\_\+ptr$<$ U $>$}]{The\+Option,  }\item[{shared\+\_\+ptr$<$ \hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston} $>$}]{The\+Path\+Generation\+\_\+,  }\item[{double}]{T }\end{DoxyParamCaption})}
+
+\hypertarget{classHedgingStrategySV_ae9105e2ff747d92d970fda66de06d8d0}{}\label{classHedgingStrategySV_ae9105e2ff747d92d970fda66de06d8d0} 
+\index{Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}!````~Hedging\+Strategy\+SV@{$\sim$\+Hedging\+Strategy\+SV}}
+\index{````~Hedging\+Strategy\+SV@{$\sim$\+Hedging\+Strategy\+SV}!Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}}
+\subsubsection{\texorpdfstring{$\sim$\+Hedging\+Strategy\+S\+V()}{~HedgingStrategySV()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual \hyperlink{classHedgingStrategySV}{Hedging\+Strategy\+SV}$<$ U $>$\+::$\sim$\hyperlink{classHedgingStrategySV}{Hedging\+Strategy\+SV} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHedgingStrategySV_abb9531c069f4d1e758fc23c4bc7ed09c}{}\label{classHedgingStrategySV_abb9531c069f4d1e758fc23c4bc7ed09c} 
+\index{Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}!Do\+One\+Path@{Do\+One\+Path}}
+\index{Do\+One\+Path@{Do\+One\+Path}!Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}}
+\subsubsection{\texorpdfstring{Do\+One\+Path()}{DoOnePath()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual double \hyperlink{classHedgingStrategySV}{Hedging\+Strategy\+SV}$<$ U $>$\+::Do\+One\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \hyperlink{classHedgingStrategy_ad2a7c02ee59750c40f29a03ee6fee140}{Hedging\+Strategy$<$ U $>$}.
+
+
+
+Implemented in \hyperlink{classDeltaHedgingInstantVol_ac05386c300db720ed07d8465123a8f7a}{Delta\+Hedging\+Instant\+Vol$<$ U $>$}, \hyperlink{classDeltaHedgingCurrentVol_ad235325f348bd58eb54d9dec389aa2e9}{Delta\+Hedging\+Current\+Vol$<$ U $>$}, \hyperlink{classDeltaHedgingRMSDec_aa9118ce56921178e38a7ed8a6acee656}{Delta\+Hedging\+R\+M\+S\+Dec$<$ U $>$}, and \hyperlink{classDeltaHedgingRMS_ad1dfe5625f1064b9b1f8a45b20f0ee50}{Delta\+Hedging\+R\+M\+S$<$ U $>$}.
+
+\hypertarget{classHedgingStrategySV_a8cdbb26bfa8da99f16161f2449928a5e}{}\label{classHedgingStrategySV_a8cdbb26bfa8da99f16161f2449928a5e} 
+\index{Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}!Get\+Steps@{Get\+Steps}}
+\index{Get\+Steps@{Get\+Steps}!Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}}
+\subsubsection{\texorpdfstring{Get\+Steps()}{GetSteps()}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+virtual unsigned long \hyperlink{classHedgingStrategySV}{Hedging\+Strategy\+SV}$<$ U $>$\+::Get\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classHedgingStrategy_a4df1155158f019fb0c4f565045b9e633}{Hedging\+Strategy$<$ U $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHedgingStrategySV_aa341650c5b2846606e59e3e6c6225aca}{}\label{classHedgingStrategySV_aa341650c5b2846606e59e3e6c6225aca} 
+\index{Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}!The\+Path\+Generation@{The\+Path\+Generation}}
+\index{The\+Path\+Generation@{The\+Path\+Generation}!Hedging\+Strategy\+SV@{Hedging\+Strategy\+SV}}
+\subsubsection{\texorpdfstring{The\+Path\+Generation}{ThePathGeneration}}
+{\footnotesize\ttfamily template$<$typename U $>$ \\
+shared\+\_\+ptr$<$\hyperlink{classPathGenerationHeston}{Path\+Generation\+Heston}$>$ \hyperlink{classHedgingStrategySV}{Hedging\+Strategy\+SV}$<$ U $>$\+::The\+Path\+Generation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hedging__strategy__sv_8h}{hedging\+\_\+strategy\+\_\+sv.\+h}\end{DoxyCompactItemize}

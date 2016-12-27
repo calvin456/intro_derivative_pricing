@@ -1,0 +1,7 @@
+<map id="PayOffMulti" name="PayOffMulti">
+<area shape="rect" id="node3" href="$classExchangeOption.html" title="{ExchangeOption\n||+ ExchangeOption()\l+ ExchangeOption()\l+ operator()()\l+ ~ExchangeOption()\l+ clone()\l}" alt="" coords="5,461,152,597"/>
+<area shape="rect" id="node4" href="$classQuantoCall.html" title="{QuantoCall\n||+ QuantoCall()\l+ QuantoCall()\l+ operator()()\l+ ~QuantoCall()\l+ clone()\l}" alt="" coords="176,461,291,597"/>
+<area shape="rect" id="node5" href="$classQuantoPut.html" title="{QuantoPut\n||+ QuantoPut()\l+ QuantoPut()\l+ operator()()\l+ ~QuantoPut()\l+ clone()\l}" alt="" coords="315,461,427,597"/>
+<area shape="rect" id="node6" href="$classSpreadOption.html" title="{SpreadOption\n||+ SpreadOption()\l+ SpreadOption()\l+ operator()()\l+ ~SpreadOption()\l+ clone()\l}" alt="" coords="450,461,579,597"/>
+<area shape="rect" id="node2" href="$classPayOff.html" title="{PayOff\n||+ PayOff()\l+ PayOff()\l+ operator()()\l+ PayOff()\l+ operator()()\l+ ~PayOff()\l+ PayOff()\l+ operator()()\l+ ~PayOff()\l+ clone()\l+ GetStrike()\l+ SetStrike()\l}" alt="" coords="253,5,350,244"/>
+</map>

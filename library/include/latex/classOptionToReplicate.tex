@@ -1,0 +1,186 @@
+\hypertarget{classOptionToReplicate}{}\section{Option\+To\+Replicate Class Reference}
+\label{classOptionToReplicate}\index{Option\+To\+Replicate@{Option\+To\+Replicate}}
+
+
+{\ttfamily \#include $<$Options\+To\+Replicate.\+h$>$}
+
+
+
+Inheritance diagram for Option\+To\+Replicate\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classOptionToReplicate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Option\+To\+Replicate\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classOptionToReplicate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOptionToReplicate_a0fd76dc048a75371e306275fdd5a2aa5}{Option\+To\+Replicate} (double \hyperlink{classOptionToReplicate_a64ffcbc25fc60c5dc18ca4b78194ca89}{Strike}, double \hyperlink{classOptionToReplicate_a7cd35379de855ad6e53008fbf7e9dda0}{Barrier}, double \hyperlink{classOptionToReplicate_ad344ef3a4a4e93372c390c60420d1a61}{r}, double \hyperlink{classOptionToReplicate_a3a28b1ab0cd1ee635b3c31998bd2c572}{Vol}, double \hyperlink{classOptionToReplicate_a62014eac88a2a766ed674be69e9fd926}{Expiry}, double \hyperlink{classOptionToReplicate_aa088a512c974dc622ca1bbca61ec5e34}{d}=0.\+0)
+\item 
+\hyperlink{classOptionToReplicate_a94d108f85fbd72b41d68f5e22061d0c5}{Option\+To\+Replicate} (const \hyperlink{classOptionToReplicate}{Option\+To\+Replicate} \&other)
+\item 
+virtual \hyperlink{classOptionToReplicate_a215ec3a4ce1dd20524ee87c663e8ed74}{$\sim$\+Option\+To\+Replicate} ()
+\item 
+virtual void \hyperlink{classOptionToReplicate_ae744ce948286546566cd424eaa7ea5cb}{Generate\+Ptf} (unsigned long steps, shared\+\_\+ptr$<$ Option $>$ Option\+Final)=0
+\item 
+virtual void \hyperlink{classOptionToReplicate_ad3315e5766faa9be46fa690d8d358b9d}{Generate\+Ptf1} (unsigned long steps, shared\+\_\+ptr$<$ Option $>$ Option\+Final)=0
+\item 
+virtual void \hyperlink{classOptionToReplicate_a47ad183412648a70cd77957383eb421f}{Generate\+Ptf} (unsigned long steps, const vector$<$ double $>$ \&\hyperlink{classOptionToReplicate_a3a28b1ab0cd1ee635b3c31998bd2c572}{Vol}, shared\+\_\+ptr$<$ Option $>$ Option\+Final)=0
+\item 
+virtual double \hyperlink{classOptionToReplicate_a7f39f64594b4baffb45d61a65b38c6b2}{Get\+Value} (double Spot, double t, shared\+\_\+ptr$<$ Option $>$ Option\+Final) const =0
+\item 
+virtual double \hyperlink{classOptionToReplicate_a738f813473de4945df377bcd3fe17f6e}{Get\+Value} (double Spot, const vector$<$ double $>$ \&\hyperlink{classOptionToReplicate_a3a28b1ab0cd1ee635b3c31998bd2c572}{Vol}, double t, shared\+\_\+ptr$<$ Option $>$ Option\+Final) const =0
+\item 
+virtual void \hyperlink{classOptionToReplicate_ac93d01199a0c2dfcfedb6185d6f0de2f}{set\+Rate} (double r\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classOptionToReplicate_a64ffcbc25fc60c5dc18ca4b78194ca89}{Strike}
+\item 
+double \hyperlink{classOptionToReplicate_a7cd35379de855ad6e53008fbf7e9dda0}{Barrier}
+\item 
+double \hyperlink{classOptionToReplicate_a62014eac88a2a766ed674be69e9fd926}{Expiry}
+\item 
+double \hyperlink{classOptionToReplicate_ad344ef3a4a4e93372c390c60420d1a61}{r}
+\item 
+double \hyperlink{classOptionToReplicate_aa088a512c974dc622ca1bbca61ec5e34}{d}
+\item 
+double \hyperlink{classOptionToReplicate_a3a28b1ab0cd1ee635b3c31998bd2c572}{Vol}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classOptionToReplicate_a0fd76dc048a75371e306275fdd5a2aa5}{}\label{classOptionToReplicate_a0fd76dc048a75371e306275fdd5a2aa5} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Option\+To\+Replicate()}{OptionToReplicate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Option\+To\+Replicate\+::\+Option\+To\+Replicate (\begin{DoxyParamCaption}\item[{double}]{Strike,  }\item[{double}]{Barrier,  }\item[{double}]{r,  }\item[{double}]{Vol,  }\item[{double}]{Expiry,  }\item[{double}]{d = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classOptionToReplicate_a94d108f85fbd72b41d68f5e22061d0c5}{}\label{classOptionToReplicate_a94d108f85fbd72b41d68f5e22061d0c5} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Option\+To\+Replicate()}{OptionToReplicate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Option\+To\+Replicate\+::\+Option\+To\+Replicate (\begin{DoxyParamCaption}\item[{const \hyperlink{classOptionToReplicate}{Option\+To\+Replicate} \&}]{other }\end{DoxyParamCaption})}
+
+\hypertarget{classOptionToReplicate_a215ec3a4ce1dd20524ee87c663e8ed74}{}\label{classOptionToReplicate_a215ec3a4ce1dd20524ee87c663e8ed74} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!````~Option\+To\+Replicate@{$\sim$\+Option\+To\+Replicate}}
+\index{````~Option\+To\+Replicate@{$\sim$\+Option\+To\+Replicate}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{$\sim$\+Option\+To\+Replicate()}{~OptionToReplicate()}}
+{\footnotesize\ttfamily virtual Option\+To\+Replicate\+::$\sim$\+Option\+To\+Replicate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classOptionToReplicate_ae744ce948286546566cd424eaa7ea5cb}{}\label{classOptionToReplicate_ae744ce948286546566cd424eaa7ea5cb} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Generate\+Ptf@{Generate\+Ptf}}
+\index{Generate\+Ptf@{Generate\+Ptf}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Generate\+Ptf()}{GeneratePtf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Option\+To\+Replicate\+::\+Generate\+Ptf (\begin{DoxyParamCaption}\item[{unsigned long}]{steps,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classUpAndOutCall_aed1268fa0b2bd83e9191385560bb7910}{Up\+And\+Out\+Call}, and \hyperlink{classDownAndOutCall_a378b557d728ed157db9d41ef39bb8abf}{Down\+And\+Out\+Call}.
+
+\hypertarget{classOptionToReplicate_a47ad183412648a70cd77957383eb421f}{}\label{classOptionToReplicate_a47ad183412648a70cd77957383eb421f} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Generate\+Ptf@{Generate\+Ptf}}
+\index{Generate\+Ptf@{Generate\+Ptf}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Generate\+Ptf()}{GeneratePtf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Option\+To\+Replicate\+::\+Generate\+Ptf (\begin{DoxyParamCaption}\item[{unsigned long}]{steps,  }\item[{const vector$<$ double $>$ \&}]{Vol,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classUpAndOutCall_a3afb135f946b6c42226c15a36a0b1971}{Up\+And\+Out\+Call}, and \hyperlink{classDownAndOutCall_a7f4f73437c1e61cc57f96fadd05a7df1}{Down\+And\+Out\+Call}.
+
+\hypertarget{classOptionToReplicate_ad3315e5766faa9be46fa690d8d358b9d}{}\label{classOptionToReplicate_ad3315e5766faa9be46fa690d8d358b9d} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Generate\+Ptf1@{Generate\+Ptf1}}
+\index{Generate\+Ptf1@{Generate\+Ptf1}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Generate\+Ptf1()}{GeneratePtf1()}}
+{\footnotesize\ttfamily virtual void Option\+To\+Replicate\+::\+Generate\+Ptf1 (\begin{DoxyParamCaption}\item[{unsigned long}]{steps,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classUpAndOutCall_a2e25a8a717d611d6593fb9387e9d3b22}{Up\+And\+Out\+Call}, and \hyperlink{classDownAndOutCall_a0b8b44b58822b7c4f75e2436b9cf69d7}{Down\+And\+Out\+Call}.
+
+\hypertarget{classOptionToReplicate_a7f39f64594b4baffb45d61a65b38c6b2}{}\label{classOptionToReplicate_a7f39f64594b4baffb45d61a65b38c6b2} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Get\+Value()}{GetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double Option\+To\+Replicate\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{double}]{Spot,  }\item[{double}]{t,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classUpAndOutCall_a472ab725d98145e17219dbc6106b7b5c}{Up\+And\+Out\+Call}, and \hyperlink{classDownAndOutCall_ab5855704cc4680238596427a115cb3e1}{Down\+And\+Out\+Call}.
+
+\hypertarget{classOptionToReplicate_a738f813473de4945df377bcd3fe17f6e}{}\label{classOptionToReplicate_a738f813473de4945df377bcd3fe17f6e} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Get\+Value()}{GetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double Option\+To\+Replicate\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{double}]{Spot,  }\item[{const vector$<$ double $>$ \&}]{Vol,  }\item[{double}]{t,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classUpAndOutCall_a6e3ed611443089f59d148e4f30428b0b}{Up\+And\+Out\+Call}, and \hyperlink{classDownAndOutCall_a6ccfc2e5d77a48558087d4b9df914377}{Down\+And\+Out\+Call}.
+
+\hypertarget{classOptionToReplicate_ac93d01199a0c2dfcfedb6185d6f0de2f}{}\label{classOptionToReplicate_ac93d01199a0c2dfcfedb6185d6f0de2f} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!set\+Rate@{set\+Rate}}
+\index{set\+Rate@{set\+Rate}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{set\+Rate()}{setRate()}}
+{\footnotesize\ttfamily virtual void Option\+To\+Replicate\+::set\+Rate (\begin{DoxyParamCaption}\item[{double}]{r\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classOptionToReplicate_a7cd35379de855ad6e53008fbf7e9dda0}{}\label{classOptionToReplicate_a7cd35379de855ad6e53008fbf7e9dda0} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Barrier@{Barrier}}
+\index{Barrier@{Barrier}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Barrier}{Barrier}}
+{\footnotesize\ttfamily double Option\+To\+Replicate\+::\+Barrier\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classOptionToReplicate_aa088a512c974dc622ca1bbca61ec5e34}{}\label{classOptionToReplicate_aa088a512c974dc622ca1bbca61ec5e34} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!d@{d}}
+\index{d@{d}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily double Option\+To\+Replicate\+::d\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classOptionToReplicate_a62014eac88a2a766ed674be69e9fd926}{}\label{classOptionToReplicate_a62014eac88a2a766ed674be69e9fd926} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Expiry@{Expiry}}
+\index{Expiry@{Expiry}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Expiry}{Expiry}}
+{\footnotesize\ttfamily double Option\+To\+Replicate\+::\+Expiry\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classOptionToReplicate_ad344ef3a4a4e93372c390c60420d1a61}{}\label{classOptionToReplicate_ad344ef3a4a4e93372c390c60420d1a61} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!r@{r}}
+\index{r@{r}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily double Option\+To\+Replicate\+::r\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classOptionToReplicate_a64ffcbc25fc60c5dc18ca4b78194ca89}{}\label{classOptionToReplicate_a64ffcbc25fc60c5dc18ca4b78194ca89} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Strike@{Strike}}
+\index{Strike@{Strike}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Strike}{Strike}}
+{\footnotesize\ttfamily double Option\+To\+Replicate\+::\+Strike\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classOptionToReplicate_a3a28b1ab0cd1ee635b3c31998bd2c572}{}\label{classOptionToReplicate_a3a28b1ab0cd1ee635b3c31998bd2c572} 
+\index{Option\+To\+Replicate@{Option\+To\+Replicate}!Vol@{Vol}}
+\index{Vol@{Vol}!Option\+To\+Replicate@{Option\+To\+Replicate}}
+\subsubsection{\texorpdfstring{Vol}{Vol}}
+{\footnotesize\ttfamily double Option\+To\+Replicate\+::\+Vol\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{OptionsToReplicate_8h}{Options\+To\+Replicate.\+h}\end{DoxyCompactItemize}

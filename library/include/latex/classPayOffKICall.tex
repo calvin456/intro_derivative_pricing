@@ -1,0 +1,93 @@
+\hypertarget{classPayOffKICall}{}\section{Pay\+Off\+K\+I\+Call Class Reference}
+\label{classPayOffKICall}\index{Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}}
+
+
+{\ttfamily \#include $<$Barrier\+Option.\+h$>$}
+
+
+
+Inheritance diagram for Pay\+Off\+K\+I\+Call\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classPayOffKICall__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pay\+Off\+K\+I\+Call\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classPayOffKICall__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPayOffKICall_ae9e4e8412e6c51e6642d0d9d77c7e644}{Pay\+Off\+K\+I\+Call} (double Barrier\+\_\+, double Strike\+\_\+, double \hyperlink{classPayOffBarrier_aca3ea631dcdb28a1df971b74774e41f8}{Rebate}=0.\+0)
+\item 
+virtual double \hyperlink{classPayOffKICall_a4acdec35a77873ea44f529fad9a348d5}{operator()} (double Spot) const
+\item 
+virtual \hyperlink{classPayOffKICall_a94543d709558c055c9ab3ba6ae7b3f42}{$\sim$\+Pay\+Off\+K\+I\+Call} ()
+\item 
+virtual bool \hyperlink{classPayOffKICall_af16b41bce04b47515f543d2da2c449a9}{Is\+Touched} (double Spot) const
+\item 
+virtual \hyperlink{classPayOff}{Pay\+Off} $\ast$ \hyperlink{classPayOffKICall_a88d8fbd976608d0a4da969e638a261b4}{clone} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPayOffKICall_ae9e4e8412e6c51e6642d0d9d77c7e644}{}\label{classPayOffKICall_ae9e4e8412e6c51e6642d0d9d77c7e644} 
+\index{Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}!Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}}
+\index{Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}!Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}}
+\subsubsection{\texorpdfstring{Pay\+Off\+K\+I\+Call()}{PayOffKICall()}}
+{\footnotesize\ttfamily Pay\+Off\+K\+I\+Call\+::\+Pay\+Off\+K\+I\+Call (\begin{DoxyParamCaption}\item[{double}]{Barrier\+\_\+,  }\item[{double}]{Strike\+\_\+,  }\item[{double}]{Rebate = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classPayOffKICall_a94543d709558c055c9ab3ba6ae7b3f42}{}\label{classPayOffKICall_a94543d709558c055c9ab3ba6ae7b3f42} 
+\index{Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}!````~Pay\+Off\+K\+I\+Call@{$\sim$\+Pay\+Off\+K\+I\+Call}}
+\index{````~Pay\+Off\+K\+I\+Call@{$\sim$\+Pay\+Off\+K\+I\+Call}!Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}}
+\subsubsection{\texorpdfstring{$\sim$\+Pay\+Off\+K\+I\+Call()}{~PayOffKICall()}}
+{\footnotesize\ttfamily virtual Pay\+Off\+K\+I\+Call\+::$\sim$\+Pay\+Off\+K\+I\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPayOffKICall_a88d8fbd976608d0a4da969e638a261b4}{}\label{classPayOffKICall_a88d8fbd976608d0a4da969e638a261b4} 
+\index{Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}!clone@{clone}}
+\index{clone@{clone}!Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classPayOff}{Pay\+Off}$\ast$ Pay\+Off\+K\+I\+Call\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPayOff_ad8194d5b82247ae89c25c515f0ba806a}{Pay\+Off}.
+
+\hypertarget{classPayOffKICall_af16b41bce04b47515f543d2da2c449a9}{}\label{classPayOffKICall_af16b41bce04b47515f543d2da2c449a9} 
+\index{Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}!Is\+Touched@{Is\+Touched}}
+\index{Is\+Touched@{Is\+Touched}!Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}}
+\subsubsection{\texorpdfstring{Is\+Touched()}{IsTouched()}}
+{\footnotesize\ttfamily virtual bool Pay\+Off\+K\+I\+Call\+::\+Is\+Touched (\begin{DoxyParamCaption}\item[{double}]{Spot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPayOffBarrier_a2aa9162c618c4f72a6593dc625e1e1e8}{Pay\+Off\+Barrier}.
+
+\hypertarget{classPayOffKICall_a4acdec35a77873ea44f529fad9a348d5}{}\label{classPayOffKICall_a4acdec35a77873ea44f529fad9a348d5} 
+\index{Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}!operator()@{operator()}}
+\index{operator()@{operator()}!Pay\+Off\+K\+I\+Call@{Pay\+Off\+K\+I\+Call}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual double Pay\+Off\+K\+I\+Call\+::operator() (\begin{DoxyParamCaption}\item[{double}]{Spot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPayOff_a5ae17d82c233ef5568c8fb0539703000}{Pay\+Off}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BarrierOption_8h}{Barrier\+Option.\+h}\end{DoxyCompactItemize}

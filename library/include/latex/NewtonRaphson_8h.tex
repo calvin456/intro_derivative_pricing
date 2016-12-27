@@ -1,0 +1,37 @@
+\hypertarget{NewtonRaphson_8h}{}\section{Newton\+Raphson.\+h File Reference}
+\label{NewtonRaphson_8h}\index{Newton\+Raphson.\+h@{Newton\+Raphson.\+h}}
+{\ttfamily \#include $<$Terminator.\+h$>$}\newline
+{\ttfamily \#include $<$Timer.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for Newton\+Raphson.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{NewtonRaphson_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T , double(\+T\+::$\ast$)(double) const Value, double(\+T\+::$\ast$)(double) const Derivative$>$ }\\double \hyperlink{NewtonRaphson_8h_a1dd612cdbc00607803438d9195ea10ad}{Newton\+Raphson} (double Target, double Start, double Tolerance, const T \&The\+Object)
+\item 
+{\footnotesize template$<$class T , double(\+T\+::$\ast$)(double) const Value, double(\+T\+::$\ast$)(double) const Derivative$>$ }\\double \hyperlink{NewtonRaphson_8h_ab4e09da5c0540c8bcfde5e929d26560a}{Newton\+Raphson1} (double Target, double Start, double Tolerance, const T \&The\+Object, \hyperlink{classTerminator}{Terminator} \&Terminator\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{NewtonRaphson_8h_a1dd612cdbc00607803438d9195ea10ad}{}\label{NewtonRaphson_8h_a1dd612cdbc00607803438d9195ea10ad} 
+\index{Newton\+Raphson.\+h@{Newton\+Raphson.\+h}!Newton\+Raphson@{Newton\+Raphson}}
+\index{Newton\+Raphson@{Newton\+Raphson}!Newton\+Raphson.\+h@{Newton\+Raphson.\+h}}
+\subsubsection{\texorpdfstring{Newton\+Raphson()}{NewtonRaphson()}}
+{\footnotesize\ttfamily template$<$class T , double(\+T\+::$\ast$)(double) const Value, double(\+T\+::$\ast$)(double) const Derivative$>$ \\
+double Newton\+Raphson (\begin{DoxyParamCaption}\item[{double}]{Target,  }\item[{double}]{Start,  }\item[{double}]{Tolerance,  }\item[{const T \&}]{The\+Object }\end{DoxyParamCaption})}
+
+\hypertarget{NewtonRaphson_8h_ab4e09da5c0540c8bcfde5e929d26560a}{}\label{NewtonRaphson_8h_ab4e09da5c0540c8bcfde5e929d26560a} 
+\index{Newton\+Raphson.\+h@{Newton\+Raphson.\+h}!Newton\+Raphson1@{Newton\+Raphson1}}
+\index{Newton\+Raphson1@{Newton\+Raphson1}!Newton\+Raphson.\+h@{Newton\+Raphson.\+h}}
+\subsubsection{\texorpdfstring{Newton\+Raphson1()}{NewtonRaphson1()}}
+{\footnotesize\ttfamily template$<$class T , double(\+T\+::$\ast$)(double) const Value, double(\+T\+::$\ast$)(double) const Derivative$>$ \\
+double Newton\+Raphson1 (\begin{DoxyParamCaption}\item[{double}]{Target,  }\item[{double}]{Start,  }\item[{double}]{Tolerance,  }\item[{const T \&}]{The\+Object,  }\item[{\hyperlink{classTerminator}{Terminator} \&}]{Terminator\+\_\+ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,125 @@
+\hypertarget{classPathGenerationGBM}{}\section{Path\+Generation\+G\+BM Class Reference}
+\label{classPathGenerationGBM}\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+
+
+{\ttfamily \#include $<$path\+\_\+generation\+\_\+gbm.\+h$>$}
+
+
+
+Inheritance diagram for Path\+Generation\+G\+BM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classPathGenerationGBM__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Path\+Generation\+G\+BM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classPathGenerationGBM__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPathGenerationGBM_aba41021bb84202742fea8e69e8d09c86}{Path\+Generation\+G\+BM} (shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$ The\+Generator\+\_\+, double Spot0\+\_\+, double T\+\_\+, const \hyperlink{classParameters}{Parameters} \&drift\+\_\+, const \hyperlink{classParameters}{Parameters} \&vol\+\_\+, unsigned long steps\+\_\+=1)
+\item 
+virtual \hyperlink{classPathGenerationGBM_a9e6f1c4803d020420dbffdb3b1107a02}{$\sim$\+Path\+Generation\+G\+BM} ()
+\item 
+double \hyperlink{classPathGenerationGBM_ac8bbe44a4ec2fd4a2249086d912dff33}{Get\+One\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+) const
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \hyperlink{classPathGenerationGBM_abcf6790de9e9b4deef334653409a5c3f}{Get\+Whole\+Path} (\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&args\+\_\+)
+\item 
+virtual \hyperlink{classParameters}{Parameters} \hyperlink{classPathGenerationGBM_afd14338fefddbe66fa7328e33a9ab60b}{Get\+Drift} () const
+\item 
+virtual \hyperlink{classParameters}{Parameters} \hyperlink{classPathGenerationGBM_a9c4387dfc5f0d024f5d112996546c0c7}{Get\+Vol} () const
+\item 
+void \hyperlink{classPathGenerationGBM_ad6e5900646658170c9491b2897c3a4bf}{Set\+Steps} (unsigned long steps\+\_\+)
+\item 
+void \hyperlink{classPathGenerationGBM_a67aa2511f5cc9d90b81ab97730248e09}{Set\+Drift} (const \hyperlink{classParameters}{Parameters} \&drift\+\_\+)
+\item 
+void \hyperlink{classPathGenerationGBM_af1212fa64fcb9a97be42b4482ff51b65}{Set\+Vol} (const \hyperlink{classParameters}{Parameters} \&vol\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPathGenerationGBM_aba41021bb84202742fea8e69e8d09c86}{}\label{classPathGenerationGBM_aba41021bb84202742fea8e69e8d09c86} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{Path\+Generation\+G\+B\+M()}{PathGenerationGBM()}}
+{\footnotesize\ttfamily Path\+Generation\+G\+B\+M\+::\+Path\+Generation\+G\+BM (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \hyperlink{classRandomBase}{Random\+Base} $>$}]{The\+Generator\+\_\+,  }\item[{double}]{Spot0\+\_\+,  }\item[{double}]{T\+\_\+,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{drift\+\_\+,  }\item[{const \hyperlink{classParameters}{Parameters} \&}]{vol\+\_\+,  }\item[{unsigned long}]{steps\+\_\+ = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\hypertarget{classPathGenerationGBM_a9e6f1c4803d020420dbffdb3b1107a02}{}\label{classPathGenerationGBM_a9e6f1c4803d020420dbffdb3b1107a02} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!````~Path\+Generation\+G\+BM@{$\sim$\+Path\+Generation\+G\+BM}}
+\index{````~Path\+Generation\+G\+BM@{$\sim$\+Path\+Generation\+G\+BM}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{$\sim$\+Path\+Generation\+G\+B\+M()}{~PathGenerationGBM()}}
+{\footnotesize\ttfamily virtual Path\+Generation\+G\+B\+M\+::$\sim$\+Path\+Generation\+G\+BM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPathGenerationGBM_afd14338fefddbe66fa7328e33a9ab60b}{}\label{classPathGenerationGBM_afd14338fefddbe66fa7328e33a9ab60b} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Get\+Drift@{Get\+Drift}}
+\index{Get\+Drift@{Get\+Drift}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{Get\+Drift()}{GetDrift()}}
+{\footnotesize\ttfamily virtual \hyperlink{classParameters}{Parameters} Path\+Generation\+G\+B\+M\+::\+Get\+Drift (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\hypertarget{classPathGenerationGBM_ac8bbe44a4ec2fd4a2249086d912dff33}{}\label{classPathGenerationGBM_ac8bbe44a4ec2fd4a2249086d912dff33} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Get\+One\+Path@{Get\+One\+Path}}
+\index{Get\+One\+Path@{Get\+One\+Path}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{Get\+One\+Path()}{GetOnePath()}}
+{\footnotesize\ttfamily double Path\+Generation\+G\+B\+M\+::\+Get\+One\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPathGeneration_a9a64a37f4dd9b2b3ef84f3cb66aed843}{Path\+Generation}.
+
+\hypertarget{classPathGenerationGBM_a9c4387dfc5f0d024f5d112996546c0c7}{}\label{classPathGenerationGBM_a9c4387dfc5f0d024f5d112996546c0c7} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Get\+Vol@{Get\+Vol}}
+\index{Get\+Vol@{Get\+Vol}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{Get\+Vol()}{GetVol()}}
+{\footnotesize\ttfamily virtual \hyperlink{classParameters}{Parameters} Path\+Generation\+G\+B\+M\+::\+Get\+Vol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\hypertarget{classPathGenerationGBM_abcf6790de9e9b4deef334653409a5c3f}{}\label{classPathGenerationGBM_abcf6790de9e9b4deef334653409a5c3f} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Get\+Whole\+Path@{Get\+Whole\+Path}}
+\index{Get\+Whole\+Path@{Get\+Whole\+Path}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{Get\+Whole\+Path()}{GetWholePath()}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array} Path\+Generation\+G\+B\+M\+::\+Get\+Whole\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args} \&}]{args\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPathGeneration_ace7520fed7b6a7711f4d3684c974cb76}{Path\+Generation}.
+
+\hypertarget{classPathGenerationGBM_a67aa2511f5cc9d90b81ab97730248e09}{}\label{classPathGenerationGBM_a67aa2511f5cc9d90b81ab97730248e09} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Set\+Drift@{Set\+Drift}}
+\index{Set\+Drift@{Set\+Drift}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{Set\+Drift()}{SetDrift()}}
+{\footnotesize\ttfamily void Path\+Generation\+G\+B\+M\+::\+Set\+Drift (\begin{DoxyParamCaption}\item[{const \hyperlink{classParameters}{Parameters} \&}]{drift\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classPathGenerationGBM_ad6e5900646658170c9491b2897c3a4bf}{}\label{classPathGenerationGBM_ad6e5900646658170c9491b2897c3a4bf} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Set\+Steps@{Set\+Steps}}
+\index{Set\+Steps@{Set\+Steps}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{Set\+Steps()}{SetSteps()}}
+{\footnotesize\ttfamily void Path\+Generation\+G\+B\+M\+::\+Set\+Steps (\begin{DoxyParamCaption}\item[{unsigned long}]{steps\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classPathGeneration_afc14af2b771829ca2581463e4e4c1213}{Path\+Generation}.
+
+\hypertarget{classPathGenerationGBM_af1212fa64fcb9a97be42b4482ff51b65}{}\label{classPathGenerationGBM_af1212fa64fcb9a97be42b4482ff51b65} 
+\index{Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}!Set\+Vol@{Set\+Vol}}
+\index{Set\+Vol@{Set\+Vol}!Path\+Generation\+G\+BM@{Path\+Generation\+G\+BM}}
+\subsubsection{\texorpdfstring{Set\+Vol()}{SetVol()}}
+{\footnotesize\ttfamily void Path\+Generation\+G\+B\+M\+::\+Set\+Vol (\begin{DoxyParamCaption}\item[{const \hyperlink{classParameters}{Parameters} \&}]{vol\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{path__generation__gbm_8h}{path\+\_\+generation\+\_\+gbm.\+h}\end{DoxyCompactItemize}

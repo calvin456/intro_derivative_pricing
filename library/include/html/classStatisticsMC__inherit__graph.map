@@ -1,0 +1,12 @@
+<map id="StatisticsMC" name="StatisticsMC">
+<area shape="rect" id="node2" href="$classConvergenceTable.html" title="{ConvergenceTable\n||+ ConvergenceTable()\l+ clone()\l+ DumpOneResult()\l+ GetResultsSoFar()\l}" alt="" coords="5,189,156,311"/>
+<area shape="rect" id="node3" href="$classStatisticsKeepTrack.html" title="{StatisticsKeepTrack\n||+ StatisticsKeepTrack()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="181,189,341,311"/>
+<area shape="rect" id="node4" href="$classStatisticsMean.html" title="{StatisticsMean\n||+ StatisticsMean()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="365,189,508,311"/>
+<area shape="rect" id="node5" href="$classStatisticsMoments4.html" title="{StatisticsMoments4\n||+ StatisticsMoments4()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="532,189,691,311"/>
+<area shape="rect" id="node6" href="$classStatisticsRMS.html" title="{StatisticsRMS\n||+ StatisticsRMS()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="715,189,857,311"/>
+<area shape="rect" id="node7" href="$classStatisticsSE.html" title="{StatisticsSE\n||+ StatisticsSE()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="881,189,1024,311"/>
+<area shape="rect" id="node8" href="$classStatisticsStdDev.html" title="{StatisticsStdDev\n||+ StatisticsStdDev()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="1048,189,1191,311"/>
+<area shape="rect" id="node9" href="$classStatisticsVariance.html" title="{StatisticsVariance\n||+ StatisticsVariance()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="1215,189,1363,311"/>
+<area shape="rect" id="node10" href="$classStatsGatherer.html" title="{StatsGatherer\n||+ StatsGatherer()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="1387,189,1529,311"/>
+<area shape="rect" id="node11" href="$classValueAtRisk.html" title="{ValueAtRisk\n||+ ValueAtRisk()\l+ DumpOneResult()\l+ GetResultsSoFar()\l+ clone()\l}" alt="" coords="1553,189,1696,311"/>
+</map>

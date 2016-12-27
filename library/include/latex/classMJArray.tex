@@ -1,0 +1,222 @@
+\hypertarget{classMJArray}{}\section{M\+J\+Array Class Reference}
+\label{classMJArray}\index{M\+J\+Array@{M\+J\+Array}}
+
+
+{\ttfamily \#include $<$Arrays.\+h$>$}
+
+
+
+Collaboration diagram for M\+J\+Array\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classMJArray__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMJArray_a422fa68b394b9528cca2e8fbaefb10e9}{M\+J\+Array} (unsigned long \hyperlink{classMJArray_a997898f10d39bc94bd242c308a85bb72}{size}=0)
+\item 
+\hyperlink{classMJArray_abc20a4af4285b9cc1b53ef1c9455f7b4}{M\+J\+Array} (const \hyperlink{classMJArray}{M\+J\+Array} \&original)
+\item 
+\hyperlink{classMJArray_a7e3ed3537c34e7643a920069862bc4fa}{$\sim$\+M\+J\+Array} ()
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_aa9e039dcbf214e52e99a06d31ae7d240}{operator=} (const \hyperlink{classMJArray}{M\+J\+Array} \&original)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_a5c7b21d9d8d045c886de8e5a18d34c98}{operator=} (const double \&val)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_a90d77478cd3c6a90d8abb4dbbaff7f34}{operator+=} (const \hyperlink{classMJArray}{M\+J\+Array} \&operand)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_ab776bc1d3b6d080f74e9d38c0a8e274e}{operator-\/=} (const \hyperlink{classMJArray}{M\+J\+Array} \&operand)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_ae376c7745492b26cd040412fd4599a2e}{operator/=} (const \hyperlink{classMJArray}{M\+J\+Array} \&operand)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_a00f266e67cd2e280235a3733bc86efaa}{operator$\ast$=} (const \hyperlink{classMJArray}{M\+J\+Array} \&operand)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_a63ea203f87c5e0c4ec6e63089d3c4374}{operator+=} (const double \&operand)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_afd06295917fc094dea817bf83222d3d1}{operator-\/=} (const double \&operand)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_a376204e0aa5fc772aa881598e77020fc}{operator/=} (const double \&operand)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \& \hyperlink{classMJArray_a22272f9dcbc763c98b67368f6a897aad}{operator$\ast$=} (const double \&operand)
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \hyperlink{classMJArray_a7564d3a887e8635f0430263839dfc602}{apply} (double f(double)) const
+\item 
+void \hyperlink{classMJArray_a0bcd1aaca8e71b17364ae9f00eaf88df}{print} () const
+\item 
+double \hyperlink{classMJArray_a813a61264d4a763702bec802199fec2c}{operator\mbox{[}$\,$\mbox{]}} (unsigned long i) const
+\item 
+double \& \hyperlink{classMJArray_a039a83653bc0ba6f8c0aa7c74deb3bd7}{operator\mbox{[}$\,$\mbox{]}} (unsigned long i)
+\item 
+unsigned long \hyperlink{classMJArray_a997898f10d39bc94bd242c308a85bb72}{size} () const
+\item 
+void \hyperlink{classMJArray_a06c85b4ded36ba52bd8ca14d712b4b2c}{resize} (unsigned long new\+Size)
+\item 
+double \hyperlink{classMJArray_ad79c3f21f9d1329546de066b1b3cc9f6}{sum} () const
+\item 
+double \hyperlink{classMJArray_afb89bd41c6b811616336d4dd7f7697fb}{min} () const
+\item 
+double \hyperlink{classMJArray_ad96b5b1988e216bece33f8cad1907ebb}{max} () const
+\item 
+\hyperlink{classMJArray}{M\+J\+Array} \hyperlink{classMJArray_aa7ce6c82b0da3b3a6b691327c83500f0}{merge} (const \hyperlink{classMJArray}{M\+J\+Array} \&array)
+\item 
+void \hyperlink{classMJArray_adbdbdf57961201fe20593a346f1e3c09}{remove\+\_\+duplicate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMJArray_a422fa68b394b9528cca2e8fbaefb10e9}{}\label{classMJArray_a422fa68b394b9528cca2e8fbaefb10e9} 
+\index{M\+J\+Array@{M\+J\+Array}!M\+J\+Array@{M\+J\+Array}}
+\index{M\+J\+Array@{M\+J\+Array}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{M\+J\+Array()}{MJArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily M\+J\+Array\+::\+M\+J\+Array (\begin{DoxyParamCaption}\item[{unsigned long}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\hypertarget{classMJArray_abc20a4af4285b9cc1b53ef1c9455f7b4}{}\label{classMJArray_abc20a4af4285b9cc1b53ef1c9455f7b4} 
+\index{M\+J\+Array@{M\+J\+Array}!M\+J\+Array@{M\+J\+Array}}
+\index{M\+J\+Array@{M\+J\+Array}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{M\+J\+Array()}{MJArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily M\+J\+Array\+::\+M\+J\+Array (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{original }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a7e3ed3537c34e7643a920069862bc4fa}{}\label{classMJArray_a7e3ed3537c34e7643a920069862bc4fa} 
+\index{M\+J\+Array@{M\+J\+Array}!````~M\+J\+Array@{$\sim$\+M\+J\+Array}}
+\index{````~M\+J\+Array@{$\sim$\+M\+J\+Array}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{$\sim$\+M\+J\+Array()}{~MJArray()}}
+{\footnotesize\ttfamily M\+J\+Array\+::$\sim$\+M\+J\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMJArray_a7564d3a887e8635f0430263839dfc602}{}\label{classMJArray_a7564d3a887e8635f0430263839dfc602} 
+\index{M\+J\+Array@{M\+J\+Array}!apply@{apply}}
+\index{apply@{apply}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array} M\+J\+Array\+::apply (\begin{DoxyParamCaption}\item[{double }]{fdouble }\end{DoxyParamCaption}) const}
+
+\hypertarget{classMJArray_ad96b5b1988e216bece33f8cad1907ebb}{}\label{classMJArray_ad96b5b1988e216bece33f8cad1907ebb} 
+\index{M\+J\+Array@{M\+J\+Array}!max@{max}}
+\index{max@{max}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily double M\+J\+Array\+::max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classMJArray_aa7ce6c82b0da3b3a6b691327c83500f0}{}\label{classMJArray_aa7ce6c82b0da3b3a6b691327c83500f0} 
+\index{M\+J\+Array@{M\+J\+Array}!merge@{merge}}
+\index{merge@{merge}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array} M\+J\+Array\+::merge (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{array }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_afb89bd41c6b811616336d4dd7f7697fb}{}\label{classMJArray_afb89bd41c6b811616336d4dd7f7697fb} 
+\index{M\+J\+Array@{M\+J\+Array}!min@{min}}
+\index{min@{min}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily double M\+J\+Array\+::min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classMJArray_a00f266e67cd2e280235a3733bc86efaa}{}\label{classMJArray_a00f266e67cd2e280235a3733bc86efaa} 
+\index{M\+J\+Array@{M\+J\+Array}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{operand }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a22272f9dcbc763c98b67368f6a897aad}{}\label{classMJArray_a22272f9dcbc763c98b67368f6a897aad} 
+\index{M\+J\+Array@{M\+J\+Array}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const double \&}]{operand }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a90d77478cd3c6a90d8abb4dbbaff7f34}{}\label{classMJArray_a90d77478cd3c6a90d8abb4dbbaff7f34} 
+\index{M\+J\+Array@{M\+J\+Array}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{operand }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a63ea203f87c5e0c4ec6e63089d3c4374}{}\label{classMJArray_a63ea203f87c5e0c4ec6e63089d3c4374} 
+\index{M\+J\+Array@{M\+J\+Array}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator+= (\begin{DoxyParamCaption}\item[{const double \&}]{operand }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_ab776bc1d3b6d080f74e9d38c0a8e274e}{}\label{classMJArray_ab776bc1d3b6d080f74e9d38c0a8e274e} 
+\index{M\+J\+Array@{M\+J\+Array}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{operand }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_afd06295917fc094dea817bf83222d3d1}{}\label{classMJArray_afd06295917fc094dea817bf83222d3d1} 
+\index{M\+J\+Array@{M\+J\+Array}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator-\/= (\begin{DoxyParamCaption}\item[{const double \&}]{operand }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_ae376c7745492b26cd040412fd4599a2e}{}\label{classMJArray_ae376c7745492b26cd040412fd4599a2e} 
+\index{M\+J\+Array@{M\+J\+Array}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator/= (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{operand }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a376204e0aa5fc772aa881598e77020fc}{}\label{classMJArray_a376204e0aa5fc772aa881598e77020fc} 
+\index{M\+J\+Array@{M\+J\+Array}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator/= (\begin{DoxyParamCaption}\item[{const double \&}]{operand }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_aa9e039dcbf214e52e99a06d31ae7d240}{}\label{classMJArray_aa9e039dcbf214e52e99a06d31ae7d240} 
+\index{M\+J\+Array@{M\+J\+Array}!operator=@{operator=}}
+\index{operator=@{operator=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{original }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a5c7b21d9d8d045c886de8e5a18d34c98}{}\label{classMJArray_a5c7b21d9d8d045c886de8e5a18d34c98} 
+\index{M\+J\+Array@{M\+J\+Array}!operator=@{operator=}}
+\index{operator=@{operator=}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classMJArray}{M\+J\+Array}\& M\+J\+Array\+::operator= (\begin{DoxyParamCaption}\item[{const double \&}]{val }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a813a61264d4a763702bec802199fec2c}{}\label{classMJArray_a813a61264d4a763702bec802199fec2c} 
+\index{M\+J\+Array@{M\+J\+Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double M\+J\+Array\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned long}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{classMJArray_a039a83653bc0ba6f8c0aa7c74deb3bd7}{}\label{classMJArray_a039a83653bc0ba6f8c0aa7c74deb3bd7} 
+\index{M\+J\+Array@{M\+J\+Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double \& M\+J\+Array\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned long}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{classMJArray_a0bcd1aaca8e71b17364ae9f00eaf88df}{}\label{classMJArray_a0bcd1aaca8e71b17364ae9f00eaf88df} 
+\index{M\+J\+Array@{M\+J\+Array}!print@{print}}
+\index{print@{print}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void M\+J\+Array\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classMJArray_adbdbdf57961201fe20593a346f1e3c09}{}\label{classMJArray_adbdbdf57961201fe20593a346f1e3c09} 
+\index{M\+J\+Array@{M\+J\+Array}!remove\+\_\+duplicate@{remove\+\_\+duplicate}}
+\index{remove\+\_\+duplicate@{remove\+\_\+duplicate}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{remove\+\_\+duplicate()}{remove\_duplicate()}}
+{\footnotesize\ttfamily void M\+J\+Array\+::remove\+\_\+duplicate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a06c85b4ded36ba52bd8ca14d712b4b2c}{}\label{classMJArray_a06c85b4ded36ba52bd8ca14d712b4b2c} 
+\index{M\+J\+Array@{M\+J\+Array}!resize@{resize}}
+\index{resize@{resize}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void M\+J\+Array\+::resize (\begin{DoxyParamCaption}\item[{unsigned long}]{new\+Size }\end{DoxyParamCaption})}
+
+\hypertarget{classMJArray_a997898f10d39bc94bd242c308a85bb72}{}\label{classMJArray_a997898f10d39bc94bd242c308a85bb72} 
+\index{M\+J\+Array@{M\+J\+Array}!size@{size}}
+\index{size@{size}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily unsigned long M\+J\+Array\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{classMJArray_ad79c3f21f9d1329546de066b1b3cc9f6}{}\label{classMJArray_ad79c3f21f9d1329546de066b1b3cc9f6} 
+\index{M\+J\+Array@{M\+J\+Array}!sum@{sum}}
+\index{sum@{sum}!M\+J\+Array@{M\+J\+Array}}
+\subsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily double M\+J\+Array\+::sum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Arrays_8h}{Arrays.\+h}\end{DoxyCompactItemize}

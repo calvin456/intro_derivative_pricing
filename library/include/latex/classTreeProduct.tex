@@ -1,0 +1,100 @@
+\hypertarget{classTreeProduct}{}\section{Tree\+Product Class Reference}
+\label{classTreeProduct}\index{Tree\+Product@{Tree\+Product}}
+
+
+{\ttfamily \#include $<$Tree\+Products.\+h$>$}
+
+
+
+Inheritance diagram for Tree\+Product\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTreeProduct__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tree\+Product\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classTreeProduct__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTreeProduct_ac7a606cd5a196a7e280549cdbc8ac5cc}{Tree\+Product} (double Final\+Time\+\_\+)
+\item 
+virtual double \hyperlink{classTreeProduct_acda7abc61cf6ac1b0f69a09eb0709832}{Final\+Pay\+Off} (double Spot) const =0
+\item 
+virtual double \hyperlink{classTreeProduct_a0b58b8acdd3759f55212c1c65361056e}{Pre\+Final\+Value} (double Spot, double Time, double Discounted\+Future\+Value) const =0
+\item 
+virtual \hyperlink{classTreeProduct_a05e31647f87241f2cabbd3af756a9fd6}{$\sim$\+Tree\+Product} ()
+\item 
+virtual \hyperlink{classTreeProduct}{Tree\+Product} $\ast$ \hyperlink{classTreeProduct_a38edda2bee3c7203e94511df96a18c32}{clone} () const =0
+\item 
+double \hyperlink{classTreeProduct_ad8ae61f333f08e7a9f2e24e3611263f9}{Get\+Final\+Time} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTreeProduct_ac7a606cd5a196a7e280549cdbc8ac5cc}{}\label{classTreeProduct_ac7a606cd5a196a7e280549cdbc8ac5cc} 
+\index{Tree\+Product@{Tree\+Product}!Tree\+Product@{Tree\+Product}}
+\index{Tree\+Product@{Tree\+Product}!Tree\+Product@{Tree\+Product}}
+\subsubsection{\texorpdfstring{Tree\+Product()}{TreeProduct()}}
+{\footnotesize\ttfamily Tree\+Product\+::\+Tree\+Product (\begin{DoxyParamCaption}\item[{double}]{Final\+Time\+\_\+ }\end{DoxyParamCaption})}
+
+\hypertarget{classTreeProduct_a05e31647f87241f2cabbd3af756a9fd6}{}\label{classTreeProduct_a05e31647f87241f2cabbd3af756a9fd6} 
+\index{Tree\+Product@{Tree\+Product}!````~Tree\+Product@{$\sim$\+Tree\+Product}}
+\index{````~Tree\+Product@{$\sim$\+Tree\+Product}!Tree\+Product@{Tree\+Product}}
+\subsubsection{\texorpdfstring{$\sim$\+Tree\+Product()}{~TreeProduct()}}
+{\footnotesize\ttfamily virtual Tree\+Product\+::$\sim$\+Tree\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classTreeProduct_a38edda2bee3c7203e94511df96a18c32}{}\label{classTreeProduct_a38edda2bee3c7203e94511df96a18c32} 
+\index{Tree\+Product@{Tree\+Product}!clone@{clone}}
+\index{clone@{clone}!Tree\+Product@{Tree\+Product}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classTreeProduct}{Tree\+Product}$\ast$ Tree\+Product\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classTreeAmericanBarrier_a25a7d1fdcfd55228de1b4f50d0b3943d}{Tree\+American\+Barrier}, \hyperlink{classTreeBarrier_a549dec4cf147800496f9efca623201f9}{Tree\+Barrier}, \hyperlink{classTreeAmerican_ade2d404dec9ebd28695f246393dd0256}{Tree\+American}, \hyperlink{classTreeEuropean_acf540b1c3082da0853905f252bf9d773}{Tree\+European}, and \hyperlink{classTreeEuropeanTemplate_ab295adeefbb84f93854f07f511742ae7}{Tree\+European\+Template$<$ T $>$}.
+
+\hypertarget{classTreeProduct_acda7abc61cf6ac1b0f69a09eb0709832}{}\label{classTreeProduct_acda7abc61cf6ac1b0f69a09eb0709832} 
+\index{Tree\+Product@{Tree\+Product}!Final\+Pay\+Off@{Final\+Pay\+Off}}
+\index{Final\+Pay\+Off@{Final\+Pay\+Off}!Tree\+Product@{Tree\+Product}}
+\subsubsection{\texorpdfstring{Final\+Pay\+Off()}{FinalPayOff()}}
+{\footnotesize\ttfamily virtual double Tree\+Product\+::\+Final\+Pay\+Off (\begin{DoxyParamCaption}\item[{double}]{Spot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classTreeAmericanBarrier_a55218e00428e49c18186358ae1b54b58}{Tree\+American\+Barrier}, \hyperlink{classTreeBarrier_a920dcdcf9a3b00f6a83c13fbe51b5b8a}{Tree\+Barrier}, \hyperlink{classTreeAmerican_ad3a967025c3355fdce85f5d28afcc302}{Tree\+American}, \hyperlink{classTreeEuropean_aaffa40394d1021120a87dfa8e176c321}{Tree\+European}, and \hyperlink{classTreeEuropeanTemplate_a20fe052329fc532eb24931a4e7e20a63}{Tree\+European\+Template$<$ T $>$}.
+
+\hypertarget{classTreeProduct_ad8ae61f333f08e7a9f2e24e3611263f9}{}\label{classTreeProduct_ad8ae61f333f08e7a9f2e24e3611263f9} 
+\index{Tree\+Product@{Tree\+Product}!Get\+Final\+Time@{Get\+Final\+Time}}
+\index{Get\+Final\+Time@{Get\+Final\+Time}!Tree\+Product@{Tree\+Product}}
+\subsubsection{\texorpdfstring{Get\+Final\+Time()}{GetFinalTime()}}
+{\footnotesize\ttfamily double Tree\+Product\+::\+Get\+Final\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{classTreeProduct_a0b58b8acdd3759f55212c1c65361056e}{}\label{classTreeProduct_a0b58b8acdd3759f55212c1c65361056e} 
+\index{Tree\+Product@{Tree\+Product}!Pre\+Final\+Value@{Pre\+Final\+Value}}
+\index{Pre\+Final\+Value@{Pre\+Final\+Value}!Tree\+Product@{Tree\+Product}}
+\subsubsection{\texorpdfstring{Pre\+Final\+Value()}{PreFinalValue()}}
+{\footnotesize\ttfamily virtual double Tree\+Product\+::\+Pre\+Final\+Value (\begin{DoxyParamCaption}\item[{double}]{Spot,  }\item[{double}]{Time,  }\item[{double}]{Discounted\+Future\+Value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classTreeAmericanBarrier_a66ac7ef18f10dbc5232b7c18e3093805}{Tree\+American\+Barrier}, \hyperlink{classTreeBarrier_a507840c03551ece81bae4a97d342a368}{Tree\+Barrier}, \hyperlink{classTreeAmerican_aac1d79d79a45a83a06cdbaaf9d80018e}{Tree\+American}, \hyperlink{classTreeEuropean_a555787d536320f1d9ce776da1c785058}{Tree\+European}, and \hyperlink{classTreeEuropeanTemplate_a09419e2ce4ef3564661a45440ed24882}{Tree\+European\+Template$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{TreeProducts_8h}{Tree\+Products.\+h}\end{DoxyCompactItemize}

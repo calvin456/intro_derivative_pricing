@@ -1,0 +1,117 @@
+\hypertarget{classDownAndOutCall}{}\section{Down\+And\+Out\+Call Class Reference}
+\label{classDownAndOutCall}\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+
+
+{\ttfamily \#include $<$Options\+To\+Replicate.\+h$>$}
+
+
+
+Inheritance diagram for Down\+And\+Out\+Call\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classDownAndOutCall__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Down\+And\+Out\+Call\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classDownAndOutCall__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDownAndOutCall_a61cebb82065fba33c51db0a3075a40d8}{Down\+And\+Out\+Call} (double \hyperlink{classOptionToReplicate_a64ffcbc25fc60c5dc18ca4b78194ca89}{Strike}, double \hyperlink{classOptionToReplicate_a7cd35379de855ad6e53008fbf7e9dda0}{Barrier}, double \hyperlink{classOptionToReplicate_ad344ef3a4a4e93372c390c60420d1a61}{r}, double \hyperlink{classOptionToReplicate_a3a28b1ab0cd1ee635b3c31998bd2c572}{Vol}, double \hyperlink{classOptionToReplicate_a62014eac88a2a766ed674be69e9fd926}{Expiry}, double \hyperlink{classOptionToReplicate_aa088a512c974dc622ca1bbca61ec5e34}{d}=0.\+0)
+\item 
+virtual \hyperlink{classDownAndOutCall_a01a5a9897ef41a37c569187b6c263afb}{$\sim$\+Down\+And\+Out\+Call} ()
+\item 
+virtual void \hyperlink{classDownAndOutCall_a378b557d728ed157db9d41ef39bb8abf}{Generate\+Ptf} (unsigned long steps, shared\+\_\+ptr$<$ Option $>$ Option\+Final)
+\item 
+virtual void \hyperlink{classDownAndOutCall_a0b8b44b58822b7c4f75e2436b9cf69d7}{Generate\+Ptf1} (unsigned long steps, shared\+\_\+ptr$<$ Option $>$ Option\+Final)
+\item 
+virtual void \hyperlink{classDownAndOutCall_a7f4f73437c1e61cc57f96fadd05a7df1}{Generate\+Ptf} (unsigned long steps, const vector$<$ double $>$ \&\hyperlink{classOptionToReplicate_a3a28b1ab0cd1ee635b3c31998bd2c572}{Vol}, shared\+\_\+ptr$<$ Option $>$ Option\+Final)
+\item 
+virtual double \hyperlink{classDownAndOutCall_ab5855704cc4680238596427a115cb3e1}{Get\+Value} (double \+\_\+\+Spot, double \+\_\+t, shared\+\_\+ptr$<$ Option $>$ Option\+Final) const
+\item 
+virtual double \hyperlink{classDownAndOutCall_a6ccfc2e5d77a48558087d4b9df914377}{Get\+Value} (double \+\_\+\+Spot, const vector$<$ double $>$ \&\+\_\+\+Vol, double \+\_\+t, shared\+\_\+ptr$<$ Option $>$ Option\+Final) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDownAndOutCall_a61cebb82065fba33c51db0a3075a40d8}{}\label{classDownAndOutCall_a61cebb82065fba33c51db0a3075a40d8} 
+\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}!Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}!Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+\subsubsection{\texorpdfstring{Down\+And\+Out\+Call()}{DownAndOutCall()}}
+{\footnotesize\ttfamily Down\+And\+Out\+Call\+::\+Down\+And\+Out\+Call (\begin{DoxyParamCaption}\item[{double}]{Strike,  }\item[{double}]{Barrier,  }\item[{double}]{r,  }\item[{double}]{Vol,  }\item[{double}]{Expiry,  }\item[{double}]{d = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classDownAndOutCall_a01a5a9897ef41a37c569187b6c263afb}{}\label{classDownAndOutCall_a01a5a9897ef41a37c569187b6c263afb} 
+\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}!````~Down\+And\+Out\+Call@{$\sim$\+Down\+And\+Out\+Call}}
+\index{````~Down\+And\+Out\+Call@{$\sim$\+Down\+And\+Out\+Call}!Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+\subsubsection{\texorpdfstring{$\sim$\+Down\+And\+Out\+Call()}{~DownAndOutCall()}}
+{\footnotesize\ttfamily virtual Down\+And\+Out\+Call\+::$\sim$\+Down\+And\+Out\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDownAndOutCall_a378b557d728ed157db9d41ef39bb8abf}{}\label{classDownAndOutCall_a378b557d728ed157db9d41ef39bb8abf} 
+\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}!Generate\+Ptf@{Generate\+Ptf}}
+\index{Generate\+Ptf@{Generate\+Ptf}!Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+\subsubsection{\texorpdfstring{Generate\+Ptf()}{GeneratePtf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Down\+And\+Out\+Call\+::\+Generate\+Ptf (\begin{DoxyParamCaption}\item[{unsigned long}]{steps,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classOptionToReplicate_ae744ce948286546566cd424eaa7ea5cb}{Option\+To\+Replicate}.
+
+\hypertarget{classDownAndOutCall_a7f4f73437c1e61cc57f96fadd05a7df1}{}\label{classDownAndOutCall_a7f4f73437c1e61cc57f96fadd05a7df1} 
+\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}!Generate\+Ptf@{Generate\+Ptf}}
+\index{Generate\+Ptf@{Generate\+Ptf}!Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+\subsubsection{\texorpdfstring{Generate\+Ptf()}{GeneratePtf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Down\+And\+Out\+Call\+::\+Generate\+Ptf (\begin{DoxyParamCaption}\item[{unsigned long}]{steps,  }\item[{const vector$<$ double $>$ \&}]{Vol,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classOptionToReplicate_a47ad183412648a70cd77957383eb421f}{Option\+To\+Replicate}.
+
+\hypertarget{classDownAndOutCall_a0b8b44b58822b7c4f75e2436b9cf69d7}{}\label{classDownAndOutCall_a0b8b44b58822b7c4f75e2436b9cf69d7} 
+\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}!Generate\+Ptf1@{Generate\+Ptf1}}
+\index{Generate\+Ptf1@{Generate\+Ptf1}!Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+\subsubsection{\texorpdfstring{Generate\+Ptf1()}{GeneratePtf1()}}
+{\footnotesize\ttfamily virtual void Down\+And\+Out\+Call\+::\+Generate\+Ptf1 (\begin{DoxyParamCaption}\item[{unsigned long}]{steps,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classOptionToReplicate_ad3315e5766faa9be46fa690d8d358b9d}{Option\+To\+Replicate}.
+
+\hypertarget{classDownAndOutCall_ab5855704cc4680238596427a115cb3e1}{}\label{classDownAndOutCall_ab5855704cc4680238596427a115cb3e1} 
+\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+\subsubsection{\texorpdfstring{Get\+Value()}{GetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual double Down\+And\+Out\+Call\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{double}]{\+\_\+\+Spot,  }\item[{double}]{\+\_\+t,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classOptionToReplicate_a7f39f64594b4baffb45d61a65b38c6b2}{Option\+To\+Replicate}.
+
+\hypertarget{classDownAndOutCall_a6ccfc2e5d77a48558087d4b9df914377}{}\label{classDownAndOutCall_a6ccfc2e5d77a48558087d4b9df914377} 
+\index{Down\+And\+Out\+Call@{Down\+And\+Out\+Call}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Down\+And\+Out\+Call@{Down\+And\+Out\+Call}}
+\subsubsection{\texorpdfstring{Get\+Value()}{GetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual double Down\+And\+Out\+Call\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{double}]{\+\_\+\+Spot,  }\item[{const vector$<$ double $>$ \&}]{\+\_\+\+Vol,  }\item[{double}]{\+\_\+t,  }\item[{shared\+\_\+ptr$<$ Option $>$}]{Option\+Final }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classOptionToReplicate_a738f813473de4945df377bcd3fe17f6e}{Option\+To\+Replicate}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{OptionsToReplicate_8h}{Options\+To\+Replicate.\+h}\end{DoxyCompactItemize}

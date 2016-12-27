@@ -1,0 +1,131 @@
+\hypertarget{cholesky_8hpp}{}\section{cholesky.\+hpp File Reference}
+\label{cholesky_8hpp}\index{cholesky.\+hpp@{cholesky.\+hpp}}
+
+
+cholesky decomposition  
+
+
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/vector.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/vector\+\_\+proxy.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/matrix.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/matrix\+\_\+proxy.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/vector\+\_\+expression.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/matrix\+\_\+expression.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/ublas/triangular.\+hpp$>$}\newline
+Include dependency graph for cholesky.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cholesky_8hpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class M\+A\+T\+R\+IX , class T\+R\+IA $>$ }\\size\+\_\+t \hyperlink{cholesky_8hpp_ae66ea4c67986682ce4230c63b84b6b4b}{cholesky\+\_\+decompose} (const M\+A\+T\+R\+IX \&A, T\+R\+IA \&L)
+\begin{DoxyCompactList}\small\item\em decompose the symmetric positive definit matrix A into product L L$^\wedge$T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class M\+A\+T\+R\+IX $>$ }\\size\+\_\+t \hyperlink{cholesky_8hpp_a71c7f33e8371e7fa388cb62242115fb6}{cholesky\+\_\+decompose} (M\+A\+T\+R\+IX \&A)
+\begin{DoxyCompactList}\small\item\em decompose the symmetric positive definit matrix A into product L L$^\wedge$T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class M\+A\+T\+R\+IX $>$ }\\size\+\_\+t \hyperlink{cholesky_8hpp_ace677bb12873ee1d57eded9c3042b22b}{incomplete\+\_\+cholesky\+\_\+decompose} (M\+A\+T\+R\+IX \&A)
+\begin{DoxyCompactList}\small\item\em decompose the symmetric positive definit matrix A into product L L$^\wedge$T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T\+R\+IA , class V\+EC $>$ }\\void \hyperlink{cholesky_8hpp_a3215778be82258d19471e2aef27430b7}{cholesky\+\_\+solve} (const T\+R\+IA \&L, V\+EC \&x, ublas\+::lower)
+\begin{DoxyCompactList}\small\item\em solve system L L$^\wedge$T x = b inplace \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+cholesky decomposition 
+
+-\/$\ast$-\/ c++ -\/$\ast$-\/ 
+
+\subsection{Function Documentation}
+\hypertarget{cholesky_8hpp_ae66ea4c67986682ce4230c63b84b6b4b}{}\label{cholesky_8hpp_ae66ea4c67986682ce4230c63b84b6b4b} 
+\index{cholesky.\+hpp@{cholesky.\+hpp}!cholesky\+\_\+decompose@{cholesky\+\_\+decompose}}
+\index{cholesky\+\_\+decompose@{cholesky\+\_\+decompose}!cholesky.\+hpp@{cholesky.\+hpp}}
+\subsubsection{\texorpdfstring{cholesky\+\_\+decompose()}{cholesky\_decompose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class M\+A\+T\+R\+IX , class T\+R\+IA $>$ \\
+size\+\_\+t cholesky\+\_\+decompose (\begin{DoxyParamCaption}\item[{const M\+A\+T\+R\+IX \&}]{A,  }\item[{T\+R\+IA \&}]{L }\end{DoxyParamCaption})}
+
+
+
+decompose the symmetric positive definit matrix A into product L L$^\wedge$T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M\+A\+T\+R\+IX} & type of input matrix \\
+\hline
+{\em T\+R\+IA} & type of lower triangular output matrix \\
+\hline
+{\em A} & square symmetric positive definite input matrix (only the lower triangle is accessed) \\
+\hline
+{\em L} & lower triangular output matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nonzero if decompositon fails (the value ist 1 + the numer of the failing row) 
+\end{DoxyReturn}
+\hypertarget{cholesky_8hpp_a71c7f33e8371e7fa388cb62242115fb6}{}\label{cholesky_8hpp_a71c7f33e8371e7fa388cb62242115fb6} 
+\index{cholesky.\+hpp@{cholesky.\+hpp}!cholesky\+\_\+decompose@{cholesky\+\_\+decompose}}
+\index{cholesky\+\_\+decompose@{cholesky\+\_\+decompose}!cholesky.\+hpp@{cholesky.\+hpp}}
+\subsubsection{\texorpdfstring{cholesky\+\_\+decompose()}{cholesky\_decompose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class M\+A\+T\+R\+IX $>$ \\
+size\+\_\+t cholesky\+\_\+decompose (\begin{DoxyParamCaption}\item[{M\+A\+T\+R\+IX \&}]{A }\end{DoxyParamCaption})}
+
+
+
+decompose the symmetric positive definit matrix A into product L L$^\wedge$T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M\+A\+T\+R\+IX} & type of matrix A \\
+\hline
+{\em A} & input\+: square symmetric positive definite matrix (only the lower triangle is accessed) \\
+\hline
+{\em A} & output\+: the lower triangle of A is replaced by the cholesky factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nonzero if decompositon fails (the value ist 1 + the numer of the failing row) 
+\end{DoxyReturn}
+\hypertarget{cholesky_8hpp_a3215778be82258d19471e2aef27430b7}{}\label{cholesky_8hpp_a3215778be82258d19471e2aef27430b7} 
+\index{cholesky.\+hpp@{cholesky.\+hpp}!cholesky\+\_\+solve@{cholesky\+\_\+solve}}
+\index{cholesky\+\_\+solve@{cholesky\+\_\+solve}!cholesky.\+hpp@{cholesky.\+hpp}}
+\subsubsection{\texorpdfstring{cholesky\+\_\+solve()}{cholesky\_solve()}}
+{\footnotesize\ttfamily template$<$class T\+R\+IA , class V\+EC $>$ \\
+void cholesky\+\_\+solve (\begin{DoxyParamCaption}\item[{const T\+R\+IA \&}]{L,  }\item[{V\+EC \&}]{x,  }\item[{ublas\+::lower}]{ }\end{DoxyParamCaption})}
+
+
+
+solve system L L$^\wedge$T x = b inplace 
+
+
+\begin{DoxyParams}{Parameters}
+{\em L} & a triangular matrix \\
+\hline
+{\em x} & input\+: right hand side b; output\+: solution x \\
+\hline
+\end{DoxyParams}
+\hypertarget{cholesky_8hpp_ace677bb12873ee1d57eded9c3042b22b}{}\label{cholesky_8hpp_ace677bb12873ee1d57eded9c3042b22b} 
+\index{cholesky.\+hpp@{cholesky.\+hpp}!incomplete\+\_\+cholesky\+\_\+decompose@{incomplete\+\_\+cholesky\+\_\+decompose}}
+\index{incomplete\+\_\+cholesky\+\_\+decompose@{incomplete\+\_\+cholesky\+\_\+decompose}!cholesky.\+hpp@{cholesky.\+hpp}}
+\subsubsection{\texorpdfstring{incomplete\+\_\+cholesky\+\_\+decompose()}{incomplete\_cholesky\_decompose()}}
+{\footnotesize\ttfamily template$<$class M\+A\+T\+R\+IX $>$ \\
+size\+\_\+t incomplete\+\_\+cholesky\+\_\+decompose (\begin{DoxyParamCaption}\item[{M\+A\+T\+R\+IX \&}]{A }\end{DoxyParamCaption})}
+
+
+
+decompose the symmetric positive definit matrix A into product L L$^\wedge$T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M\+A\+T\+R\+IX} & type of matrix A \\
+\hline
+{\em A} & input\+: square symmetric positive definite matrix (only the lower triangle is accessed) \\
+\hline
+{\em A} & output\+: the lower triangle of A is replaced by the cholesky factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nonzero if decompositon fails (the value ist 1 + the numer of the failing row) 
+\end{DoxyReturn}

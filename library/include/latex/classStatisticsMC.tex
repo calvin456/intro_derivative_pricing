@@ -1,0 +1,92 @@
+\hypertarget{classStatisticsMC}{}\section{Statistics\+MC Class Reference}
+\label{classStatisticsMC}\index{Statistics\+MC@{Statistics\+MC}}
+
+
+{\ttfamily \#include $<$M\+C\+Statistics.\+h$>$}
+
+
+
+Inheritance diagram for Statistics\+MC\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStatisticsMC__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Statistics\+MC\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classStatisticsMC__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStatisticsMC_ad1b428e0652968ebf00aa0b018a470d2}{Statistics\+MC} ()
+\item 
+virtual void \hyperlink{classStatisticsMC_a3ab5fb27d6933d8e35b2a55c3897cbe3}{Dump\+One\+Result} (double result)=0
+\item 
+virtual std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \hyperlink{classStatisticsMC_ae29a294b6db36c2bf46c20ac30e25aad}{Get\+Results\+So\+Far} () const =0
+\item 
+virtual \hyperlink{classStatisticsMC}{Statistics\+MC} $\ast$ \hyperlink{classStatisticsMC_af716d17e088d36f283e112ba736f8002}{clone} () const =0
+\item 
+virtual \hyperlink{classStatisticsMC_aef119bf7e7b60ba4fb8aaaf3605a564d}{$\sim$\+Statistics\+MC} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classStatisticsMC_ad1b428e0652968ebf00aa0b018a470d2}{}\label{classStatisticsMC_ad1b428e0652968ebf00aa0b018a470d2} 
+\index{Statistics\+MC@{Statistics\+MC}!Statistics\+MC@{Statistics\+MC}}
+\index{Statistics\+MC@{Statistics\+MC}!Statistics\+MC@{Statistics\+MC}}
+\subsubsection{\texorpdfstring{Statistics\+M\+C()}{StatisticsMC()}}
+{\footnotesize\ttfamily Statistics\+M\+C\+::\+Statistics\+MC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{classStatisticsMC_aef119bf7e7b60ba4fb8aaaf3605a564d}{}\label{classStatisticsMC_aef119bf7e7b60ba4fb8aaaf3605a564d} 
+\index{Statistics\+MC@{Statistics\+MC}!````~Statistics\+MC@{$\sim$\+Statistics\+MC}}
+\index{````~Statistics\+MC@{$\sim$\+Statistics\+MC}!Statistics\+MC@{Statistics\+MC}}
+\subsubsection{\texorpdfstring{$\sim$\+Statistics\+M\+C()}{~StatisticsMC()}}
+{\footnotesize\ttfamily virtual Statistics\+M\+C\+::$\sim$\+Statistics\+MC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classStatisticsMC_af716d17e088d36f283e112ba736f8002}{}\label{classStatisticsMC_af716d17e088d36f283e112ba736f8002} 
+\index{Statistics\+MC@{Statistics\+MC}!clone@{clone}}
+\index{clone@{clone}!Statistics\+MC@{Statistics\+MC}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classStatisticsMC}{Statistics\+MC}$\ast$ Statistics\+M\+C\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classStatisticsKeepTrack_a09c6aad9bb77548e267fe4f5ae7d99dd}{Statistics\+Keep\+Track}, \hyperlink{classStatisticsRMS_af14e9befb5bfdb68b70e2e3e68206081}{Statistics\+R\+MS}, \hyperlink{classStatisticsStdDev_a13d8861fc23c9bb99e46e725e014a6b9}{Statistics\+Std\+Dev}, \hyperlink{classStatisticsVariance_aed63efacc9d231e9ae00625d0c7efd81}{Statistics\+Variance}, \hyperlink{classStatisticsSE_a935f22f6610e3a9ad584a8805293d740}{Statistics\+SE}, \hyperlink{classStatsGatherer_a07a78e389d948bfc0809ccf57c0dd811}{Stats\+Gatherer}, \hyperlink{classValueAtRisk_a8fc9a8f4f9449a04ed177272c0931619}{Value\+At\+Risk}, \hyperlink{classStatisticsMoments4_a7196986cea84e8d9589ac51d50eaba15}{Statistics\+Moments4}, \hyperlink{classStatisticsMean_a2ef95157e57b138a50c7c6d451a366e3}{Statistics\+Mean}, and \hyperlink{classConvergenceTable_a129d95361fa2dd5a6ad43d4320f40682}{Convergence\+Table}.
+
+\hypertarget{classStatisticsMC_a3ab5fb27d6933d8e35b2a55c3897cbe3}{}\label{classStatisticsMC_a3ab5fb27d6933d8e35b2a55c3897cbe3} 
+\index{Statistics\+MC@{Statistics\+MC}!Dump\+One\+Result@{Dump\+One\+Result}}
+\index{Dump\+One\+Result@{Dump\+One\+Result}!Statistics\+MC@{Statistics\+MC}}
+\subsubsection{\texorpdfstring{Dump\+One\+Result()}{DumpOneResult()}}
+{\footnotesize\ttfamily virtual void Statistics\+M\+C\+::\+Dump\+One\+Result (\begin{DoxyParamCaption}\item[{double}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classStatisticsKeepTrack_aaee86e9b5d2223f0c07725056cd55c8b}{Statistics\+Keep\+Track}, \hyperlink{classStatisticsRMS_af9c972ac6ee7938f6690a99ee51b5771}{Statistics\+R\+MS}, \hyperlink{classStatisticsStdDev_a824017c76562426a4fd640ef8a909a5e}{Statistics\+Std\+Dev}, \hyperlink{classStatisticsVariance_a403368dde195a18fe4ce64e41854d493}{Statistics\+Variance}, \hyperlink{classStatisticsSE_a3628cdafd9ed239168b4fc50db7f1e1e}{Statistics\+SE}, \hyperlink{classStatsGatherer_ae7f7e9ad4a0b0491dbcbcc27f93a89ff}{Stats\+Gatherer}, \hyperlink{classValueAtRisk_ad61f71fb24d6b6f4825e813137d4ef73}{Value\+At\+Risk}, \hyperlink{classStatisticsMoments4_aa68d32f4eda0c2be64ef35ebac9bbe0b}{Statistics\+Moments4}, \hyperlink{classStatisticsMean_a4e57d592c77b52e1d8b3985ab221c33c}{Statistics\+Mean}, and \hyperlink{classConvergenceTable_ae4ebb3988c6a8bc4e81049bfacf388e2}{Convergence\+Table}.
+
+\hypertarget{classStatisticsMC_ae29a294b6db36c2bf46c20ac30e25aad}{}\label{classStatisticsMC_ae29a294b6db36c2bf46c20ac30e25aad} 
+\index{Statistics\+MC@{Statistics\+MC}!Get\+Results\+So\+Far@{Get\+Results\+So\+Far}}
+\index{Get\+Results\+So\+Far@{Get\+Results\+So\+Far}!Statistics\+MC@{Statistics\+MC}}
+\subsubsection{\texorpdfstring{Get\+Results\+So\+Far()}{GetResultsSoFar()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::vector$<$double$>$ $>$ Statistics\+M\+C\+::\+Get\+Results\+So\+Far (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classStatisticsKeepTrack_a836a4a0d70daeef85410eff352d8fcf9}{Statistics\+Keep\+Track}, \hyperlink{classStatisticsRMS_a7c6b6ca7df8fac1cbfb16bca6272445b}{Statistics\+R\+MS}, \hyperlink{classStatisticsStdDev_aacb0a24c646c6c664cadbca82c2ddfdd}{Statistics\+Std\+Dev}, \hyperlink{classStatisticsVariance_a755d94e3fd68419d85ab7dbffe5b7e5d}{Statistics\+Variance}, \hyperlink{classStatisticsSE_a4ae9b974c43eccf3e60b307eb26689a4}{Statistics\+SE}, \hyperlink{classStatsGatherer_a61205b038d5c707a18660dc6cb1212d6}{Stats\+Gatherer}, \hyperlink{classValueAtRisk_a1ff78542a90e27d895382a9ea2169b6d}{Value\+At\+Risk}, \hyperlink{classStatisticsMoments4_a46b2f0c0688de83ea348a51ea7f6eaf1}{Statistics\+Moments4}, \hyperlink{classStatisticsMean_acc9e8c9d9bfa37917845c45ef266b287}{Statistics\+Mean}, and \hyperlink{classConvergenceTable_a74d6d80fbfb1af7cd27ab306f0f619c0}{Convergence\+Table}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{MCStatistics_8h}{M\+C\+Statistics.\+h}\end{DoxyCompactItemize}

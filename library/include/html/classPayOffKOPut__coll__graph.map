@@ -1,0 +1,4 @@
+<map id="PayOffKOPut" name="PayOffKOPut">
+<area shape="rect" id="node2" href="$classPayOffBarrier.html" title="{PayOffBarrier\n|# Barrier\l# Rebate\l|+ PayOffBarrier()\l+ ~PayOffBarrier()\l+ IsTouched()\l+ GetBarrier()\l+ GetRebate()\l}" alt="" coords="6,292,135,443"/>
+<area shape="rect" id="node3" href="$classPayOff.html" title="{PayOff\n||+ PayOff()\l+ PayOff()\l+ operator()()\l+ PayOff()\l+ operator()()\l+ ~PayOff()\l+ PayOff()\l+ operator()()\l+ ~PayOff()\l+ clone()\l+ GetStrike()\l+ SetStrike()\l}" alt="" coords="22,5,119,244"/>
+</map>

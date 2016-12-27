@@ -1,0 +1,107 @@
+\hypertarget{classPayOffBarrier}{}\section{Pay\+Off\+Barrier Class Reference}
+\label{classPayOffBarrier}\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+
+
+{\ttfamily \#include $<$Barrier\+Option.\+h$>$}
+
+
+
+Inheritance diagram for Pay\+Off\+Barrier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPayOffBarrier__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pay\+Off\+Barrier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classPayOffBarrier__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPayOffBarrier_af1530a3c7badd16d31c52fd2b74c9d97}{Pay\+Off\+Barrier} (double Barrier\+\_\+, double Strike\+\_\+, double \hyperlink{classPayOffBarrier_aca3ea631dcdb28a1df971b74774e41f8}{Rebate}=0.\+0)
+\item 
+virtual \hyperlink{classPayOffBarrier_a16fa76cfd65461bc2eea467ccbdb23eb}{$\sim$\+Pay\+Off\+Barrier} ()
+\item 
+virtual bool \hyperlink{classPayOffBarrier_a2aa9162c618c4f72a6593dc625e1e1e8}{Is\+Touched} (double Spot) const =0
+\item 
+double \hyperlink{classPayOffBarrier_a60eb2ac1bebf772f3acd9cb83ae8fe27}{Get\+Barrier} () const
+\item 
+double \hyperlink{classPayOffBarrier_ab8e43255a688a822dc651f0b47000fdc}{Get\+Rebate} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classPayOffBarrier_a0f514158e3a0ba82736c3566b53ccfc9}{Barrier}
+\item 
+double \hyperlink{classPayOffBarrier_aca3ea631dcdb28a1df971b74774e41f8}{Rebate}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPayOffBarrier_af1530a3c7badd16d31c52fd2b74c9d97}{}\label{classPayOffBarrier_af1530a3c7badd16d31c52fd2b74c9d97} 
+\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}!Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}!Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+\subsubsection{\texorpdfstring{Pay\+Off\+Barrier()}{PayOffBarrier()}}
+{\footnotesize\ttfamily Pay\+Off\+Barrier\+::\+Pay\+Off\+Barrier (\begin{DoxyParamCaption}\item[{double}]{Barrier\+\_\+,  }\item[{double}]{Strike\+\_\+,  }\item[{double}]{Rebate = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classPayOffBarrier_a16fa76cfd65461bc2eea467ccbdb23eb}{}\label{classPayOffBarrier_a16fa76cfd65461bc2eea467ccbdb23eb} 
+\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}!````~Pay\+Off\+Barrier@{$\sim$\+Pay\+Off\+Barrier}}
+\index{````~Pay\+Off\+Barrier@{$\sim$\+Pay\+Off\+Barrier}!Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+\subsubsection{\texorpdfstring{$\sim$\+Pay\+Off\+Barrier()}{~PayOffBarrier()}}
+{\footnotesize\ttfamily virtual Pay\+Off\+Barrier\+::$\sim$\+Pay\+Off\+Barrier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPayOffBarrier_a60eb2ac1bebf772f3acd9cb83ae8fe27}{}\label{classPayOffBarrier_a60eb2ac1bebf772f3acd9cb83ae8fe27} 
+\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}!Get\+Barrier@{Get\+Barrier}}
+\index{Get\+Barrier@{Get\+Barrier}!Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+\subsubsection{\texorpdfstring{Get\+Barrier()}{GetBarrier()}}
+{\footnotesize\ttfamily double Pay\+Off\+Barrier\+::\+Get\+Barrier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{classPayOffBarrier_ab8e43255a688a822dc651f0b47000fdc}{}\label{classPayOffBarrier_ab8e43255a688a822dc651f0b47000fdc} 
+\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}!Get\+Rebate@{Get\+Rebate}}
+\index{Get\+Rebate@{Get\+Rebate}!Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+\subsubsection{\texorpdfstring{Get\+Rebate()}{GetRebate()}}
+{\footnotesize\ttfamily double Pay\+Off\+Barrier\+::\+Get\+Rebate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{classPayOffBarrier_a2aa9162c618c4f72a6593dc625e1e1e8}{}\label{classPayOffBarrier_a2aa9162c618c4f72a6593dc625e1e1e8} 
+\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}!Is\+Touched@{Is\+Touched}}
+\index{Is\+Touched@{Is\+Touched}!Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+\subsubsection{\texorpdfstring{Is\+Touched()}{IsTouched()}}
+{\footnotesize\ttfamily virtual bool Pay\+Off\+Barrier\+::\+Is\+Touched (\begin{DoxyParamCaption}\item[{double}]{Spot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classPayOffUpOutPut_a4b2900efde69ce09f2b0404729d0d61d}{Pay\+Off\+Up\+Out\+Put}, \hyperlink{classPayOffUpInPut_a8e8079a2508dfc533f60ca52b496f603}{Pay\+Off\+Up\+In\+Put}, \hyperlink{classPayOffDownOutCall_a516af0320ef04d315b66a924e346aa78}{Pay\+Off\+Down\+Out\+Call}, \hyperlink{classPayOffDownInCall_a2be6d6571ea7969db355d39980326def}{Pay\+Off\+Down\+In\+Call}, \hyperlink{classPayOffKIPut_a0f62d8559620b09b97f31ce052ad061c}{Pay\+Off\+K\+I\+Put}, \hyperlink{classPayOffKICall_af16b41bce04b47515f543d2da2c449a9}{Pay\+Off\+K\+I\+Call}, \hyperlink{classPayOffKOPut_ad3237bb8f95b93cb2930b5c2a57fd7f8}{Pay\+Off\+K\+O\+Put}, and \hyperlink{classPayOffKOCall_aa67fba615a4a0d6272bfc5f7c5604bd0}{Pay\+Off\+K\+O\+Call}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPayOffBarrier_a0f514158e3a0ba82736c3566b53ccfc9}{}\label{classPayOffBarrier_a0f514158e3a0ba82736c3566b53ccfc9} 
+\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}!Barrier@{Barrier}}
+\index{Barrier@{Barrier}!Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+\subsubsection{\texorpdfstring{Barrier}{Barrier}}
+{\footnotesize\ttfamily double Pay\+Off\+Barrier\+::\+Barrier\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classPayOffBarrier_aca3ea631dcdb28a1df971b74774e41f8}{}\label{classPayOffBarrier_aca3ea631dcdb28a1df971b74774e41f8} 
+\index{Pay\+Off\+Barrier@{Pay\+Off\+Barrier}!Rebate@{Rebate}}
+\index{Rebate@{Rebate}!Pay\+Off\+Barrier@{Pay\+Off\+Barrier}}
+\subsubsection{\texorpdfstring{Rebate}{Rebate}}
+{\footnotesize\ttfamily double Pay\+Off\+Barrier\+::\+Rebate\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{BarrierOption_8h}{Barrier\+Option.\+h}\end{DoxyCompactItemize}

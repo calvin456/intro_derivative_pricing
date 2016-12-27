@@ -1,0 +1,89 @@
+\hypertarget{classQuantoCall}{}\section{Quanto\+Call Class Reference}
+\label{classQuantoCall}\index{Quanto\+Call@{Quanto\+Call}}
+
+
+{\ttfamily \#include $<$Pay\+Off\+Multi.\+h$>$}
+
+
+
+Inheritance diagram for Quanto\+Call\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classQuantoCall__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Quanto\+Call\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classQuantoCall__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQuantoCall_a8e713c9d2e6b9a72d55f524981cfe838}{Quanto\+Call} (double Strike\+\_\+, double fx\+Rate\+\_\+=1.\+0)
+\item 
+\hyperlink{classQuantoCall_ae1be4dc5d31fedff93f80d9db5819f8a}{Quanto\+Call} (const \hyperlink{classMJArray}{M\+J\+Array} \&\hyperlink{path__generation_8h_a75c13cde2074f502cc4348c70528572d}{args})
+\item 
+virtual double \hyperlink{classQuantoCall_a4269b10b960c3d71cd01b4bd889534ae}{operator()} (const \hyperlink{classMJArray}{M\+J\+Array} \&Spots) const
+\item 
+virtual \hyperlink{classQuantoCall_a044fed51d92c3899e6468e3d918f0191}{$\sim$\+Quanto\+Call} ()
+\item 
+virtual \hyperlink{classPayOff}{Pay\+Off} $\ast$ \hyperlink{classQuantoCall_a93f79639f06467ab145108dc15bba830}{clone} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classQuantoCall_a8e713c9d2e6b9a72d55f524981cfe838}{}\label{classQuantoCall_a8e713c9d2e6b9a72d55f524981cfe838} 
+\index{Quanto\+Call@{Quanto\+Call}!Quanto\+Call@{Quanto\+Call}}
+\index{Quanto\+Call@{Quanto\+Call}!Quanto\+Call@{Quanto\+Call}}
+\subsubsection{\texorpdfstring{Quanto\+Call()}{QuantoCall()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Quanto\+Call\+::\+Quanto\+Call (\begin{DoxyParamCaption}\item[{double}]{Strike\+\_\+,  }\item[{double}]{fx\+Rate\+\_\+ = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+\hypertarget{classQuantoCall_ae1be4dc5d31fedff93f80d9db5819f8a}{}\label{classQuantoCall_ae1be4dc5d31fedff93f80d9db5819f8a} 
+\index{Quanto\+Call@{Quanto\+Call}!Quanto\+Call@{Quanto\+Call}}
+\index{Quanto\+Call@{Quanto\+Call}!Quanto\+Call@{Quanto\+Call}}
+\subsubsection{\texorpdfstring{Quanto\+Call()}{QuantoCall()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Quanto\+Call\+::\+Quanto\+Call (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{args }\end{DoxyParamCaption})}
+
+\hypertarget{classQuantoCall_a044fed51d92c3899e6468e3d918f0191}{}\label{classQuantoCall_a044fed51d92c3899e6468e3d918f0191} 
+\index{Quanto\+Call@{Quanto\+Call}!````~Quanto\+Call@{$\sim$\+Quanto\+Call}}
+\index{````~Quanto\+Call@{$\sim$\+Quanto\+Call}!Quanto\+Call@{Quanto\+Call}}
+\subsubsection{\texorpdfstring{$\sim$\+Quanto\+Call()}{~QuantoCall()}}
+{\footnotesize\ttfamily virtual Quanto\+Call\+::$\sim$\+Quanto\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classQuantoCall_a93f79639f06467ab145108dc15bba830}{}\label{classQuantoCall_a93f79639f06467ab145108dc15bba830} 
+\index{Quanto\+Call@{Quanto\+Call}!clone@{clone}}
+\index{clone@{clone}!Quanto\+Call@{Quanto\+Call}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classPayOff}{Pay\+Off}$\ast$ Quanto\+Call\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPayOff_ad8194d5b82247ae89c25c515f0ba806a}{Pay\+Off}.
+
+\hypertarget{classQuantoCall_a4269b10b960c3d71cd01b4bd889534ae}{}\label{classQuantoCall_a4269b10b960c3d71cd01b4bd889534ae} 
+\index{Quanto\+Call@{Quanto\+Call}!operator()@{operator()}}
+\index{operator()@{operator()}!Quanto\+Call@{Quanto\+Call}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual double Quanto\+Call\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{classMJArray}{M\+J\+Array} \&}]{Spots }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classPayOffMulti_a61039e0c0ee136842b5d6f340b9f8155}{Pay\+Off\+Multi}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PayOffMulti_8h}{Pay\+Off\+Multi.\+h}\end{DoxyCompactItemize}
